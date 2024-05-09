@@ -135,6 +135,7 @@
 }
 @media (max-width: 991.98px) {
   :root {
+    --fs-2xl: 20px;
     --fs-5xl: 28px;
     --fs-6xl: 40px;
     --fs-7xl: 36px;
@@ -153,9 +154,11 @@
 }
 @media (max-width: 575.98px) {
   :root {
+    --fs-md: 15px;
+
     --fs-6xl: 40px;
     --fs-7xl: 28px;
-    --fs-8xl: 32px;
+    --fs-8xl: 25px;
     --fs-9xl: 60px;
   }
 }

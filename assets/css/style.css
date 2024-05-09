@@ -110,8 +110,28 @@
 .opacity_70 {
   opacity: 70%;
 }
+.hero_form_btn {
+  padding-top: 11px;
+  padding-bottom: 11px;
+  border-radius: 65px;
+  border: 1px solid var(--clr-green);
+}
+.hero_form_btn:hover {
+  background-color: var(--clr-darkgreen);
+}
 @media (max-width: 767.98px) {
   .gap_20 {
-  gap: 6px;
+    gap: 6px;
+  }
+  .nav_btn {
+    padding: 8px 30px;
+    border-radius: 65px;
+    line-height: 138.2%;
+    border: 1px solid #228b22;
+  }
 }
+@media (max-width: 575.98px) {
+  .hero_mobile {
+    max-width: 310px;
+  }
 }

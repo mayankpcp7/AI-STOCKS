@@ -90,7 +90,7 @@
                                         id="days">00</p>
                                     <span class="counter_line position-absolute"></span>
                                 </div>
-                                <p class="text-white fw-bold ff_opensans lh_145 fs_md px-lg-4 px-2 mx-1">Days</p>
+                                <p class="text-white fw-bold ff_opensans lh_145 fs_md px-lg-4 px-sm-2 mx-1">Days</p>
                             </div>
                             <div class="hero_counter_card d-flex flex-column align-items-center">
                                 <div class="position-relative my-4 pt-1">
@@ -99,7 +99,7 @@
                                     </p>
                                     <span class="counter_line position-absolute"></span>
                                 </div>
-                                <p class="text-white fw-bold ff_opensans lh_145 fs_md px-lg-4 px-2 mx-1">Hours</p>
+                                <p class="text-white fw-bold ff_opensans lh_145 fs_md px-lg-4 px-sm-2 mx-1">Hours</p>
                             </div>
                             <div class="hero_counter_card d-flex flex-column align-items-center">
                                 <div class="position-relative my-4 pt-1">
@@ -108,7 +108,7 @@
                                     </p>
                                     <span class="counter_line position-absolute"></span>
                                 </div>
-                                <p class="text-white fw-bold ff_opensans lh_145 fs_md px-lg-4 px-2 mx-1">Minutes</p>
+                                <p class="text-white fw-bold ff_opensans lh_145 fs_md px-lg-4 px-sm-2 mx-1">Minutes</p>
                             </div>
                             <div class="hero_counter_card d-flex flex-column align-items-center">
                                 <div class="position-relative my-4 pt-1">
@@ -117,7 +117,7 @@
                                     </p>
                                     <span class="counter_line position-absolute"></span>
                                 </div>
-                                <p class="text-white fw-bold ff_opensans lh_145 fs_md px-lg-4 px-2 mx-1">Seconds</p>
+                                <p class="text-white fw-bold ff_opensans lh_145 fs_md px-lg-4 px-sm-2 mx-1">Seconds</p>
                             </div>
                         </div>
                     </div>
@@ -133,7 +133,7 @@
                             </p>
                             <form action="
                            #" onsubmit="return validateForm()">
-                                <div class="d-flex flex-column">
+                                <div class="d-flex flex-column me-3 me-lg-0">
                                     <label class="ff_opensans fw-semibold text-black opacity_70 fs_xsm pb-1 mt-4 lh_"
                                         for="name">First Name</label>
                                     <input class="form_lable_border px-2" type="text" id="name" name="name" required>
@@ -141,11 +141,12 @@
                                         for="name">Last Name</label>
                                     <input class="form_lable_border px-2" type="text" id="name" name="name" required>
                                     <label class="ff_opensans fw-semibold text-black opacity_70 fs_xsm pb-1 mt-4 lh_"
-                                        for="name">Email</label>
-                                    <input class="form_lable_border px-2" type="text" id="name" name="name" required>
+                                        for="email">Email</label>
+                                    <input class="form_lable_border px-2" type="text" id="email" name="email" required>
                                     <label class="ff_opensans fw-semibold text-black opacity_70 fs_xsm pb-1 mt-4 lh_"
-                                        for="name">Phone Number</label>
-                                    <input class="form_lable_border px-2" type="text" id="name" name="name" required>
+                                        for="phone">Phone Number</label>
+                                    <input class="form_lable_border px-2" type="tel" id="phone" name="phone" required>
+                                    <button class="text-white bg_green lh_150 hero_form_btn transition_200 mt-4" type="submit" value="Submit">Get Started</button>
                                 </div>
                             </form>
                         </div>
@@ -155,7 +156,7 @@
 
         </header>
         <!------------------------- How It Works ------------------------->
-        <section class="works_bg_img">
+        <!-- <section class="works_bg_img">
             <div class="how_it_works">
                 <div class="d-flex flex-column px-3">
                     <h2 class="ff_opensans how_work_pb fw-light fs_7xl text-white text-center mb-0 lh_125">
@@ -267,7 +268,7 @@
                     </div>
                 </div>
             </div>
-        </section>
+        </section> -->
         <!-------------------------------- Statistics For Today -------------------------------->
         <section class="statistics_for_today bg_richblack position-relative">
             <img class="position-absolute trangle_shadow" src="/assets/images/png/trangle-left-shadow.png"
@@ -338,6 +339,18 @@
 
             }
 
+        }
+    </script>
+    <!----------- header form validation ------->
+    <script>
+        function validateForm() {
+            var password = document.getElementById("password").value;
+            var confirm_password = document.getElementById("confirm_password").value;
+            if (password !== confirm_password) {
+                alert("Passwords do not match");
+                return false;
+            }
+            return true;
         }
     </script>
     <!----------- counter ------->
