@@ -70,7 +70,9 @@
 .bg_richblack {
   background-color: var(--clr-richblack);
 }
-
+.bg_green {
+  background-color: var(--clr-green);
+}
 .custom_container {
   max-width: 1164px;
   padding: 0px 12px;
