@@ -1,0 +1,10 @@
+.works_bg_img {
+  background-image: url("/assets/images/png/how-works-bg.png") !important;
+  background-size: cover !important;
+  background-position: center !important;
+  background-repeat: no-repeat !important;
+}
+.how_it_works {
+  padding-top: 86px;
+  padding-bottom: 113px;
+}

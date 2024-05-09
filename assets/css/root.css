@@ -13,9 +13,10 @@
   --fs-3xl: 28px;
   --fs-4xl: 32px;
   --fs-5xl: 36px;
-  --fs-6xl: 48px;
-  --fs-7xl: 52px;
-  --fs-8xl: 128px;
+  --fs-6xl: 40px;
+  --fs-7xl: 48px;
+  --fs-8xl: 52px;
+  --fs-9xl: 128px;
 
   /* ------ colors root ------------ */
   --clr-green: #228b22;
