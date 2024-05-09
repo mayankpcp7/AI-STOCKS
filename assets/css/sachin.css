@@ -8,3 +8,42 @@
   padding-top: 86px;
   padding-bottom: 113px;
 }
+.opacity_80 {
+  opacity: 0.8;
+}
+.max_w_890 {
+  max-width: 890px;
+}
+.how_work_pera_pt {
+  padding-top: 28px;
+}
+.how_work_pb {
+  padding-bottom: 26px;
+}
+.green_circle {
+  width: 154px;
+  height: 154px;
+  border-radius: 50%;
+  background-color: #228b22;
+}
+.max_w_918 {
+  max-width: 918px;
+}
+.max_w_240 {
+  max-width: 240px;
+}
+.max_w_265 {
+  max-width: 265px;
+}
+.circle_card_mt {
+  margin-top: 86px;
+}
+.circle_card_mb {
+  margin-bottom: 39px;
+}
+.circle_card_gap {
+  gap: 40px;
+}
+.circle_card_pera_pt {
+  padding-top: 10px;
+}

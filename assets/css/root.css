@@ -22,6 +22,7 @@
   --clr-green: #228b22;
   --clr-richblack: #020507;
   --clr-darkgreen: #0a130b;
+  --clr-lightblack: #131313;
 }
 .fs_xsm {
   font-size: var(--fs-xsm);
@@ -65,15 +66,21 @@
 .clr_green {
   color: var(--clr-green);
 }
+.clr_lightblack {
+  color: var(--clr-lightblack);
+}
 .clr_darkgreen {
-  color: var(--clr-darkgreen);
+  color: var(--clr-richblack);
 }
 .bg_richblack {
-  background-color: var(--clr-richblack);
+  background-color: var(--clr-darkgreen);
 }
 
 .custom_container {
   max-width: 1164px;
   padding: 0px 12px;
   margin: 0px auto;
+}
+.lh_100 {
+  line-height: 100%;
 }
