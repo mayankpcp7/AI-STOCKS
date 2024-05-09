@@ -79,3 +79,31 @@
   padding: 0px 12px;
   margin: 0px auto;
 }
+/* ------------- line-heights --------------- */
+.lh_120 {
+  line-height: 120%;
+}
+.lh_136 {
+  line-height: 136%;
+}
+.lh_137 {
+  line-height: 137%;
+}
+.lh_160 {
+  line-height: 160%;
+}
+.lh_140 {
+  line-height: 140%;
+}
+.lh_145 {
+  line-height: 145%;
+}
+.lh_125 {
+  line-height: 125%;
+}
+.lh_150 {
+  line-height: 150%;
+}
+.lh_130 {
+  line-height: 130%;
+}
