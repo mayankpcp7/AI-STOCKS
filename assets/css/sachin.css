@@ -57,6 +57,31 @@
   top: 23%;
   right: 24%;
 }
+/*-------------------- statistics_for_today --------------------*/
+.statistics_for_today {
+  padding-top: 167px;
+  padding-bottom: 278px;
+}
+.counter_card {
+  width: 256px;
+  height: 235px;
+  border-radius: 25px;
+  background: linear-gradient(112.83deg, #121f13 0%, #102012 110.84%);
+}
+.counter_card_mt {
+  margin-top: 98px;
+}
+.counter_card_text {
+  color: #121f13;
+  -webkit-text-stroke: 1px;
+  -webkit-text-stroke-color: #228b22;
+}
+.counter_card_text_pt {
+  padding-top: 38px;
+}
+.max_w_996 {
+  max-width: 996px;
+}
 @media (max-width: 991.98px) {
   .green_circle {
     width: 120px;

@@ -60,6 +60,9 @@
 .fs_8xl {
   font-size: var(--fs-8xl);
 }
+.fs_9xl {
+  font-size: var(--fs-9xl);
+}
 .clr_richblack {
   color: var(--clr-richblack);
 }
