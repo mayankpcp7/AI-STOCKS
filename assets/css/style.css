@@ -1,0 +1,11 @@
+* {
+  list-style-type: none !important;
+  text-decoration: none !important;
+}
+
+.bg_header {
+  background-image: url(../images/png/header-bg.png);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
