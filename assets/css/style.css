@@ -29,7 +29,7 @@
 }
 .major_ai {
   max-width: 665px;
-  opacity: 80%;
+  color: #cfd2cf;
 }
 
 .green_gradiant {
@@ -47,7 +47,7 @@
   transform: translate(-50%, -50%);
   max-width: 54px;
   border-radius: 50%;
-  animation: rotate 4s infinite linear;
+  display: block;
 }
 .stamp {
   top: 50%;
@@ -61,5 +61,28 @@
   -moz-box-shadow: -1px -4px 33px 3px rgba(255, 255, 255, 1);
   box-shadow: -1px -4px 33px 3px rgba(255, 255, 255, 1);
 }
-@keyframes rotate {
+.pause_icon {
+  display: none;
+}
+
+.time_counter {
+  max-width: 566px;
+}
+.counter_card {
+  background-color: #122014;
+}
+
+.counter_line {
+  content: "";
+  height: 4px;
+  display: flex;
+  z-index: 2;
+  width: 124px;
+  background-color: #132115;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.gap_20 {
+  gap: 20px;
 }
