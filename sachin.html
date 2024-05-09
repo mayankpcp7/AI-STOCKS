@@ -45,20 +45,20 @@
         </div>
         <div class="mx-3">
           <div
-            class="row align-items-start max_w_918 circle_card_mt mx-auto position-relative"
+            class="row justify-content-center align-items-start max_w_918 circle_card_mt mx-auto position-relative"
           >
             <img
-              class="position-absolute green_line"
+              class="position-absolute green_line d-md-block d-none"
               src="/assets/images/png/doted-green-line.png"
               alt="doted-green-line"
             />
             <img
-              class="position-absolute green_line_2"
+              class="position-absolute green_line_2 d-md-block d-none"
               src="/assets/images/png/doted-green-line.png"
               alt="doted-green-line"
             />
 
-            <div class="col-4 d-flex justify-content-center">
+            <div class="col-md-4 col-sm-6 d-flex justify-content-center">
               <div class="d-flex justify-content-center flex-column max_w_240">
                 <div
                   class="green_circle d-flex justify-content-center align-items-center mx-auto circle_card_mb"
@@ -90,7 +90,9 @@
                 </div>
               </div>
             </div>
-            <div class="col-4 d-flex justify-content-center">
+            <div
+              class="col-md-4 col-sm-6 d-flex justify-content-center mt-sm-0 mt-4"
+            >
               <div class="d-flex justify-content-center flex-column max_w_240">
                 <div
                   class="green_circle d-flex justify-content-center align-items-center mx-auto circle_card_mb"
@@ -123,7 +125,9 @@
                 </div>
               </div>
             </div>
-            <div class="col-4 d-flex justify-content-center">
+            <div
+              class="col-md-4 col-sm-6 d-flex justify-content-center mt-md-0 mt-4"
+            >
               <div class="d-flex justify-content-center flex-column max_w_265">
                 <div
                   class="green_circle d-flex justify-content-center align-items-center mx-auto circle_card_mb"
@@ -160,15 +164,22 @@
       </div>
     </section>
     <!-------------------------------- Statistics For Today -------------------------------->
-    <section class="statistics_for_today bg_richblack">
+    <section class="statistics_for_today bg_richblack position-relative">
+      <img
+        class="position-absolute trangle_shadow"
+        src="/assets/images/png/trangle-left-shadow.png"
+        alt="trangle-left-shadow"
+      />
       <h2
         class="ff_opensans fw-light fs_7xl text-white text-center mb-0 lh_125"
       >
         Statistics For Today
       </h2>
       <div class="mx-3">
-        <div class="row align-items-start max_w_996 counter_card_mt mx-auto">
-          <div class="col-4 d-flex justify-content-center">
+        <div
+          class="row justify-content-center align-items-start max_w_996 counter_card_mt mx-auto position-relative"
+        >
+          <div class="col-md-4 col-sm-6 d-flex justify-content-center">
             <div class="d-flex flex-column justify-content-center">
               <div
                 class="counter_card p-3 mx-auto d-flex justify-content-center align-items-center"
@@ -176,7 +187,7 @@
                 <p
                   class="fs_9xl counter_card_text ff_roboto fw-bold mb-0 lh_100"
                 >
-                  01
+                  0<span class="counter" data-target="1"></span>
                 </p>
               </div>
               <p
@@ -186,7 +197,9 @@
               </p>
             </div>
           </div>
-          <div class="col-4 d-flex justify-content-center">
+          <div
+            class="col-md-4 col-sm-6 d-flex justify-content-center mt-sm-0 mt-4"
+          >
             <div class="d-flex flex-column justify-content-center">
               <div
                 class="counter_card p-3 mx-auto d-flex justify-content-center align-items-center"
@@ -194,7 +207,7 @@
                 <p
                   class="fs_9xl counter_card_text ff_roboto fw-bold mb-0 lh_100"
                 >
-                  135
+                  <span class="counter" data-target="135"></span>
                 </p>
               </div>
               <p
@@ -204,7 +217,9 @@
               </p>
             </div>
           </div>
-          <div class="col-4 d-flex justify-content-center">
+          <div
+            class="col-md-4 col-sm-6 d-flex justify-content-center mt-md-0 mt-4"
+          >
             <div class="d-flex flex-column justify-content-center">
               <div
                 class="counter_card p-3 mx-auto d-flex justify-content-center align-items-center"
@@ -212,7 +227,7 @@
                 <p
                   class="fs_9xl counter_card_text ff_roboto fw-bold mb-0 lh_100"
                 >
-                  5X
+                  <span class="counter" data-target="5"></span>X
                 </p>
               </div>
               <p
@@ -225,6 +240,35 @@
         </div>
       </div>
     </section>
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        const counters = document.querySelectorAll(".counter");
+
+        counters.forEach((counter) => {
+          const target = +counter.getAttribute("data-target");
+          counter.innerText = "0";
+
+          const updateCounter = () => {
+            const count = +counter.innerText;
+            // Decrease the increment value for a slower animation
+            const increment = target / 500; // Adjust this value for the desired speed
+            if (count < target) {
+              counter.innerText = `${Math.ceil(count + increment)}`;
+              setTimeout(updateCounter, 10); // Adjust the timeout for smoother animation
+            } else {
+              counter.innerText = target;
+            }
+          };
+          updateCounter();
+        });
+      });
+    </script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.4/jquery.min.js"
+      integrity="sha512-pumBsjNRGGqkPzKHndZMaAG+bir374sORyzM3uulLV14lN5LyykqNk8eEeUlUkB3U0M4FApyaHraT65ihJhDpQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
