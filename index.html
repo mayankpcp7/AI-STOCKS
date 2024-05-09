@@ -17,7 +17,7 @@
     <div class="bg_richblack">
         <header class="bg_header ">
             <nav class="nav_border">
-                <div class="custom_container py-2">
+                <div class="custom_container py-lg-2">
                     <div class="d-flex align-items-center justify-content-between py-4">
                         <a href="#" class="fw-bold text-white ff_opensans fs_2xl">AI STOCKS</a>
                         <button class="bg_green text-white ff_opensans fw-semibold nav_btn fs_lg transition_200">Sign
@@ -25,7 +25,7 @@
                     </div>
                 </div>
             </nav>
-            <main class="mt-5 pt-5 custom_container">
+            <main class="mt-sm-5 mt-4 pt-5 custom_container">
                 <h1 class="text-white ff_opensans mt-2 text-center fw-normal fs_8xl main_heading mx-auto">Dive into the
                     Explosive
                     Momentum of
@@ -41,7 +41,7 @@
                     expected to grow
                     <span class="text-white fw-bold">130.66% </span> in 2024
                 </p>
-                <div class="d-flex pt-4">
+                <div class="d-flex flex-lg-row flex-column align-items-center pt-4">
                     <div class="green_gradiant px-2 rounded-4 d-flex flex-column justify-content-center">
                         <div class="position-relative mt-4 pt-2 mx-2 d-flex align-items-center justify-content-center ">
                             <img class="play_icon position-absolute transition_200 cursor_pointer"
@@ -58,44 +58,44 @@
                             demand for
                             media coverage, registration closes in</p>
                         <div class="d-flex align-items-center gap_20 pt-4 time_counter mx-auto">
-                            <div class="counter_card d-flex flex-column align-items-center">
+                            <div class="hero_counter_card d-flex flex-column align-items-center">
                                 <div class="position-relative my-4 pt-1">
                                     <p class="time_numbers mb-0 position-relative fw-bold text-white ff_opensans lh_145 fs_8xl"
                                         id="days">00</p>
                                     <span class="counter_line position-absolute"></span>
                                 </div>
-                                <p class="text-white fw-bold ff_opensans lh_145 fs_md px-4 mx-1">Days</p>
+                                <p class="text-white fw-bold ff_opensans lh_145 fs_md px-lg-4 px-2 mx-1">Days</p>
                             </div>
-                            <div class="counter_card d-flex flex-column align-items-center">
+                            <div class="hero_counter_card d-flex flex-column align-items-center">
                                 <div class="position-relative my-4 pt-1">
                                     <p class="time_numbers mb-0 position-relative fw-bold text-white ff_opensans lh_145 fs_8xl"
                                         id="hours">01
                                     </p>
                                     <span class="counter_line position-absolute"></span>
                                 </div>
-                                <p class="text-white fw-bold ff_opensans lh_145 fs_md px-4 mx-1">Hours</p>
+                                <p class="text-white fw-bold ff_opensans lh_145 fs_md px-lg-4 px-2 mx-1">Hours</p>
                             </div>
-                            <div class="counter_card d-flex flex-column align-items-center">
+                            <div class="hero_counter_card d-flex flex-column align-items-center">
                                 <div class="position-relative my-4 pt-1">
                                     <p class="time_numbers mb-0 position-relative fw-bold text-white ff_opensans lh_145 fs_8xl"
                                         id="minutes">05
                                     </p>
                                     <span class="counter_line position-absolute"></span>
                                 </div>
-                                <p class="text-white fw-bold ff_opensans lh_145 fs_md px-4 mx-1">Minutes</p>
+                                <p class="text-white fw-bold ff_opensans lh_145 fs_md px-lg-4 px-2 mx-1">Minutes</p>
                             </div>
-                            <div class="counter_card d-flex flex-column align-items-center">
+                            <div class="hero_counter_card d-flex flex-column align-items-center">
                                 <div class="position-relative my-4 pt-1">
                                     <p class="time_numbers mb-0 position-relative fw-bold text-white ff_opensans lh_145 fs_8xl"
                                         id="seconds">59
                                     </p>
                                     <span class="counter_line position-absolute"></span>
                                 </div>
-                                <p class="text-white fw-bold ff_opensans lh_145 fs_md px-4 mx-1">Seconds</p>
+                                <p class="text-white fw-bold ff_opensans lh_145 fs_md px-lg-4 px-2 mx-1">Seconds</p>
                             </div>
                         </div>
                     </div>
-                    <div class="position-relative ms-5 ps-3">
+                    <div class="position-relative ms-lg-5 ps-lg-3 mt-4 mt-lg-0">
                         <img class="hero_mobile" src="./assets/images/png/hero-mobile.png" alt="hero-mobile">
                         <div class="d-flex flex-column position-absolute top-0 hero_form w-full ms-2">
                             <p
@@ -108,7 +108,17 @@
                             <form action="
                            #" onsubmit="return validateForm()">
                                 <div class="d-flex flex-column">
-                                    <label class="ff_opensans fw-semibold text-black opacity_70 fs_xsm pb-1 mt-4 lh_" for="name">First Name</label>
+                                    <label class="ff_opensans fw-semibold text-black opacity_70 fs_xsm pb-1 mt-4 lh_"
+                                        for="name">First Name</label>
+                                    <input class="form_lable_border px-2" type="text" id="name" name="name" required>
+                                    <label class="ff_opensans fw-semibold text-black opacity_70 fs_xsm pb-1 mt-4 lh_"
+                                        for="name">Last Name</label>
+                                    <input class="form_lable_border px-2" type="text" id="name" name="name" required>
+                                    <label class="ff_opensans fw-semibold text-black opacity_70 fs_xsm pb-1 mt-4 lh_"
+                                        for="name">Email</label>
+                                    <input class="form_lable_border px-2" type="text" id="name" name="name" required>
+                                    <label class="ff_opensans fw-semibold text-black opacity_70 fs_xsm pb-1 mt-4 lh_"
+                                        for="name">Phone Number</label>
                                     <input class="form_lable_border px-2" type="text" id="name" name="name" required>
                                 </div>
                             </form>
@@ -119,6 +129,7 @@
 
         </header>
     </div>
+   
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
         crossorigin="anonymous"></script>
