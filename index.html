@@ -135,7 +135,8 @@
                     <h2 class="ff_opensans how_work_pb fw-light fs_7xl text-white text-center mb-0 lh_125">
                         How It Works
                     </h2>
-                    <p class="text-white fw-normal text-sm ff_opensans opacity_80 max_w_890 text-center mx-auto mb-0 lh_160">
+                    <p
+                        class="text-white fw-normal text-sm ff_opensans opacity_80 max_w_890 text-center mx-auto mb-0 lh_160">
                         If you've used ChatGPT, the OpenAl chatbot that has wowed users by
                         writing code and instantly answering complex questions, you've
                         gotten a glimpse into the next frontier in artificial intelligence,
@@ -157,7 +158,7 @@
                             src="/assets/images/png/doted-green-line.png" alt="doted-green-line" />
                         <img class="position-absolute green_line_2 d-md-block d-none"
                             src="/assets/images/png/doted-green-line.png" alt="doted-green-line" />
-        
+
                         <div class="col-md-4 col-sm-6 d-flex justify-content-center">
                             <div class="d-flex justify-content-center flex-column max_w_240">
                                 <div
@@ -249,7 +250,8 @@
                 Statistics For Today
             </h2>
             <div class="mx-3">
-                <div class="row justify-content-center align-items-start max_w_996 counter_card_mt mx-auto position-relative">
+                <div
+                    class="row justify-content-center align-items-start max_w_996 counter_card_mt mx-auto position-relative">
                     <div class="col-md-4 col-sm-6 d-flex justify-content-center">
                         <div class="d-flex flex-column justify-content-center">
                             <div class="counter_card p-3 mx-auto d-flex justify-content-center align-items-center">
@@ -290,7 +292,7 @@
             </div>
         </section>
     </div>
-   
+
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
         crossorigin="anonymous"></script>
@@ -351,30 +353,30 @@
             }
         }, 1000);
     </script>
-<!------ sachin counter ----- -->
-<script>
-    document.addEventListener("DOMContentLoaded", function () {
-        const counters = document.querySelectorAll(".counter");
+    <!------ sachin counter ----- -->
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            const counters = document.querySelectorAll(".counter");
 
-        counters.forEach((counter) => {
-            const target = +counter.getAttribute("data-target");
-            counter.innerText = "0";
+            counters.forEach((counter) => {
+                const target = +counter.getAttribute("data-target");
+                counter.innerText = "0";
 
-            const updateCounter = () => {
-                const count = +counter.innerText;
-                // Decrease the increment value for a slower animation
-                const increment = target / 500; // Adjust this value for the desired speed
-                if (count < target) {
-                    counter.innerText = `${Math.ceil(count + increment)}`;
-                    setTimeout(updateCounter, 10); // Adjust the timeout for smoother animation
-                } else {
-                    counter.innerText = target;
-                }
-            };
-            updateCounter();
+                const updateCounter = () => {
+                    const count = +counter.innerText;
+                    // Decrease the increment value for a slower animation
+                    const increment = target / 500; // Adjust this value for the desired speed
+                    if (count < target) {
+                        counter.innerText = `${Math.ceil(count + increment)}`;
+                        setTimeout(updateCounter, 10); // Adjust the timeout for smoother animation
+                    } else {
+                        counter.innerText = target;
+                    }
+                };
+                updateCounter();
+            });
         });
-    });
-</script>
+    </script>
 
 </body>
 
