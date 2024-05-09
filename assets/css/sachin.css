@@ -47,3 +47,34 @@
 .circle_card_pera_pt {
   padding-top: 10px;
 }
+.green_line {
+  max-width: 173px;
+  top: 23%;
+  left: 24%;
+}
+.green_line_2 {
+  max-width: 173px;
+  top: 23%;
+  right: 24%;
+}
+@media (max-width: 991.98px) {
+  .green_circle {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    background-color: #228b22;
+  }
+  .circle_card_mb {
+    margin-bottom: 26px;
+  }
+  .green_line {
+    max-width: 200px;
+    top: 22%;
+    left: 19%;
+  }
+  .green_line_2 {
+    max-width: 200px;
+    top: 22%;
+    right: 22%;
+  }
+}
