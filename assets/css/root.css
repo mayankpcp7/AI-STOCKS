@@ -26,6 +26,7 @@
   --clr-green: #228b22;
   --clr-richblack: #020507;
   --clr-darkgreen: #0a130b;
+  --clr-lightblack: #131313;
 }
 .fs_xsm {
   font-size: var(--fs-xsm);
@@ -63,17 +64,23 @@
 .fs_8xl {
   font-size: var(--fs-8xl);
 }
+.fs_9xl {
+  font-size: var(--fs-9xl);
+}
 .clr_richblack {
   color: var(--clr-richblack);
 }
 .clr_green {
   color: var(--clr-green);
 }
+.clr_lightblack {
+  color: var(--clr-lightblack);
+}
 .clr_darkgreen {
-  color: var(--clr-darkgreen);
+  color: var(--clr-richblack);
 }
 .bg_richblack {
-  background-color: var(--clr-richblack);
+  background-color: var(--clr-darkgreen);
 }
 .bg_green {
   background-color: var(--clr-green);
@@ -82,6 +89,9 @@
   max-width: 1164px;
   padding: 0px 12px;
   margin: 0px auto;
+}
+.lh_100 {
+  line-height: 100%;
 }
 /* ------------- line-heights --------------- */
 .lh_120 {
