@@ -102,4 +102,10 @@
     top: 22%;
     right: 22%;
   }
+  .counter_card {
+    width: 220px;
+    height: 215px;
+    border-radius: 25px;
+    background: linear-gradient(112.83deg, #121f13 0%, #102012 110.84%);
+  }
 }
