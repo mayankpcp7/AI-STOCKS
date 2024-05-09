@@ -37,20 +37,62 @@
                     Major AI
                     Stocks such as
                     Microsoft and Nvidia have
-                    surged over 80% in the past year. This giants are
+                    surged over <span class="fw-bold text-white">80%</span> in the past year. This giants are
                     expected to grow
-                    130.66% in 2024</p>
+                    <span class="text-white fw-bold">130.66% </span> in 2024
+                </p>
                 <div class="d-flex pt-3">
-                    <div class="green_gradiant">
-                        <div class="position-relative">
-                            <img class="play_icon position-absolute transition_200" src="./assets/images/png/play_icon.png"
-                                alt="play_icon">
-                            <img class="position-absolute stamp transition_200 " src="./assets/images/png/dollar-stamp.png"
-                                alt="dollar-stamp">
-                            <video class="w-100 hero_video position-relative"
-                                poster="./assets/images/png/thumbnail.png">
+                    <div class="green_gradiant px-2 rounded-4 d-flex flex-column justify-content-center">
+                        <div class="position-relative mt-4 pt-2 mx-2 d-flex align-items-center justify-content-center ">
+                            <img class="play_icon position-absolute transition_200 cursor_pointer"
+                                src="./assets/images/png/play_icon.png" alt="play_icon" onclick="toggleVideo()">
+                            <img class="position-absolute stamp transition_200"
+                                src="./assets/images/png/dollar-stamp.png" alt="dollar-stamp">
+                            <video class="w-100 hero_video position-relative" poster="./assets/images/png/thumbnail.png"
+                                id="video">
                                 <source type="video/mp4" src="https://aietf.ai/AI-ETF-v3/AI-ETF2.mp4">
                             </video>
+                        </div>
+                        <p class="mt-1 pt-3 px-1 text-white ff_opensans text-center fw-bold text-white fs_md">Due to
+                            extremely high
+                            demand for
+                            media coverage, registration closes in</p>
+                        <div class="d-flex align-items-center gap_20 pt-4 time_counter mx-auto">
+                            <div class="counter_card d-flex flex-column align-items-center">
+                                <div class="position-relative my-4 pt-1">
+                                    <p class="time_numbers mb-0 position-relative fw-bold text-white ff_opensans lh_145 fs_8xl"
+                                        id="days">00</p>
+                                    <span class="counter_line position-absolute"></span>
+                                </div>
+                                <p class="text-white fw-bold ff_opensans lh_145 fs_md px-4 mx-1">Days</p>
+                            </div>
+                            <div class="counter_card d-flex flex-column align-items-center">
+                                <div class="position-relative my-4 pt-1">
+                                    <p class="time_numbers mb-0 position-relative fw-bold text-white ff_opensans lh_145 fs_8xl"
+                                        id="hours">01
+                                    </p>
+                                    <span class="counter_line position-absolute"></span>
+                                </div>
+                                <p class="text-white fw-bold ff_opensans lh_145 fs_md px-4 mx-1">Hours</p>
+                            </div>
+                            <div class="counter_card d-flex flex-column align-items-center">
+                                <div class="position-relative my-4 pt-1">
+                                    <p class="time_numbers mb-0 position-relative fw-bold text-white ff_opensans lh_145 fs_8xl"
+                                        id="minutes">05
+                                    </p>
+                                    <span class="counter_line position-absolute"></span>
+                                </div>
+                                <p class="text-white fw-bold ff_opensans lh_145 fs_md px-4 mx-1">Minutes</p>
+                            </div>
+                            <div class="counter_card d-flex flex-column align-items-center">
+                                <div class="position-relative my-4 pt-1">
+                                    <p class="time_numbers mb-0 position-relative fw-bold text-white ff_opensans lh_145 fs_8xl"
+                                        id="seconds">59
+                                    </p>
+                                    <span class="counter_line position-absolute"></span>
+                                </div>
+                                <p class="text-white fw-bold ff_opensans lh_145 fs_md px-4 mx-1">Seconds</p>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -61,6 +103,65 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
         crossorigin="anonymous"></script>
+    <!---------- header video ---->
+    <script>
+        function toggleVideo() {
+            var video = document.getElementById('video');
+            var playIcon = document.querySelector('.play_icon');
+            var stamp = document.querySelector('.stamp');
+
+            if (video.paused) {
+                video.play();
+                playIcon.style.display = 'none';
+                stamp.style.display = 'none';
+            } else {
+                video.pause();
+                playIcon.style.display = 'block';
+                stamp.style.display = 'block';
+
+            }
+
+        }
+    </script>
+    <!----------- counter ------->
+    <script>
+        // Set the default values for seconds
+        var seconds = 59;
+
+        // Update the countdown every 1 second
+        var x = setInterval(function () {
+
+            // Decrease one second
+            seconds--;
+
+            // Display the countdown
+            document.getElementById("seconds").innerHTML = seconds < 10 ? "0" + seconds : seconds;
+
+            // If seconds reach 0, decrement minutes
+            if (seconds === 0) {
+                // If minutes reach 0, decrement hours
+                if (minutes === 0) {
+                    // If hours reach 0, decrement days
+                    if (hours === 0) {
+                        // If days reach 0, clear the interval
+                        clearInterval(x);
+                        document.getElementById("days").innerHTML = "00";
+                        document.getElementById("hours").innerHTML = "00";
+                        document.getElementById("minutes").innerHTML = "00";
+                        document.getElementById("seconds").innerHTML = "00";
+                        return;
+                    }
+                    hours--;
+                    minutes = 59;
+                } else {
+                    minutes--;
+                }
+                seconds = 59;
+            }
+        }, 1000);
+    </script>
+
+
 </body>
 
 </html>
