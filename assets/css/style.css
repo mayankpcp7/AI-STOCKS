@@ -86,3 +86,26 @@
 .gap_20 {
   gap: 20px;
 }
+.hero_mobile {
+  max-width: 329px;
+}
+.hero_form {
+  min-width: 261px;
+}
+.right_ai {
+  min-width: 250px;
+}
+.hero_form {
+  transform: translateX(-50%);
+  left: 50%;
+}
+.form_lable_border {
+  border-radius: 100px;
+  border: 1px solid #cccc;
+  min-height: 37.6px;
+  outline: linear-gradient(180deg, #9b77e8 0%, #6854ff 100%);
+}
+
+.opacity_70 {
+  opacity: 70%;
+}
