@@ -234,6 +234,7 @@
 .nla_graph {
   max-width: 430px;
 }
+
 /* ---------------------------------------- media quaries ----------------------------------- */
 @media (max-width: 991.98px) {
   .benefit_card {
