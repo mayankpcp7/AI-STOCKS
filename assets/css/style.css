@@ -154,6 +154,21 @@
 .gap_22 {
   gap: 22px;
 }
+.slide_container {
+  width: calc(360px * 8);
+  -webkit-animation: scroll 20s linear infinite;
+  animation: scroll 20s linear infinite;
+}
+@-webkit-keyframes scroll {
+  0% {
+    -webkit-transform: translateX(0);
+    transform: translateX(0);
+  }
+  100% {
+    -webkit-transform: translateX(calc(-360px * 4));
+    transform: translateX(calc(-360px * 4));
+  }
+}
 /* --------------------------------------- How it  Benifit ----------------------------------*/
 .benifit_heading {
   max-width: 648px;
@@ -214,8 +229,8 @@
 }
 .understanding_card {
   border-radius: 16px;
-  width: 524px;
-  height: 260px;
+  min-width: 524px;
+  min-height: 260px;
 }
 .understanding_card_img {
   max-width: 72px;
@@ -229,16 +244,54 @@
   padding: 20px;
   max-width: 471px;
   margin-top: -10%;
-  margin-left: 20px;
+  left: 50%;
+  transform: translateX(-50%);
 }
 .nla_graph {
   max-width: 430px;
 }
-
+.potential_energy {
+  background-color: #182619;
+  border-radius: 10px;
+}
+.lighter_green {
+  color: #2db965;
+}
+.maximize_btn {
+  padding: 11px 23px;
+  border-radius: 65px;
+  border: 1px solid var(--clr-green);
+}
+.maximize_btn:hover {
+  background-color: #102012;
+}
 /* ---------------------------------------- media quaries ----------------------------------- */
+@media (min-width: 1526px) {
+  .slide_container {
+    width: calc(244px * 12);
+    -webkit-animation: scroll 15s linear infinite;
+    animation: scroll 15s linear infinite;
+  }
+}
+@media (max-width: 1199.98px) {
+  .leverged_card {
+    max-width: 400px;
+  }
+  .understanding_card {
+    max-width: 100%;
+    min-width: 400px !important;
+  }
+}
 @media (max-width: 991.98px) {
   .benefit_card {
     padding: 58px 15.5px;
+  }
+  .leverged_card {
+    max-width: 340px;
+  }
+  .understanding_card {
+    max-width: 100%;
+    min-width: 300px !important;
   }
 }
 @media (max-width: 767.98px) {
