@@ -119,7 +119,28 @@
 .hero_form_btn:hover {
   background-color: var(--clr-darkgreen);
 }
+.hero_left_green_ellipse {
+  width: 197px;
+  height: 197px;
+  background-color: var(--clr-green);
+  filter: blur(100px);
+  border-radius: 50%;
+  left: -15%;
+  top: 10%;
+}
+.hero_right_green_ellipse {
+  width: 197px;
+  height: 197px;
+  background-color: var(--clr-green);
+  filter: blur(100px);
+  border-radius: 50%;
+  top: 10%;
+  right: -15%;
+}
 @media (max-width: 767.98px) {
+  .stamp {
+    max-width: 79px;
+  }
   .gap_20 {
     gap: 6px;
   }
@@ -133,5 +154,11 @@
 @media (max-width: 575.98px) {
   .hero_mobile {
     max-width: 310px;
+  }
+  .hero_form_btn {
+    padding: 6px;
+  }
+  .play_icon {
+    max-width: 34px;
   }
 }

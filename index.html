@@ -51,7 +51,9 @@
                     </div>
                 </div>
             </nav>
-            <main class="mt-sm-5 mt-4 pt-5 custom_container">
+            <main class="mt-sm-5 mt-4 pt-5 custom_container position-relative">
+                <span class="hero_right_green_ellipse position-absolute"></span>
+                <span class="hero_left_green_ellipse position-absolute  hero_right_ellipse"></span>
                 <h1 class="text-white ff_opensans mt-2 text-center fw-normal fs_8xl main_heading mx-auto">Dive into the
                     Explosive
                     Momentum of
@@ -59,7 +61,7 @@
                     <span class="fw-bold clr_green lh_120"> Top 7
                         Fastest-Growing AI Stocks!</span>
                 </h1>
-                <p class="text-white ff_opensans fw-normal pb-1 lh_160 fs_sm major_ai mx-auto mt-2 pt-4 text-center">
+                <p class="text-white ff_opensans fw-normal pb-1 lh_160 fs_sm major_ai mx-auto mt-md-2 pt-sm-4 pt-1 text-center">
                     Major AI
                     Stocks such as
                     Microsoft and Nvidia have
@@ -67,7 +69,7 @@
                     expected to grow
                     <span class="text-white fw-bold">130.66% </span> in 2024
                 </p>
-                <div class="d-flex flex-lg-row flex-column align-items-center pt-4">
+                <div class="d-flex flex-lg-row flex-column align-items-center pt-sm-4 pt-2">
                     <div class="green_gradiant px-2 rounded-4 d-flex flex-column justify-content-center">
                         <div class="position-relative mt-4 pt-2 mx-2 d-flex align-items-center justify-content-center ">
                             <img class="play_icon position-absolute transition_200 cursor_pointer"
@@ -83,7 +85,7 @@
                             extremely high
                             demand for
                             media coverage, registration closes in</p>
-                        <div class="d-flex align-items-center gap_20 pt-4 time_counter mx-auto">
+                        <div class="d-flex align-items-center gap_20 pt-sm-4 pt-3 time_counter mx-auto">
                             <div class="hero_counter_card d-flex flex-column align-items-center">
                                 <div class="position-relative my-4 pt-1">
                                     <p class="time_numbers mb-0 position-relative fw-bold text-white ff_opensans lh_145 fs_8xl"
@@ -125,200 +127,54 @@
                         <img class="hero_mobile" src="./assets/images/png/hero-mobile.png" alt="hero-mobile">
                         <div class="d-flex flex-column position-absolute top-0 hero_form w-full ms-2">
                             <p
-                                class="clr_richblack ff_opensans fs_sm fw-bold mt-5 pt-3 right_time lh_140 mb-0 mx-auto text-center w-full">
+                                class="clr_richblack ff_opensans fs_sm fw-bold mt-5 pt-3 me-3 me-lg-0 right_time lh_140 mb-0 mx-auto text-center w-full">
                                 This Is The Right Time to Invest In AI
                                 Stocks</p>
-                            <p class="fs_xsm ff_opensans text-center mt-2">In a matter of minutes one of our AI mentors
+                            <p class="fs_xsm ff_opensans text-center mt-2 me-3 me-lg-0">In a matter of minutes one of
+                                our AI mentors
                                 will contact you, No Experience Required!
                             </p>
-                            <form action="
-                           #" onsubmit="return validateForm()">
+                            <form action="#" onsubmit="return validateForm(event)">
                                 <div class="d-flex flex-column me-3 me-lg-0">
-                                    <label class="ff_opensans fw-semibold text-black opacity_70 fs_xsm pb-1 mt-4 lh_"
-                                        for="name">First Name</label>
-                                    <input class="form_lable_border px-2" type="text" id="name" name="name" required>
-                                    <label class="ff_opensans fw-semibold text-black opacity_70 fs_xsm pb-1 mt-4 lh_"
-                                        for="name">Last Name</label>
-                                    <input class="form_lable_border px-2" type="text" id="name" name="name" required>
-                                    <label class="ff_opensans fw-semibold text-black opacity_70 fs_xsm pb-1 mt-4 lh_"
+                                    <label
+                                        class="ff_opensans fw-semibold text-black opacity_70 fs_xsm pb-1 mt-lg-4 mt-3 lh_"
+                                        for="first_name">First
+                                        Name</label>
+                                    <input class="form_lable_border px-2" type="text" id="first_name" name="first_name"
+                                        required>
+
+                                    <label
+                                        class="ff_opensans fw-semibold text-black opacity_70 fs_xsm pb-1 mt-lg-4 mt-3 lh_"
+                                        for="last_name">Last
+                                        Name</label>
+                                    <input class="form_lable_border px-2" type="text" id="last_name" name="last_name"
+                                        required>
+
+                                    <label
+                                        class="ff_opensans fw-semibold text-black opacity_70 fs_xsm pb-1 mt-lg-4 mt-3 lh_"
                                         for="email">Email</label>
                                     <input class="form_lable_border px-2" type="text" id="email" name="email" required>
-                                    <label class="ff_opensans fw-semibold text-black opacity_70 fs_xsm pb-1 mt-4 lh_"
-                                        for="phone">Phone Number</label>
+
+                                    <label
+                                        class="ff_opensans fw-semibold text-black opacity_70 fs_xsm pb-1 mt-lg-4 mt-3 lh_"
+                                        for="phone">Phone
+                                        Number</label>
                                     <input class="form_lable_border px-2" type="tel" id="phone" name="phone" required>
+
                                     <button class="text-white bg_green lh_150 hero_form_btn transition_200 mt-4"
-                                        type="submit" value="Submit">Get Started</button>
+                                        type="submit" value="Submit">Get
+                                        Started</button>
                                 </div>
                             </form>
+                            <p class="text-center fw-bold ff_opensans clr_richblack fs_xsm pt-3">3 Spot Left</p>
+                            <!-- <div id="doneMessage" style="display: none;" class="clr_green fw-bold bg-white p-5 rounded-4 border-1 absolute top-50">Done!</div> -->
                         </div>
                     </div>
                 </div>
             </main>
 
         </header>
-        <!------------------------- How It Works ------------------------->
-        <section class="works_bg_img">
-            <div class="how_it_works">
-                <div class="d-flex flex-column px-3">
-                    <h2 class="ff_opensans how_work_pb fw-light fs_7xl text-white text-center mb-0 lh_125">
-                        How It Works
-                    </h2>
-                    <p
-                        class="text-white fw-normal text-sm ff_opensans opacity_80 max_w_890 text-center mx-auto mb-0 lh_160">
-                        If you've used ChatGPT, the OpenAl chatbot that has wowed users by
-                        writing code and instantly answering complex questions, you've
-                        gotten a glimpse into the next frontier in artificial intelligence,
-                        as big tech companies are racing to develop the leading Al chatbot.
-                    </p>
-                    <p
-                        class="text-white fw-normal text-sm ff_opensans opacity_80 max_w_890 text-center mx-auto mb-0 how_work_pera_pt lh_160">
-                        If you want to get portfolio exposure to Al companies but don't want
-                        to identify individual Al stocks, you can invest in an Al-focused
-                        exchange-traded fund (ETF). AI ETFs provide exposure to a broad
-                        range of the best Al companies, eliminating the need to research and
-                        choose individual stocks on your own.
-                    </p>
-                </div>
-                <div class="mx-3">
-                    <div
-                        class="row justify-content-center align-items-start max_w_918 circle_card_mt mx-auto position-relative">
-                        <img class="position-absolute green_line d-md-block d-none"
-                            src="/assets/images/png/doted-green-line.png" alt="doted-green-line" />
-                        <img class="position-absolute green_line_2 d-md-block d-none"
-                            src="/assets/images/png/doted-green-line.png" alt="doted-green-line" />
 
-                        <div class="col-md-4 col-sm-6 d-flex justify-content-center">
-                            <div class="d-flex justify-content-center flex-column max_w_240">
-                                <div
-                                    class="green_circle d-flex justify-content-center align-items-center mx-auto circle_card_mb">
-                                    <div class="d-flex flex-column">
-                                        <h5
-                                            class="ff_opensans fw-bold fs_6xl text_light_black text-center clr_lightblack mb-0 lh_100">
-                                            01
-                                        </h5>
-                                        <p
-                                            class="ff_opensans fw-normal fs_lg text_light_black text-center clr_lightblack mb-0 lh_100">
-                                            Step
-                                        </p>
-                                    </div>
-                                </div>
-                                <div class="d-flex flex-column">
-                                    <h4 class="text-white text-center fw-bold ff_opensans fs_5xl mb-0 lh_145">
-                                        Sign up
-                                    </h4>
-                                    <p
-                                        class="text-white fw-normal text-sm ff_opensans opacity_80 text-center mx-auto mb-0 lh_160 circle_card_pera_pt">
-                                        Fill out the Registration Form to Get Started.
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-md-4 col-sm-6 d-flex justify-content-center mt-sm-0 mt-4">
-                            <div class="d-flex justify-content-center flex-column max_w_240">
-                                <div
-                                    class="green_circle d-flex justify-content-center align-items-center mx-auto circle_card_mb">
-                                    <div class="d-flex flex-column">
-                                        <h5
-                                            class="ff_opensans fw-bold fs_6xl text_light_black text-center clr_lightblack mb-0 lh_100">
-                                            02
-                                        </h5>
-                                        <p
-                                            class="ff_opensans fw-normal fs_lg text_light_black text-center clr_lightblack mb-0 lh_100">
-                                            Step
-                                        </p>
-                                    </div>
-                                </div>
-                                <div class="d-flex flex-column">
-                                    <h4 class="text-white text-center fw-bold ff_opensans fs_5xl mb-0 lh_145">
-                                        Verification
-                                    </h4>
-                                    <p
-                                        class="text-white fw-normal text-sm ff_opensans opacity_80 text-center mx-auto mb-0 lh_160 circle_card_pera_pt">
-                                        Schedule a Call with Our Verified AI Trading Mentors to
-                                        Guide You Through Your Investment Journey
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-md-4 col-sm-6 d-flex justify-content-center mt-md-0 mt-4">
-                            <div class="d-flex justify-content-center flex-column max_w_265">
-                                <div
-                                    class="green_circle d-flex justify-content-center align-items-center mx-auto circle_card_mb">
-                                    <div class="d-flex flex-column">
-                                        <h5
-                                            class="ff_opensans fw-bold fs_6xl text_light_black text-center clr_lightblack mb-0 lh_100">
-                                            03
-                                        </h5>
-                                        <p
-                                            class="ff_opensans fw-normal fs_lg text_light_black text-center clr_lightblack mb-0 lh_100">
-                                            Step
-                                        </p>
-                                    </div>
-                                </div>
-                                <div class="d-flex flex-column">
-                                    <h4 class="text-white text-center fw-bold ff_opensans fs_5xl mb-0 lh_145">
-                                        Start Investing
-                                    </h4>
-                                    <p
-                                        class="text-white fw-normal text-sm ff_opensans opacity_80 text-center mx-auto mb-0 lh_160 circle_card_pera_pt">
-                                        Begin shaping your financial future with confidence and ease
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <!-------------------------------- Statistics For Today -------------------------------->
-        <section class="statistics_for_today bg_richblack position-relative">
-            <img class="position-absolute trangle_shadow" src="/assets/images/png/trangle-left-shadow.png"
-                alt="trangle-left-shadow" />
-            <h2 class="ff_opensans fw-light fs_7xl text-white text-center mb-0 lh_125">
-                Statistics For Today
-            </h2>
-            <div class="mx-3">
-                <div
-                    class="row justify-content-center align-items-start max_w_996 counter_card_mt mx-auto position-relative">
-                    <div class="col-md-4 col-sm-6 d-flex justify-content-center">
-                        <div class="d-flex flex-column justify-content-center">
-                            <div class="counter_card p-3 mx-auto d-flex justify-content-center align-items-center">
-                                <p class="fs_9xl counter_card_text ff_roboto fw-bold mb-0 lh_100">
-                                    0<span class="counter" data-target="1"></span>
-                                </p>
-                            </div>
-                            <p class="text-center text-white ff_opensans fw-semibold fs_lg mb-0 counter_card_text_pt">
-                                Places left to register
-                            </p>
-                        </div>
-                    </div>
-                    <div class="col-md-4 col-sm-6 d-flex justify-content-center mt-sm-0 mt-4">
-                        <div class="d-flex flex-column justify-content-center">
-                            <div class="counter_card p-3 mx-auto d-flex justify-content-center align-items-center">
-                                <p class="fs_9xl counter_card_text ff_roboto fw-bold mb-0 lh_100">
-                                    <span class="counter" data-target="135"></span>
-                                </p>
-                            </div>
-                            <p class="text-center text-white ff_opensans fw-semibold fs_lg mb-0 counter_card_text_pt">
-                                Average Registrations per day
-                            </p>
-                        </div>
-                    </div>
-                    <div class="col-md-4 col-sm-6 d-flex justify-content-center mt-md-0 mt-4">
-                        <div class="d-flex flex-column justify-content-center">
-                            <div class="counter_card p-3 mx-auto d-flex justify-content-center align-items-center">
-                                <p class="fs_9xl counter_card_text ff_roboto fw-bold mb-0 lh_100">
-                                    <span class="counter" data-target="5"></span>X
-                                </p>
-                            </div>
-                            <p class="text-center text-white ff_opensans fw-semibold fs_lg mb-0 counter_card_text_pt">
-                                The Average Earnings Increase
-                            </p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
     </div>
 
 
@@ -339,22 +195,20 @@
                 stamp.style.display = 'block';
 
             }
-
         }
     </script>
     <!----------- header form validation ------->
     <script>
-        function validateForm() {
-            var password = document.getElementById("password").value;
-            var confirm_password = document.getElementById("confirm_password").value;
-            if (password !== confirm_password) {
-                alert("Passwords do not match");
-                return false;
-            }
-            return true;
+        function validateForm(event) {
+            document.getElementById("doneMessage").style.display = "block";
+            document.getElementById("first_name").value = "";
+            document.getElementById("last_name").value = "";
+            document.getElementById("email").value = "";
+            document.getElementById("phone").value = "";
+            return false;
         }
     </script>
-    <!----------- counter ------->
+    <!----------- hero counter ------->
     <script>
         // Set the default values for seconds
         var seconds = 59;
