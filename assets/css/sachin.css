@@ -94,6 +94,114 @@
 .average_earnings {
   padding: 30px 0px;
 }
+.max_w_1440 {
+  max-width: 1440px;
+}
+.max_w_890 {
+  max-width: 890px;
+}
+.social_img {
+  max-width: 210px !important;
+}
+.px_6 {
+  padding: 0px 6px;
+}
+.social_row_mt {
+  margin-top: 12px;
+}
+.social_translate {
+  transform: translateX(-16%);
+}
+.max_w_518 {
+  max-width: 518px;
+}
+.commun_btn {
+  padding: 11px 35px;
+  border-radius: 65px;
+  line-height: 138.2%;
+  background-color: #228b22;
+  border: 1px solid #228b22;
+  transition: all 300ms;
+}
+.commun_btn:hover {
+  background-color: var(--clr-darkgreen);
+}
+.commun_btn_mt {
+  margin-top: 60px;
+}
+
+/*--------------------- faq ---------------------*/
+.faq {
+  padding-top: 250px;
+  padding-bottom: 250px;
+}
+.accordian_box {
+  max-width: 670px;
+}
+
+.accordion {
+  border: unset !important;
+}
+
+.accordion-button:not(.collapsed) {
+  border-bottom: transparent !important;
+  color: var(--bs-accordion-active-color);
+  background-color: transparent !important;
+  box-shadow: unset !important;
+  padding: 31px 0px 11px 0px !important;
+}
+
+.accordion-flush .accordion-item {
+  border-bottom: 1px solid #ffffff !important;
+}
+
+.accordion-button:not(.collapsed)::after {
+  transition: all 500ms linear !important;
+  transform: rotate(180deg) !important;
+}
+
+.accordion-item {
+  background-color: transparent !important;
+}
+
+.accordion-button::after {
+  background-size: cover !important;
+  width: 32px !important;
+  height: 32px !important;
+  font-size: 32px !important;
+  margin-top: -4px !important;
+  background-image: url("../images/svg/accordion-btn.svg") !important;
+}
+
+.accordion-button {
+  transition: all 600ms ease-in-out !important;
+  border-bottom: 1px solid #40501c !important;
+  padding: 20px 0px !important;
+}
+
+.accordion-body {
+  position: relative;
+  z-index: 10;
+  border-bottom: 1px solid #98bd42 !important;
+  padding: 4px 0px 20px 0px !important;
+}
+
+.max_w_725 {
+  max-width: 725px;
+}
+
+.max_w_555 {
+  max-width: 555px;
+}
+
+.accordion-button,
+.accordion-body,
+accordion-item {
+  box-shadow: none !important;
+  outline: none !important;
+  background-color: transparent !important;
+}
+
 @media (max-width: 991.98px) {
   .how_work_pera_pt {
     padding-top: 18px;
@@ -102,6 +210,10 @@
     margin-top: 60px;
   }
   .statistics_for_today {
+    padding-top: 80px;
+    padding-bottom: 80px;
+  }
+  .faq {
     padding-top: 80px;
     padding-bottom: 80px;
   }
@@ -162,6 +274,10 @@
     padding-bottom: 64px;
   }
   .how_it_works {
+    padding-top: 64px;
+    padding-bottom: 64px;
+  }
+  .faq {
     padding-top: 64px;
     padding-bottom: 64px;
   }
