@@ -87,6 +87,7 @@
   max-width: 996px;
 }
 .trangle_shadow {
+  max-width: 96px;
   bottom: 0;
   left: 0;
 }
@@ -148,7 +149,7 @@
   color: var(--bs-accordion-active-color);
   background-color: transparent !important;
   box-shadow: unset !important;
-  padding: 31px 0px 11px 0px !important;
+  padding: 20px 0px 10px 0px !important;
 }
 
 .accordion-flush .accordion-item {
@@ -200,6 +201,105 @@ accordion-item {
   box-shadow: none !important;
   outline: none !important;
   background-color: transparent !important;
+}
+/* ---------take first step----------- */
+.form_box {
+  max-width: 433px;
+  padding: 18px 12px 37px;
+  border-radius: 25px;
+  background: linear-gradient(112.83deg, #121f13 0%, #102012 110.84%);
+}
+.max_w_322 {
+  max-width: 322px;
+}
+.max_w_343 {
+  max-width: 343px;
+}
+.step_form_heading {
+  background: #181e0b;
+  padding-top: 30px !important;
+  padding-bottom: 30px !important;
+}
+
+.form_padding {
+  padding: 25px 20px !important;
+}
+
+.form2_input {
+  border: none !important;
+  background-color: #ffffff !important;
+  border-radius: 4px;
+}
+
+::placeholder,
+.number_text {
+  font-size: 16px;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 300;
+  color: #cbcec3 !important;
+}
+
+.number_text {
+  font-weight: 400 !important;
+  border: 1px solid #ffffff;
+  padding: 16px 13px !important;
+  background: #ebecf0;
+  border-radius: 4px;
+}
+.form_mt {
+  margin-top: 36px;
+}
+.spot_left_mt {
+  margin-top: 32px;
+}
+.popupForm {
+  display: none;
+  position: fixed;
+  top: 10%;
+  left: 51%;
+  transform: translate(-50%, -50%);
+  background-color: transparent !important;
+  padding: 64px !important;
+  z-index: 9999;
+}
+.popop_width {
+  padding: 30px 60px !important;
+}
+.submit_popop {
+  padding: 8px 16px !important;
+  left: 19%;
+  top: 6%;
+  position: absolute;
+  background: #000;
+}
+
+.sign_up_btn:hover {
+  background: white;
+  color: #98bd42;
+}
+.max_w_596 {
+  max-width: 596px;
+}
+.max_w_530 {
+  max-width: 530px;
+}
+.group_logos {
+  max-width: 571px;
+}
+
+.take_first_pb {
+  padding-bottom: 21px;
+}
+.started_btn {
+  padding: 15px 35px;
+  border-radius: 65px;
+  line-height: 138.2%;
+  background-color: #228b22;
+  border: 1px solid #228b22;
+  transition: all 300ms;
+}
+.commun_btn:hover {
+  background-color: var(--clr-darkgreen);
 }
 
 @media (max-width: 991.98px) {
@@ -291,5 +391,12 @@ accordion-item {
   }
   .circle_card_pera_pt {
     padding-top: 6px;
+  }
+  .number_text {
+    font-weight: 400 !important;
+    border: 1px solid #ffffff;
+    padding: 7px 13px !important;
+    background: #ebecf0;
+    border-radius: 4px;
   }
 }
