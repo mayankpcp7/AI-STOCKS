@@ -137,6 +137,109 @@
   top: 10%;
   right: -15%;
 }
+/* -------------------------------------- hero slider img ---------------------------------- */
+.hero_slider_img {
+  max-width: 80px;
+}
+.hero_slider_card {
+  min-width: 367px;
+  background: linear-gradient(
+      0deg,
+      rgba(255, 255, 255, 0.01),
+      rgba(255, 255, 255, 0.01)
+    ),
+    linear-gradient(112.83deg, #121f13 0%, #102012 110.84%);
+  border-radius: 8px;
+}
+.gap_22 {
+  gap: 22px;
+}
+/* --------------------------------------- How it  Benifit ----------------------------------*/
+.benifit_heading {
+  max-width: 648px;
+}
+.benefit_content {
+  max-width: 558px;
+}
+.benefit_card {
+  background: linear-gradient(112.83deg, #121f13 0%, #102012 110.84%);
+  border-radius: 9.93px;
+  padding: 78px 36.5px;
+}
+.benefit_card_heading {
+  max-width: 200px;
+}
+.benefit_card_img {
+  max-width: 64px;
+}
+.benefit_card:hover {
+  -webkit-box-shadow: 5px 5px 24px 3px #228b22;
+  -moz-box-shadow: 5px 5px 24px 3px #228b22;
+  box-shadow: 5px 5px 24px 3px #228b22;
+}
+.benifit_triangle_vec {
+  max-width: 87.8px;
+  left: -11%;
+  bottom: -3%;
+}
+.benifit_bottom_ellipse {
+  width: 197px;
+  height: 197px;
+  background-color: #08f70980;
+  filter: blur(90px);
+  border-radius: 50%;
+  left: -21%;
+  bottom: -10%;
+}
+.benifit_top_ellipse {
+  width: 197px;
+  height: 197px;
+  background-color: #08f70980;
+  filter: blur(90px);
+  border-radius: 50%;
+  right: -21%;
+  top: 5%;
+}
+.benifit_square_vec {
+  max-width: 95.05px;
+  right: -11%;
+  top: 5%;
+}
+/* ---------------------------------------- understanding ----------------------------------- */
+.understanding_heading {
+  max-width: 624px;
+}
+.understanding_content {
+  max-width: 812px;
+}
+.understanding_card {
+  border-radius: 16px;
+  width: 524px;
+  height: 260px;
+}
+.understanding_card_img {
+  max-width: 72px;
+}
+.mw_360 {
+  max-width: 360px;
+}
+.leverged_card {
+  border-radius: 9.93px;
+  background: linear-gradient(112.83deg, #121f13 0%, #102012 110.84%);
+  padding: 20px;
+  max-width: 471px;
+  margin-top: -10%;
+  margin-left: 20px;
+}
+.nla_graph {
+  max-width: 430px;
+}
+/* ---------------------------------------- media quaries ----------------------------------- */
+@media (max-width: 991.98px) {
+  .benefit_card {
+    padding: 58px 15.5px;
+  }
+}
 @media (max-width: 767.98px) {
   .stamp {
     max-width: 79px;
