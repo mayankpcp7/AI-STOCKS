@@ -66,7 +66,11 @@
   width: 256px;
   height: 235px;
   border-radius: 25px;
+  transition: all 300ms;
   background: linear-gradient(112.83deg, #121f13 0%, #102012 110.84%);
+}
+.counter_card:hover {
+  box-shadow: 0px 0px 30px #228b22;
 }
 .counter_card_mt {
   margin-top: 98px;
@@ -86,7 +90,28 @@
   bottom: 0;
   left: 0;
 }
+/*------------------- average_earnings -------------------*/
+.average_earnings {
+  padding: 30px 0px;
+}
 @media (max-width: 991.98px) {
+  .how_work_pera_pt {
+    padding-top: 18px;
+  }
+  .circle_card_mt {
+    margin-top: 60px;
+  }
+  .statistics_for_today {
+    padding-top: 80px;
+    padding-bottom: 80px;
+  }
+  .how_it_works {
+    padding-top: 80px;
+    padding-bottom: 80px;
+  }
+  .counter_card_mt {
+    margin-top: 60px;
+  }
   .green_circle {
     width: 120px;
     height: 120px;
@@ -114,5 +139,41 @@
   }
   .counter_card_text_pt {
     padding-top: 26px;
+  }
+}
+@media (max-width: 767.98px) {
+  .how_work_pera_pt {
+    padding-top: 12px;
+  }
+  .col_3_mt {
+    margin-top: 32px;
+  }
+  .circle_card_mb {
+    margin-bottom: 12px;
+  }
+  .circle_card_mt {
+    margin-top: 40px;
+  }
+  .counter_card_text_pt {
+    padding-top: 18px;
+  }
+  .statistics_for_today {
+    padding-top: 64px;
+    padding-bottom: 64px;
+  }
+  .how_it_works {
+    padding-top: 64px;
+    padding-bottom: 64px;
+  }
+  .counter_card_mt {
+    margin-top: 40px;
+  }
+}
+@media (max-width: 575.98px) {
+  .col_2_mt {
+    margin-top: 32px;
+  }
+  .circle_card_pera_pt {
+    padding-top: 6px;
   }
 }
