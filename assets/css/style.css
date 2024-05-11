@@ -64,14 +64,21 @@
 .pause_icon {
   display: none;
 }
-
+.px_12 {
+  padding: 0px 12px;
+}
 .time_counter {
   max-width: 566px;
 }
 .hero_counter_card {
   background-color: #122014;
+  border-radius: 8px;
 }
-
+.video_shadow {
+  -webkit-box-shadow: 0px 0px 70px -30px rgba(103, 185, 222, 1);
+  -moz-box-shadow: 0px 0px 70px -30px rgba(103, 185, 222, 1);
+  box-shadow: 0px 0px 70px -30px rgba(103, 185, 222, 1);
+}
 .counter_line {
   content: "";
   height: 4px;
@@ -104,15 +111,17 @@
   border-radius: 100px;
   border: 1px solid #cccc;
   min-height: 37.6px;
-  outline: linear-gradient(180deg, #9b77e8 0%, #6854ff 100%);
+  outline: none;
 }
-
+.form_lable_border:hover {
+  border: 1px solid var(--clr-green);
+}
 .opacity_70 {
   opacity: 70%;
 }
 .hero_form_btn {
-  padding-top: 11px;
-  padding-bottom: 11px;
+  padding-top: 8px;
+  padding-bottom: 8px;
   border-radius: 65px;
   border: 1px solid var(--clr-green);
 }
@@ -140,6 +149,7 @@
 /* -------------------------------------- hero slider img ---------------------------------- */
 .hero_slider_img {
   max-width: 80px;
+  border-radius: 50%;
 }
 .hero_slider_card {
   min-width: 367px;
@@ -151,8 +161,17 @@
     linear-gradient(112.83deg, #121f13 0%, #102012 110.84%);
   border-radius: 8px;
 }
+.hero_slider_card:hover {
+  box-shadow: 0px 0px 20px var(--clr-green);
+}
 .gap_22 {
   gap: 22px;
+}
+.mw_400 {
+  max-width: 400px;
+}
+.ws_nowrap {
+  white-space: nowrap;
 }
 .slide_container {
   width: calc(360px * 8);
@@ -188,9 +207,7 @@
   max-width: 64px;
 }
 .benefit_card:hover {
-  -webkit-box-shadow: 5px 5px 24px 3px #228b22;
-  -moz-box-shadow: 5px 5px 24px 3px #228b22;
-  box-shadow: 5px 5px 24px 3px #228b22;
+  box-shadow: 0px 0px 30px var(--clr-green);
 }
 .benifit_triangle_vec {
   max-width: 87.8px;
@@ -243,7 +260,7 @@
   background: linear-gradient(112.83deg, #121f13 0%, #102012 110.84%);
   padding: 20px;
   max-width: 471px;
-  margin-top: -10%;
+  margin-top: -15%;
   left: 50%;
   transform: translateX(-50%);
 }
@@ -258,12 +275,54 @@
   color: #2db965;
 }
 .maximize_btn {
-  padding: 11px 23px;
+  padding: 10px 23px;
   border-radius: 65px;
   border: 1px solid var(--clr-green);
 }
 .maximize_btn:hover {
   background-color: #102012;
+}
+/* ------------------------------------------- Ai-stocks ------------------------------------ */
+.ai_stocks_bg {
+  background: linear-gradient(112.83deg, #121f13 0%, #102012 110.84%);
+  border-radius: 25px;
+}
+.ai_stocks_card {
+  min-width: 377px !important;
+  max-width: 377px;
+  min-height: 352px;
+}
+.nvindia_logo {
+  max-width: 228px;
+}
+.gap_48 {
+  gap: 48px;
+}
+.nvidia_corporation {
+  max-width: 612px;
+}
+.read_btn {
+  padding: 11px 35px;
+  border-radius: 65px;
+  border: 1px solid var(--clr-green);
+}
+.read_btn:hover {
+  background-color: #102012;
+}
+.ai_heading_lines {
+  max-width: 288px;
+}
+.growt_logo {
+  max-width: 214px;
+}
+.mw_579 {
+  max-width: 579px;
+}
+.mw_586 {
+  max-width: 586px;
+}
+.palantir_logo {
+  max-width: 311px !important;
 }
 /* ---------------------------------------- media quaries ----------------------------------- */
 @media (min-width: 1526px) {
@@ -274,6 +333,15 @@
   }
 }
 @media (max-width: 1199.98px) {
+  .ai_stocks_card {
+    min-width: 377px !important;
+    max-width: 377px;
+    min-height: auto;
+  }
+  .ai_stocks_card {
+    min-width: 308px !important;
+    max-width: 313px;
+  }
   .leverged_card {
     max-width: 400px;
   }
@@ -283,6 +351,13 @@
   }
 }
 @media (max-width: 991.98px) {
+  .ai_heading_lines {
+    max-width: 158px;
+  }
+  .ai_stocks_card {
+    min-width: 280px !important;
+    max-width: 313px;
+  }
   .benefit_card {
     padding: 58px 15.5px;
   }
@@ -295,6 +370,22 @@
   }
 }
 @media (max-width: 767.98px) {
+  .ai_heading_lines {
+    max-width: 108px;
+  }
+  .nvindia_logo {
+    max-width: 160px;
+  }
+  .ai_stocks_card {
+    min-width: 200px !important;
+    max-width: 203px;
+  }
+  .gap_48 {
+    gap: 28px;
+  }
+  .leverged_card {
+    max-width: 400px;
+  }
   .stamp {
     max-width: 79px;
   }
@@ -309,6 +400,14 @@
   }
 }
 @media (max-width: 575.98px) {
+  .ai_stocks_card {
+    min-width: 230px !important;
+    max-width: 113px;
+  }
+
+  .leverged_card {
+    max-width: 350px;
+  }
   .hero_mobile {
     max-width: 310px;
   }

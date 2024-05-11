@@ -46,7 +46,7 @@
         <header class="bg_header pb-4">
             <nav class="nav_border">
                 <div class="custom_container py-lg-2">
-                    <div class="d-flex align-items-center justify-content-between py-4">
+                    <div class="d-flex align-items-center justify-content-between py-sm-4 py-3">
                         <a href="#" class="fw-bold text-white ff_opensans fs_2xl">AI STOCKS</a>
                         <button class="bg_green text-white ff_opensans fw-semibold nav_btn fs_lg transition_200">Sign
                             Up</button>
@@ -56,7 +56,7 @@
             <main class="mt-sm-5 mt-4 pt-5 custom_container position-relative">
                 <span class="hero_right_green_ellipse position-absolute"></span>
                 <span class="hero_left_green_ellipse position-absolute  hero_right_ellipse"></span>
-                <h1 class="text-white ff_opensans mt-2 text-center fw-normal fs_8xl main_heading mx-auto">Dive into the
+                <h1 class="text-white ff_opensans mt-md-2 text-center fw-normal fs_8xl main_heading mx-auto">Dive into the
                     Explosive
                     Momentum of
                     2024 with the
@@ -64,33 +64,29 @@
                         Fastest-Growing AI Stocks!</span>
                 </h1>
                 <p
-                    class="text-white ff_opensans fw-normal pb-1 lh_160 fs_sm major_ai mx-auto mt-md-2 pt-sm-4 pt-1 text-center">
+                    class="text-white ff_opensans fw-normal pb-sm-1 mb-sm-3 lh_160 fs_sm major_ai mx-auto mt-md-2 pt-sm-4 pt-1 text-center">
                     Major AI
                     Stocks such as
                     Microsoft and Nvidia have
-                    surged over <span class="fw-bold text-white">80%</span> in the past year. This giants are
+                    surged over <span class="fw-bold text-white clr_green">80%</span> in the past year. This giants are
                     expected to grow
-                    <span class="text-white fw-bold">130.66% </span> in 2024
+                    <span class="text-white fw-bold clr_green">130.66% </span> in 2024
                 </p>
                 <div class="d-flex flex-lg-row flex-column align-items-center pt-sm-4 pt-2">
-                    <div class="green_gradiant px-2 rounded-4 d-flex flex-column justify-content-center">
-                        <div class="position-relative mt-4 pt-2 mx-2 d-flex align-items-center justify-content-center ">
-                            <img class="play_icon position-absolute transition_200 cursor_pointer"
-                                src="./assets/images/png/play_icon.png" alt="play_icon" onclick="toggleVideo()">
-                            <img class="position-absolute stamp transition_200"
-                                src="./assets/images/png/dollar-stamp.png" alt="dollar-stamp">
-                            <video class="w-100 hero_video position-relative" poster="./assets/images/png/thumbnail.png"
-                                id="video">
+                    <div class="green_gradiant px_12 rounded-4 d-flex flex-column justify-content-center">
+                        <div class="position-relative mt-lg-4 pt-lg-3 mx-2 d-flex align-items-center justify-content-center ">
+                            <video controls autoplay muted class="w-100 hero_video video_shadow"
+                                poster="./assets/images/png/thumbnail.png">
                                 <source type="video/mp4" src="https://aietf.ai/AI-ETF-v3/AI-ETF2.mp4">
                             </video>
                         </div>
-                        <p class="mt-1 pt-3 px-1 text-white ff_opensans text-center fw-bold text-white fs_md">Due to
+                        <p class="mt-1 pt-3 px-1 text-white ff_opensans d-none d-lg-block text-center fw-bold text-white fs_md">Due to
                             extremely high
                             demand for
                             media coverage, registration closes in</p>
-                        <div class="d-flex align-items-center gap_20 pt-sm-4 pt-3 time_counter mx-auto">
+                        <div class="d-lg-flex align-items-center mb-3 gap_20 d-none pt-sm-4 pt-3 time_counter mx-auto">
                             <div class="hero_counter_card d-flex flex-column align-items-center">
-                                <div class="position-relative my-4 pt-1">
+                                <div class="position-relative my-3 pt-1">
                                     <p class="time_numbers mb-0 position-relative fw-bold text-white ff_opensans lh_145 fs_8xl"
                                         id="days">00</p>
                                     <span class="counter_line position-absolute"></span>
@@ -98,7 +94,7 @@
                                 <p class="text-white fw-bold ff_opensans lh_145 fs_md px-lg-4 px-sm-2 mx-1">Days</p>
                             </div>
                             <div class="hero_counter_card d-flex flex-column align-items-center">
-                                <div class="position-relative my-4 pt-1">
+                                <div class="position-relative my-3 pt-1">
                                     <p class="time_numbers mb-0 position-relative fw-bold text-white ff_opensans lh_145 fs_8xl"
                                         id="hours">01
                                     </p>
@@ -107,7 +103,7 @@
                                 <p class="text-white fw-bold ff_opensans lh_145 fs_md px-lg-4 px-sm-2 mx-1">Hours</p>
                             </div>
                             <div class="hero_counter_card d-flex flex-column align-items-center">
-                                <div class="position-relative my-4 pt-1">
+                                <div class="position-relative my-3 pt-1">
                                     <p class="time_numbers mb-0 position-relative fw-bold text-white ff_opensans lh_145 fs_8xl"
                                         id="minutes">05
                                     </p>
@@ -116,7 +112,7 @@
                                 <p class="text-white fw-bold ff_opensans lh_145 fs_md px-lg-4 px-sm-2 mx-1">Minutes</p>
                             </div>
                             <div class="hero_counter_card d-flex flex-column align-items-center">
-                                <div class="position-relative my-4 pt-1">
+                                <div class="position-relative my-3 pt-1">
                                     <p class="time_numbers mb-0 position-relative fw-bold text-white ff_opensans lh_145 fs_8xl"
                                         id="seconds">59
                                     </p>
@@ -139,166 +135,176 @@
                             </p>
                             <form action="#" onsubmit="return validateForm(event)">
                                 <div class="d-flex flex-column me-3 me-lg-0">
-                                    <label
-                                        class="ff_opensans fw-semibold text-black opacity_70 fs_xsm pb-1 mt-lg-4 mt-3 lh_"
+                                    <label class="ff_opensans fw-semibold text-black opacity_70 fs_xsm pb-1 pt-2 mt-1"
                                         for="first_name">First
                                         Name</label>
-                                    <input class="form_lable_border px-2" type="text" id="first_name" name="first_name"
-                                        required>
+                                    <input class="form_lable_border transition_200 outline px-2" type="text"
+                                        id="first_name" name="first_name" required>
 
-                                    <label
-                                        class="ff_opensans fw-semibold text-black opacity_70 fs_xsm pb-1 mt-lg-4 mt-3 lh_"
+                                    <label class="ff_opensans fw-semibold text-black opacity_70 fs_xsm pb-1 pt-2 mt-1"
                                         for="last_name">Last
                                         Name</label>
-                                    <input class="form_lable_border px-2" type="text" id="last_name" name="last_name"
-                                        required>
+                                    <input class="form_lable_border transition_200 outline px-2" type="text"
+                                        id="last_name" name="last_name" required>
 
-                                    <label
-                                        class="ff_opensans fw-semibold text-black opacity_70 fs_xsm pb-1 mt-lg-4 mt-3 lh_"
+                                    <label class="ff_opensans fw-semibold text-black opacity_70 fs_xsm pb-1 pt-2 mt-1"
                                         for="email">Email</label>
-                                    <input class="form_lable_border px-2" type="text" id="email" name="email" required>
+                                    <input class="form_lable_border transition_200 outline px-2" type="text" id="email"
+                                        name="email" required>
 
-                                    <label
-                                        class="ff_opensans fw-semibold text-black opacity_70 fs_xsm pb-1 mt-lg-4 mt-3 lh_"
+                                    <label class="ff_opensans fw-semibold text-black opacity_70 fs_xsm pb-1 pt-2 mt-1"
                                         for="phone">Phone
                                         Number</label>
-                                    <input class="form_lable_border px-2" type="tel" id="phone" name="phone" required>
+                                    <input class="form_lable_border transition_200 outline px-2" type="tel" id="phone"
+                                        name="phone" required>
 
                                     <button class="text-white bg_green lh_150 hero_form_btn transition_200 mt-4"
                                         type="submit" value="Submit">Get
                                         Started</button>
                                 </div>
                             </form>
-                            <p class="text-center fw-bold ff_opensans clr_richblack fs_xsm pt-3">3 Spots Left</p>
-                            <!-- <div id="doneMessage" style="display: none;" class="clr_green fw-bold bg-white p-5 rounded-4 border-1 absolute top-50">Done!</div> -->
+                            <p class="text-center fw-bold ff_opensans clr_richblack fs_xsm pt-3 me-3 me-lg-0">3 Spots
+                                Left</p>
+                            <div id="doneMessage" style="display: none;"
+                                class="clr_green fw-bold bg-white nav_border text-center fs_lg rounded-4 border-1 absolute top-50">
+                                Form Submit!</div>
+                        </div>
+                    </div>
+                    <p class="mt-1 pt-3 px-1 text-white ff_opensans text-center d-lg-none mw_400 fw-bold text-white fs_md">Due to
+                        extremely high
+                        demand for
+                        media coverage, registration closes in</p>
+                    <div class="d-flex d-lg-none align-items-center mb-3 gap_20 pt-sm-4 pt-3 time_counter mx-auto">
+                        <div class="hero_counter_card d-flex flex-column align-items-center">
+                            <div class="position-relative my-3 pt-1">
+                                <p class="time_numbers mb-0 position-relative fw-bold text-white ff_opensans lh_145 fs_8xl" id="days">00</p>
+                                <span class="counter_line position-absolute"></span>
+                            </div>
+                            <p class="text-white fw-bold ff_opensans lh_145 fs_md px-lg-4 px-sm-2 mx-1">Days</p>
+                        </div>
+                        <div class="hero_counter_card d-flex flex-column align-items-center">
+                            <div class="position-relative my-3 pt-1">
+                                <p class="time_numbers mb-0 position-relative fw-bold text-white ff_opensans lh_145 fs_8xl" id="hours">01
+                                </p>
+                                <span class="counter_line position-absolute"></span>
+                            </div>
+                            <p class="text-white fw-bold ff_opensans lh_145 fs_md px-lg-4 px-sm-2 mx-1">Hours</p>
+                        </div>
+                        <div class="hero_counter_card d-flex flex-column align-items-center">
+                            <div class="position-relative my-3 pt-1">
+                                <p class="time_numbers mb-0 position-relative fw-bold text-white ff_opensans lh_145 fs_8xl" id="minutes">05
+                                </p>
+                                <span class="counter_line position-absolute"></span>
+                            </div>
+                            <p class="text-white fw-bold ff_opensans lh_145 fs_md px-lg-4 px-sm-2 mx-1">Minutes</p>
+                        </div>
+                        <div class="hero_counter_card d-flex flex-column align-items-center">
+                            <div class="position-relative my-3 pt-1">
+                                <p class="time_numbers mb-0 position-relative fw-bold text-white ff_opensans lh_145 fs_8xl" id="seconds">59
+                                </p>
+                                <span class="counter_line position-absolute"></span>
+                            </div>
+                            <p class="text-white fw-bold ff_opensans lh_145 fs_md px-lg-4 px-sm-2 mx-1">Seconds</p>
                         </div>
                     </div>
                 </div>
             </main>
 
         </header>
-
-
-        <div class="">
-            <div class="d-flex align-items-center mt-5 gap_22 pb-5 mb-2 slide_container">
-                <div class="d-flex align-items-start justify-content-lg-start py-3 px-3 hero_slider_card pe-lg-5 ">
-                    <img class="hero_slider_img my-1 ms-1" src="./assets/images/png/esthar-howard.png"
-                        alt="esthar-howard">
-                    <div class="my-1 ps-3 me-4">
-                        <h4 class="ff_opensans fs_lg text-white fw-bold lh_140">Esther Howard</h4>
-                        <p class="text-white ff_opensans fs_sm lh_150 mb-0">Profit: <span
-                                class="clr_green">$2,208</span>
-                        </p>
-                        <p class="text-white ff_opensans lh_150 mb-0 fs_sm">Current Balance: $3,361</p>
-                    </div>
+        <div class="d-flex align-items-center mt-5 gap_22 pb-5 mb-lg-2 slide_container">
+            <div class="d-flex align-items-start justify-content-lg-start py-3 px-3 hero_slider_card pe-lg-5 ">
+                <img class="hero_slider_img my-1 ms-1" src="./assets/images/webp/ana.webp" alt="esthar-howard">
+                <div class="my-1 ps-3 me-4">
+                    <h4 class="ff_opensans fs_lg text-white fw-bold lh_140">Ana</h4>
+                    <p class="text-white ff_opensans fs_sm lh_150 mb-0">Profit: <span class="clr_green">$4,760</span>
+                    </p>
+                    <p class="text-white ff_opensans lh_150 mb-0 fs_sm">Current Balance: $7,414</p>
                 </div>
-                <div class="d-flex align-items-start justify-content-lg-start py-3 px-3 hero_slider_card pe-lg-5 ">
-                    <img class="hero_slider_img my-1 ms-1" src="./assets/images/png/theresa-webb.png"
-                        alt="esthar-howard">
-                    <div class="my-1 ps-3 me-4">
-                        <h4 class="ff_opensans fs_lg text-white fw-bold lh_140">Theresa Webb</h4>
-                        <p class="text-white ff_opensans fs_sm lh_150 mb-0">Profit: <span
-                                class="clr_green">$3,302</span>
-                        </p>
-                        <p class="text-white ff_opensans lh_150 mb-0 fs_sm">Current Balance: $4,625</p>
-                    </div>
+            </div>
+            <div class="d-flex align-items-start justify-content-lg-start py-3 px-3 hero_slider_card transition_200 pe-lg-5 ">
+                <img class="hero_slider_img my-1 ms-1" src="./assets/images/webp/ray.webp" alt="esthar-howard">
+                <div class="my-1 ps-3 me-4">
+                    <h4 class="ff_opensans fs_lg text-white fw-bold lh_140">Ray</h4>
+                    <p class="text-white ff_opensans fs_sm lh_150 mb-0">Profit: <span class="clr_green">$4,490</span>
+                    </p>
+                    <p class="text-white ff_opensans lh_150 mb-0 fs_sm">Current Balance: $9,849</p>
                 </div>
-                <div class="d-flex align-items-start justify-content-lg-start py-3 px-3 hero_slider_card pe-lg-5 ">
-                    <img class="hero_slider_img my-1 ms-1" src="./assets/images/png/devon-lane.png" alt="esthar-howard">
-                    <div class="my-1 ps-3 me-4">
-                        <h4 class="ff_opensans fs_lg text-white fw-bold lh_140">Devon Lane</h4>
-                        <p class="text-white ff_opensans fs_sm lh_150 mb-0">Profit: <span
-                                class="clr_green">$5,265</span>
-                        </p>
-                        <p class="text-white ff_opensans lh_150 mb-0 fs_sm">Current Balance: $6,489</p>
-                    </div>
+            </div>
+            <div class="d-flex align-items-start justify-content-lg-start py-3 px-3 hero_slider_card transition_200 pe-lg-5 ">
+                <img class="hero_slider_img my-1 ms-1" src="./assets/images/webp/brian.webp" alt="esthar-howard">
+                <div class="my-1 ps-3 me-4">
+                    <h4 class="ff_opensans fs_lg text-white fw-bold lh_140">Devon Lane</h4>
+                    <p class="text-white ff_opensans fs_sm lh_150 mb-0 ws_nowrap">Profit: <span
+                            class="clr_green">$62,533</span>
+                    </p>
+                    <p class="text-white ff_opensans lh_150 mb-0 fs_sm ws_nowrap">Current Balance: $105,080</p>
                 </div>
-                <div class="d-flex align-items-start justify-content-lg-start py-3 px-3 hero_slider_card pe-lg-5 ">
-                    <img class="hero_slider_img my-1 ms-1" src="./assets/images/png/esthar-howard.png"
-                        alt="esthar-howard">
-                    <div class="my-1 ps-3 me-4">
-                        <h4 class="ff_opensans fs_lg text-white fw-bold lh_140">Esther Howard</h4>
-                        <p class="text-white ff_opensans fs_sm lh_150 mb-0">Profit: <span
-                                class="clr_green">$2,208</span>
-                        </p>
-                        <p class="text-white ff_opensans lh_150 mb-0 fs_sm">Current Balance: $3,361</p>
-                    </div>
+            </div>
+            <div class="d-flex align-items-start justify-content-lg-start py-3 px-3 hero_slider_card transition_200 pe-lg-5 ">
+                <img class="hero_slider_img my-1 ms-1" src="./assets/images/webp/tamara.webp" alt="esthar-howard">
+                <div class="my-1 ps-3 me-4">
+                    <h4 class="ff_opensans fs_lg text-white fw-bold lh_140">Tamara</h4>
+                    <p class="text-white ff_opensans fs_sm lh_150 mb-0">Profit: <span class="clr_green">$4,930</span>
+                    </p>
+                    <p class="text-white ff_opensans lh_150 mb-0 fs_sm  ws_nowrap">Current Balance: $12,230</p>
                 </div>
-                <div class="d-flex align-items-start justify-content-lg-start py-3 px-3 hero_slider_card pe-lg-5 ">
-                    <img class="hero_slider_img my-1 ms-1" src="./assets/images/png/ralph-edwards.png"
-                        alt="esthar-howard">
-                    <div class="my-1 ps-3 me-4">
-                        <h4 class="ff_opensans fs_lg text-white fw-bold lh_140">Ralph Edwards</h4>
-                        <p class="text-white ff_opensans fs_sm lh_150 mb-0">Profit: <span
-                                class="clr_green">$4,654</span>
-                        </p>
-                        <p class="text-white ff_opensans lh_150 mb-0 fs_sm">Current Balance: $5,832</p>
-                    </div>
+            </div>
+            <div class="d-flex align-items-start justify-content-lg-start py-3 px-3 hero_slider_card transition_200 pe-lg-5 ">
+                <img class="hero_slider_img my-1 ms-1" src="./assets/images/webp/Jerome.webp" alt="jerome">
+                <div class="my-1 ps-3 me-4">
+                    <h4 class="ff_opensans fs_lg text-white fw-bold lh_140">Jerome</h4>
+                    <p class="text-white ff_opensans fs_sm lh_150 mb-0 ws_nowrap">Profit: <span
+                            class="clr_green">$35,499</span>
+                    </p>
+                    <p class="text-white ff_opensans lh_150 mb-0 fs_sm  ws_nowrap">Current Balance: $68,147</p>
                 </div>
-                <div class="d-flex align-items-start justify-content-lg-start py-3 px-3 hero_slider_card pe-lg-5 ">
-                    <img class="hero_slider_img my-1 ms-1" src="./assets/images/png/esthar-howard.png"
-                        alt="esthar-howard">
-                    <div class="my-1 ps-3 me-4">
-                        <h4 class="ff_opensans fs_lg text-white fw-bold lh_140">Esther Howard</h4>
-                        <p class="text-white ff_opensans fs_sm lh_150 mb-0">Profit: <span
-                                class="clr_green">$2,208</span>
-                        </p>
-                        <p class="text-white ff_opensans lh_150 mb-0 fs_sm">Current Balance: $3,361</p>
-                    </div>
+            </div>
+            <div class="d-flex align-items-start justify-content-lg-start py-3 px-3 hero_slider_card transition_200 pe-lg-5 ">
+                <img class="hero_slider_img my-1 ms-1" src="./assets/images/webp/Murray.webp" alt="esthar-howard">
+                <div class="my-1 ps-3 me-4">
+                    <h4 class="ff_opensans fs_lg text-white fw-bold lh_140">Murray</h4>
+                    <p class="text-white ff_opensans fs_sm lh_150 mb-0 ws_nowrap">Profit: <span class="clr_green">$35,499</span>
+                    </p>
+                    <p class="text-white ff_opensans lh_150 mb-0 fs_sm  ws_nowrap">Current Balance: $68,187</p>
                 </div>
-                <div class="d-flex align-items-start justify-content-lg-start py-3 px-3 hero_slider_card pe-lg-5 ">
-                    <img class="hero_slider_img my-1 ms-1" src="./assets/images/png/theresa-webb.png"
-                        alt="esthar-howard">
-                    <div class="my-1 ps-3 me-4">
-                        <h4 class="ff_opensans fs_lg text-white fw-bold lh_140">Theresa Webb</h4>
-                        <p class="text-white ff_opensans fs_sm lh_150 mb-0">Profit: <span
-                                class="clr_green">$3,302</span>
-                        </p>
-                        <p class="text-white ff_opensans lh_150 mb-0 fs_sm">Current Balance: $4,625</p>
-                    </div>
+            </div>
+            <div class="d-flex align-items-start justify-content-lg-start py-3 px-3 hero_slider_card transition_200 pe-lg-5 ">
+                <img class="hero_slider_img my-1 ms-1" src="./assets/images/webp/Felicia.webp" alt="esthar-howard">
+                <div class="my-1 ps-3 me-4">
+                    <h4 class="ff_opensans fs_lg text-white fw-bold lh_140">Felicia</h4>
+                    <p class="text-white ff_opensans fs_sm lh_150 mb-0">Profit: <span class="clr_green">$2,104</span>
+                    </p>
+                    <p class="text-white ff_opensans lh_150 mb-0 fs_sm">Current Balance: $4,584</p>
                 </div>
-                <div class="d-flex align-items-start justify-content-lg-start py-3 px-3 hero_slider_card pe-lg-5 ">
-                    <img class="hero_slider_img my-1 ms-1" src="./assets/images/png/devon-lane.png" alt="esthar-howard">
-                    <div class="my-1 ps-3 me-4">
-                        <h4 class="ff_opensans fs_lg text-white fw-bold lh_140">Devon Lane</h4>
-                        <p class="text-white ff_opensans fs_sm lh_150 mb-0">Profit: <span
-                                class="clr_green">$5,265</span>
-                        </p>
-                        <p class="text-white ff_opensans lh_150 mb-0 fs_sm">Current Balance: $6,489</p>
-                    </div>
+            </div>
+            <div class="d-flex align-items-start justify-content-lg-start py-3 px-3 hero_slider_card transition_200 pe-lg-5 ">
+                <img class="hero_slider_img my-1 ms-1" src="./assets/images/webp/Courtney.webp" alt="esthar-howard">
+                <div class="my-1 ps-3 me-4">
+                    <h4 class="ff_opensans fs_lg text-white fw-bold lh_140">Courtney</h4>
+                    <p class="text-white ff_opensans fs_sm lh_150 mb-0 ws_nowrap">Profit: <span class="clr_green">$35,499</span>
+                    </p>
+                    <p class="text-white ff_opensans lh_150 mb-0 fs_sm ws_nowrap">Current Balance: $68,187</p>
                 </div>
-                <div class="d-flex align-items-start justify-content-lg-start py-3 px-3 hero_slider_card pe-lg-5 ">
-                    <img class="hero_slider_img my-1 ms-1" src="./assets/images/png/esthar-howard.png"
-                        alt="esthar-howard">
-                    <div class="my-1 ps-3 me-4">
-                        <h4 class="ff_opensans fs_lg text-white fw-bold lh_140">Esther Howard</h4>
-                        <p class="text-white ff_opensans fs_sm lh_150 mb-0">Profit: <span
-                                class="clr_green">$2,208</span>
-                        </p>
-                        <p class="text-white ff_opensans lh_150 mb-0 fs_sm">Current Balance: $3,361</p>
-                    </div>
-                </div>
-                <div class="d-flex align-items-start justify-content-lg-start py-3 px-3 hero_slider_card pe-lg-5 ">
-                    <img class="hero_slider_img my-1 ms-1" src="./assets/images/png/ralph-edwards.png"
-                        alt="esthar-howard">
-                    <div class="my-1 ps-3 me-4">
-                        <h4 class="ff_opensans fs_lg text-white fw-bold lh_140">Ralph Edwards</h4>
-                        <p class="text-white ff_opensans fs_sm lh_150 mb-0">Profit: <span
-                                class="clr_green">$4,654</span>
-                        </p>
-                        <p class="text-white ff_opensans lh_150 mb-0 fs_sm">Current Balance: $5,832</p>
-                    </div>
+            </div>
+            <div class="d-flex align-items-start justify-content-lg-start py-3 px-3 hero_slider_card transition_200 pe-lg-5 ">
+                <img class="hero_slider_img my-1 ms-1" src="./assets/images/webp/bret.webp" alt="esthar-howard">
+                <div class="my-1 ps-3 me-4">
+                    <h4 class="ff_opensans fs_lg text-white fw-bold lh_140">Brent</h4>
+                    <p class="text-white ff_opensans fs_sm lh_150 mb-0 ws_nowrap">Profit: <span class="clr_green">$32,911</span>
+                    </p>
+                    <p class="text-white ff_opensans lh_150 mb-0 fs_sm ws_nowrap">Current Balance: $55,780</p>
                 </div>
             </div>
         </div>
+
         <!-- ------------------------------------------------- How it Benifits ------------------------------------ -->
-        <section class="pb-5 mb-md-4 mb-lg-5 ">
+        <section class="pb-xl-5 mb-md-4 mb-lg-5 ">
             <div class="custom_container position-relative pb-xl-5">
                 <img class="benifit_triangle_vec position-absolute z-1"
                     src="./assets/images/png/benifit_triangle_vec.png" alt="vector">
                 <span class="benifit_bottom_ellipse position-absolute z-0"></span>
                 <span class="benifit_top_ellipse position-absolute z-0"></span>
-                <h2 class="text-center benifit_heading mx-auto mt-5 pt-5 fw-light fs_7xl text-white ff_opensans lh_125">
+                <h2 class="text-center benifit_heading mx-auto mt-sm-5 pt-xl-5  fw-light fs_7xl text-white ff_opensans lh_125">
                     How
                     to
                     Benefit By Investing In AI Stocks For <span class="clr_green">High Returns </span></h2>
@@ -308,7 +314,7 @@
                     As
                     per our research and data evaluation from experts, the price of these AI Stocks will rise over time.
                     Today's
-                    Investment can give a return of more than 130.66% in 2024.</p>
+                    Investment can give a return of more than <span class="fw-bold clr_green">130.66%</span> in 2024.</p>
                 <div class="row mt-5 pt-3 justify-content-center pb-lg-5">
                     <div class="col-lg-3 col-md-4 col-sm-6 col-12">
                         <div
@@ -357,7 +363,7 @@
         <section>
             <div class="custom_container">
                 <h2
-                    class="text-center understanding_heading mx-auto mt-xl-5 pt-5 fw-light fs_7xl text-white ff_opensans lh_125">
+                    class="text-center understanding_heading mx-auto mt-md-5 mt-sm-4 pt-5 fw-light fs_7xl text-white ff_opensans lh_125">
                     Understanding <span class="clr_green">Leveraged </span>Accounts and <span class="clr_green">Buying
                         Power</span></h2>
 
@@ -449,39 +455,474 @@
                 </div>
 
             </div>
+        </section>
+        <!-- ------------------------------- TOP 7 Ai stocks ------------------------------ -->
+        <section class="mt-5 pt-xl-5 pt-lg-4 pt-sm-2 pt-0">
+            <div class="custom_container pt-5 mt-5">
+                <div class="d-flex align-items-center justify-content-center">
+                    <img class="ai_heading_lines w-100 me-lg-5 me-lg-5 me-lg-3 d-sm-block d-none "
+                        src="./assets/images/png/ai-before.png" alt="ai-before">
+                    <h2 class="ff_opensans fs_7xl fw-light text-center text-white lh_125 px-xl-5 px-xl-4 px-3">TOP <span
+                            class="clr_green"> 7
+                            Ai
+                        </span> Stocks</h2>
+                    <img class="ai_heading_lines w-100 ms-lg-5 ms-lg-3 d-sm-block d-none"
+                        src="./assets/images/png/ai-after.png" alt="ai-before">
+                </div>
+                <div class="d-flex flex-md-row flex-column align-items-center align-items-sm-start mt-5 pt-lg-5 gap_48">
+                    <div
+                        class="ai_stocks_card h-100 py-lg-5 py-4 me-xl-4 ai_stocks_bg d-flex align-items-center  justify-content-center">
+
+                        <img class="nvindia_logo my-xl-5 my-md-3" src="./assets/images/png/nvidia-logo.png"
+                            alt="nvidia-logo">
+                    </div>
+                    <div
+                        class="d-flex flex-column ai_stocks_bg p-md-4 p-2 w-100  justify-content-start align-items-start">
+                        <p class="lh_130 fs_xl ff_opensans fw-bold text-white ps-lg-2 pt-lg-2 pb-0">AI GPU 1 year 228%
+                            Growth </p>
+                        <p class="text-white opacity_80 lh_160 fw-normal fs_sm nvidia_corporation ps-lg-2">NVIDIA
+                            Corporation,
+                            a powerhouse in GPU
+                            technology and AI innovation, offers investors
+                            compelling opportunities. With
+                            dominance in gaming and data center markets, NVIDIA stands poised for growth.
+                            Diversification efforts into AI,
+                            autonomous vehicles, and strategic acquisitions further bolster its potential. As a leader
+                            in technology and with a
+                            strong financial track record, NVIDIA remains a top choice for savvy investors.</p>
+                        <button
+                            class="text-white bg_green read_btn fs_lg transition_200 ms-lg-2 mt-md-4 mt-sm-3 mt-2">Read
+                            more</button>
+                    </div>
+                </div>
+                <div
+                    class="d-flex flex-md-row flex-column-reverse align-items-center align-items-sm-start mt-5 pt-lg-4 gap_48">
+                    <div
+                        class="d-flex flex-column ai_stocks_bg p-md-4 p-2 w-100 h-100 justify-content-start align-items-start">
+                        <p class="lh_130 fs_xl ff_opensans fw-bold text-white ps-lg-2 pt-lg-2 pb-0">Co-pilot 1 year 64%
+                            Growt </p>
+                        <p class="text-white opacity_80 lh_160 fw-normal fs_sm mw_579 ps-lg-2">Microsoft A tech giant
+                            with diverse solutions for investors, including Azure cloud services. With market dominance
+                            in
+                            software, cloud, and hardware, Microsoft shows strong growth potential. Its leadership in
+                            enterprise software, Azure
+                            cloud computing, and innovation make it an attractive investment.</p>
+                        <button
+                            class="text-white bg_green read_btn fs_lg transition_200 ms-lg-2 mb-5 mt-md-4 mt-sm-3 mt-2">Read
+                            more</button>
+                    </div>
+                    <div
+                        class="ai_stocks_card h-100 py-lg-5 py-4 ms-xl-4 ai_stocks_bg d-flex align-items-center  justify-content-center">
+                        <img class="growt_logo" src="./assets/images/png/growt.png" alt="nvidia-logo">
+                    </div>
+                </div>
+                <div class="d-flex flex-md-row flex-column align-items-center align-items-sm-start mt-5 pt-lg-4 gap_48">
+                    <div
+                        class="ai_stocks_card h-100 py-lg-5 py-4 me-xl-4 ai_stocks_bg d-flex align-items-center  justify-content-center">
+                        <img class="growt_logo" src="./assets/images/png/aws.png" alt="nvidia-logo">
+                    </div>
+                    <div
+                        class="d-flex flex-column ai_stocks_bg p-md-4 p-2 w-100 h-100 justify-content-start align-items-start">
+                        <p class="lh_130 fs_xl ff_opensans fw-bold text-white ps-lg-2 pt-lg-2 pb-0">Amazon AWS - AI 1
+                            year 69% Growth </p>
+                        <p class="text-white opacity_80 lh_160 fw-normal fs_sm mw_586 ps-lg-2">Amazon A tech juggernaut
+                            with AWS cloud services, offering diverse solutions for investors. With market leadership in
+                            cloud computing, e-commerce, and more, Amazon shows strong growth potential. Its dominance
+                            in AWS cloud services,
+                            e-commerce, and innovation make it an attractive investment. Backed by technological
+                            prowess, Amazon remains a top
+                            choice for investors</p>
+                        <button
+                            class="text-white bg_green read_btn fs_lg transition_200 ms-lg-2 mb-4 mt-md-4 mt-sm-3 mt-2">Read
+                            more</button>
+                    </div>
+
+                </div>
+                <div
+                    class="d-flex flex-md-row flex-column-reverse align-items-center align-items-sm-start mt-5 pt-lg-4 gap_48">
+                    <div
+                        class="d-flex flex-column ai_stocks_bg p-md-4 p-2 w-100 h-100 justify-content-start align-items-start">
+                        <p class="lh_130 fs_xl ff_opensans fw-bold text-white ps-lg-2 pt-lg-2 pb-0">Co-pilot 1 year 64%
+                            Growt </p>
+                        <p class="text-white opacity_80 lh_160 fw-normal fs_sm mw_579 ps-lg-2">Microsoft A tech giant
+                            with diverse solutions for investors, including Azure cloud services. With market dominance
+                            in
+                            software, cloud, and hardware, Microsoft shows strong growth potential. Its leadership in
+                            enterprise software, Azure
+                            cloud computing, and innovation make it an attractive investment.</p>
+                        <button
+                            class="text-white bg_green read_btn fs_lg transition_200 ms-lg-2 mb-5 mt-md-4 mt-sm-3 mt-2">Read
+                            more</button>
+                    </div>
+                    <div
+                        class="ai_stocks_card h-100 py-lg-5 py-4 ms-xl-4 ai_stocks_bg d-flex align-items-center  justify-content-center">
+                        <img class="palantir_logo" src="./assets/images/png/palantir.png" alt="nvidia-logo">
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!------------------------- How It Works ------------------------->
+        <section class="works_bg_img">
+            <div class="how_it_works">
+                <div class="d-flex flex-column px-3">
+                    <h2 class="ff_opensans how_work_pb fw-light fs_7xl text-white text-center mb-0 lh_125">
+                        How It Works
+                    </h2>
+                    <p
+                        class="text-white fw-normal text-sm ff_opensans opacity_80 max_w_890 text-center mx-auto mb-0 lh_160">
+                        If you've used ChatGPT, the OpenAl chatbot that has wowed users by
+                        writing code and instantly answering complex questions, you've
+                        gotten a glimpse into the next frontier in artificial intelligence,
+                        as big tech companies are racing to develop the leading Al chatbot.
+                    </p>
+                    <p
+                        class="text-white fw-normal text-sm ff_opensans opacity_80 max_w_890 text-center mx-auto mb-0 how_work_pera_pt lh_160">
+                        If you want to get portfolio exposure to Al companies but don't want
+                        to identify individual Al stocks, you can invest in an Al-focused
+                        exchange-traded fund (ETF). AI ETFs provide exposure to a broad
+                        range of the best Al companies, eliminating the need to research and
+                        choose individual stocks on your own.
+                    </p>
+                </div>
+                <div class="mx-3">
+                    <div
+                        class="row justify-content-center align-items-start max_w_918 circle_card_mt mx-auto position-relative">
+                        <img class="position-absolute green_line d-md-block d-none"
+                            src="/assets/images/png/doted-green-line.png" alt="doted-green-line" />
+                        <img class="position-absolute green_line_2 d-md-block d-none"
+                            src="/assets/images/png/doted-green-line.png" alt="doted-green-line" />
+
+                        <div class="col-md-4 col-sm-6 d-flex justify-content-center">
+                            <div class="d-flex justify-content-center flex-column max_w_240">
+                                <div
+                                    class="green_circle d-flex justify-content-center align-items-center mx-auto circle_card_mb">
+                                    <div class="d-flex flex-column">
+                                        <h5
+                                            class="ff_opensans fw-bold fs_6xl text_light_black text-center clr_lightblack mb-0 lh_100">
+                                            01
+                                        </h5>
+                                        <p
+                                            class="ff_opensans fw-normal fs_lg text_light_black text-center clr_lightblack mb-0 lh_100">
+                                            Step
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="d-flex flex-column">
+                                    <h4 class="text-white text-center fw-bold ff_opensans fs_5xl mb-0 lh_145">
+                                        Sign up
+                                    </h4>
+                                    <p
+                                        class="text-white fw-normal text-sm ff_opensans opacity_80 text-center mx-auto mb-0 lh_160 circle_card_pera_pt">
+                                        Fill out the Registration Form to Get Started.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4 col-sm-6 d-flex justify-content-center col_2_mt">
+                            <div class="d-flex justify-content-center flex-column max_w_240">
+                                <div
+                                    class="green_circle d-flex justify-content-center align-items-center mx-auto circle_card_mb">
+                                    <div class="d-flex flex-column">
+                                        <h5
+                                            class="ff_opensans fw-bold fs_6xl text_light_black text-center clr_lightblack mb-0 lh_100">
+                                            02
+                                        </h5>
+                                        <p
+                                            class="ff_opensans fw-normal fs_lg text_light_black text-center clr_lightblack mb-0 lh_100">
+                                            Step
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="d-flex flex-column">
+                                    <h4 class="text-white text-center fw-bold ff_opensans fs_5xl mb-0 lh_145">
+                                        Verification
+                                    </h4>
+                                    <p
+                                        class="text-white fw-normal text-sm ff_opensans opacity_80 text-center mx-auto mb-0 lh_160 circle_card_pera_pt">
+                                        Schedule a Call with Our Verified AI Trading Mentors to
+                                        Guide You Through Your Investment Journey
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4 col-sm-6 d-flex justify-content-center col_3_mt">
+                            <div class="d-flex justify-content-center flex-column max_w_265">
+                                <div
+                                    class="green_circle d-flex justify-content-center align-items-center mx-auto circle_card_mb">
+                                    <div class="d-flex flex-column">
+                                        <h5
+                                            class="ff_opensans fw-bold fs_6xl text_light_black text-center clr_lightblack mb-0 lh_100">
+                                            03
+                                        </h5>
+                                        <p
+                                            class="ff_opensans fw-normal fs_lg text_light_black text-center clr_lightblack mb-0 lh_100">
+                                            Step
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="d-flex flex-column">
+                                    <h4 class="text-white text-center fw-bold ff_opensans fs_5xl mb-0 lh_145">
+                                        Start Investing
+                                    </h4>
+                                    <p
+                                        class="text-white fw-normal text-sm ff_opensans opacity_80 text-center mx-auto mb-0 lh_160 circle_card_pera_pt">
+                                        Begin shaping your financial future with confidence and ease
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-------------------------------- Statistics For Today -------------------------------->
+        <section class="statistics_for_today bg_richblack">
+            <div class="max_w_1440 position-relative mx-auto">
+                <img class="position-absolute trangle_shadow" src="/assets/images/png/trangle-left-shadow.png"
+                    alt="trangle-left-shadow" />
+                <h2 class="ff_opensans fw-light fs_7xl text-white text-center mb-0 lh_125">
+                    Statistics For Today
+                </h2>
+                <div class="mx-3 counter_card_mt">
+                    <div class="row justify-content-center align-items-start max_w_996 mx-auto position-relative">
+                        <div class="col-md-4 col-sm-6 d-flex justify-content-center">
+                            <div class="d-flex flex-column justify-content-center">
+                                <div class="counter_card p-3 mx-auto d-flex justify-content-center align-items-center">
+                                    <p class="fs_9xl counter_card_text ff_roboto fw-bold mb-0 lh_100">
+                                        0<span class="counter" data-target="1"></span>
+                                    </p>
+                                </div>
+                                <p
+                                    class="text-center text-white ff_opensans fw-semibold fs_lg mb-0 counter_card_text_pt">
+                                    Places left to register
+                                </p>
+                            </div>
+                        </div>
+                        <div class="col-md-4 col-sm-6 d-flex justify-content-center col_2_mt">
+                            <div class="d-flex flex-column justify-content-center">
+                                <div class="counter_card p-3 mx-auto d-flex justify-content-center align-items-center">
+                                    <p class="fs_9xl counter_card_text ff_roboto fw-bold mb-0 lh_100">
+                                        <span class="counter" data-target="135"></span>
+                                    </p>
+                                </div>
+                                <p
+                                    class="text-center text-white ff_opensans fw-semibold fs_lg mb-0 counter_card_text_pt">
+                                    Average Registrations per day
+                                </p>
+                            </div>
+                        </div>
+                        <div class="col-md-4 col-sm-6 d-flex justify-content-center col_3_mt">
+                            <div class="d-flex flex-column justify-content-center">
+                                <div class="counter_card p-3 mx-auto d-flex justify-content-center align-items-center">
+                                    <p class="fs_9xl counter_card_text ff_roboto fw-bold mb-0 lh_100">
+                                        <span class="counter" data-target="5"></span>X
+                                    </p>
+                                </div>
+                                <p
+                                    class="text-center text-white ff_opensans fw-semibold fs_lg mb-0 counter_card_text_pt">
+                                    The Average Earnings Increase
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!----------------------------- FAQ ----------------------------->
+        <section class="bg_richblack faq">
+            <div class="custom_container">
+                <h2 class="ff_opensans fw-light fs_7xl text-white text-center mb-0 lh_125">
+                    Frequently Asked Questions
+                </h2>
+                <div class="mb-5 mt-sm-0 my-sm-4 my-lg-5 p-2 accordian_box mx-auto">
+                    <div class="accordion accordion-flush" id="accordionFlushExample">
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="flush-headingOne">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#flush-collapseOne" aria-expanded="false"
+                                    aria-controls="flush-collapseOne">
+                                    <p
+                                        class="fw-bold lh_160 text-white ff_opensans text-sm px-2 px-lg-0 max_w_555 mb-0 d-flex gap-2">
+                                        <span>1.</span> Do I need trading experience to invest in AI
+                                        Stocks?
+                                    </p>
+                                </button>
+                            </h2>
+                            <div id="flush-collapseOne" class="accordion-collapse collapse"
+                                aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
+                                <div class="accordion-body">
+                                    <p
+                                        class="text-sm fw-normal lh_160 ff_opensans text-white opacity_80 text-start max_w_555 mb-0">
+                                        Not at all! Our platform is user-friendly and suitable for
+                                        traders of all levels, from complete beginners to
+                                        experienced professionals. The AI handles the complex
+                                        analysis, so you dont need to have prior experience.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="flush-headingTwo">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#flush-collapseTwo" aria-expanded="false"
+                                    aria-controls="flush-collapseTwo">
+                                    <p
+                                        class="fw-bold lh_160 text-white ff_opensans text-sm px-2 px-lg-0 max_w_555 mb-0 d-flex gap-2">
+                                        <span>2.</span> How does AI improve my trading results?
+                                    </p>
+                                </button>
+                            </h2>
+                            <div id="flush-collapseTwo" class="accordion-collapse collapse"
+                                aria-labelledby="flush-headingTwo" data-bs-parent="#accordionFlushExample">
+                                <div class="accordion-body">
+                                    <p
+                                        class="text-sm fw-normal lh_160 ff_opensans text-white opacity_80 text-start max_w_555 mb-0">
+                                        Not at all! Our platform is user-friendly and suitable for
+                                        traders of all levels, from complete beginners to
+                                        experienced professionals. The AI handles the complex
+                                        analysis, so you dont need to have prior experience.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="flush-headingThree">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#flush-collapseThree" aria-expanded="false"
+                                    aria-controls="flush-collapseThree">
+                                    <p
+                                        class="fw-bold lh_160 text-white ff_opensans text-sm px-2 px-lg-0 max_w_555 mb-0 d-flex gap-2">
+                                        <span>3.</span> How much does it cost to use the AI Trading
+                                        Platform, and are there any discounts available?
+                                    </p>
+                                </button>
+                            </h2>
+                            <div id="flush-collapseThree" class="accordion-collapse collapse"
+                                aria-labelledby="flush-headingThree" data-bs-parent="#accordionFlushExample">
+                                <div class="accordion-body">
+                                    <p
+                                        class="text-sm fw-normal lh_160 ff_opensans text-white opacity_80 text-start max_w_555 mb-0">
+                                        Not at all! Our platform is user-friendly and suitable for
+                                        traders of all levels, from complete beginners to
+                                        experienced professionals. The AI handles the complex
+                                        analysis, so you dont need to have prior experience.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="flush-headingFour">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#flush-collapseFour" aria-expanded="false"
+                                    aria-controls="flush-collapseFour">
+                                    <p
+                                        class="fw-bold lh_160 text-white ff_opensans text-sm px-2 px-lg-0 max_w_555 mb-0 d-flex gap-2">
+                                        <span>4.</span> How can i start using the trading platform?
+                                    </p>
+                                </button>
+                            </h2>
+                            <div id="flush-collapseFour" class="accordion-collapse collapse"
+                                aria-labelledby="flush-headingFour" data-bs-parent="#accordionFlushExample">
+                                <div class="accordion-body">
+                                    <p
+                                        class="text-sm fw-normal lh_160 ff_opensans text-white opacity_80 text-start max_w_555 mb-0">
+                                        Not at all! Our platform is user-friendly and suitable for
+                                        traders of all levels, from complete beginners to
+                                        experienced professionals. The AI handles the complex
+                                        analysis, so you dont need to have prior experience.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!------------------------------ Take the first ------------------------------>
+        <section class="position-relative bg_richblack">
+            <div class="custom_container position-relative z-10">
+                <div class="d-flex flex-column align-items-center justify-content-center">
+                    <h2 class="ff_opensans take_first_pb fs_7xl max_w_596 text-white text-center mb-0 lh_125">
+                        Take the first step into AI Stock Trading
+                    </h2>
+                    <p class="text_sm lh_160 ff_opensans fw-normal max_w_530 text-center text-white opacity_80 mb-0">
+                        In a matter of minutes, one of our AI mentors will contact you, No
+                        Experience Required!
+                    </p>
+                </div>
+                <div class="row pt-5 justify-content-center">
+                    <div class="col-lg-5 d-flex justify-content-center justify-content-lg-start">
+                        <div class="form_box w-100">
+                            <h5
+                                class="text-center ff_opensans mx-auto text-white fs_3xl max_w_322 px-5 lh_140 px-sm-0 mb-0">
+                                This is the Right Time to Invest in AI ETF
+                            </h5>
+                            <p
+                                class="fs_sm lh_160 ff_opensans fw-normal max_w_343 mx-auto text-center text-white opacity_80 mb-0 pt-3">
+                                In a matter of minutes, one of our AI mentors will contact you,
+                                No Experience Required!
+                            </p>
+                            <form action="#" id="myOtherForm" class="d-flex flex-column form_mt">
+                                <input required type="text" id="otherFirstName" placeholder="First Name"
+                                    class="w-100 p-2 p-sm-3 mb-3 form2_input" />
+                                <input required type="text" id="otherLastName" placeholder="Last Name"
+                                    class="w-100 p-2 p-sm-3 mb-3 form2_input" />
+                                <input required type="email" id="otherEmail" placeholder="Email"
+                                    class="w-100 p-2 p-sm-3 mb-3 form2_input" />
+                                <div class="d-flex justify-content-center align-items-center bg-white rounded-1">
+                                    <p class="d-flex align-items-center number_text mb-0">
+                                        +91
+                                        <img src="./assets/images/svg/number-arrow.svg" alt="arrow" class="ms-1" />
+                                    </p>
+                                    <input type="number" id="otherPhoneNumber" placeholder="Phone Number"
+                                        class="w-100 p-2 p-sm-3 form2_input" />
+                                </div>
+                                <button type="submit"
+                                    class="started_btn mt-3 fw-semibold border-0 ff_opensans text-white text-lg">
+                                    Get Started
+                                </button>
+                                <a href="#">
+                                    <p class="text-center ff_opensans fw-bold fs_lg text-white spot_left_mt mb-0">
+                                        1 Spot Left
+                                    </p>
+                                </a>
+                            </form>
+
+                            <!-- Popup Form -->
+                            <div id="otherPopupForm" class="popupForm">
+                                <h2 class="bg-white popop_width text-md color-green rounded-3 ff_orbitron text-center">
+                                    Form Submitted Successfully!
+                                </h2>
+                                <!-- Add any additional content or actions for the popup here -->
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-7">
+                        <div class="d-flex justify-content-lg-start justify-content-center">
+                            <img src="./assets/images/png/logo-group.png" class="group_logos w-100 mt-5 mt-lg-0"
+                                alt="first step" />
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
     </div>
-    </section>
-    </div>
 
-
-    <!---------- header video ---->
-    <script>
-        function toggleVideo() {
-            var video = document.getElementById('video');
-            var playIcon = document.querySelector('.play_icon');
-            var stamp = document.querySelector('.stamp');
-
-            if (video.paused) {
-                video.play();
-                playIcon.style.display = 'none';
-                stamp.style.display = 'none';
-            } else {
-                video.pause();
-                playIcon.style.display = 'block';
-                stamp.style.display = 'block';
-
-            }
-        }
-    </script>
     <!----------- header form validation ------->
     <script>
         function validateForm(event) {
+            event.preventDefault();
             document.getElementById("doneMessage").style.display = "block";
+            setTimeout(function () {
+                document.getElementById("doneMessage").style.display = "none";
+            }, 2000);
+
             document.getElementById("first_name").value = "";
             document.getElementById("last_name").value = "";
             document.getElementById("email").value = "";
             document.getElementById("phone").value = "";
             return false;
+
         }
     </script>
     <!----------- hero counter ------->
