@@ -27,6 +27,7 @@
   --clr-richblack: #020507;
   --clr-darkgreen: #0a130b;
   --clr-lightblack: #131313;
+  
 }
 .fs_xsm {
   font-size: var(--fs-xsm);

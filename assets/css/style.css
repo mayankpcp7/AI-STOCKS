@@ -320,8 +320,8 @@
 .mw_579 {
   max-width: 579px;
 }
-.mw_586 {
-  max-width: 586px;
+.mw_608 {
+  max-width: 608px;
 }
 .palantir_logo {
   max-width: 311px !important;
@@ -380,21 +380,39 @@
   filter: blur(80px);
   border-radius: 50%;
   left: -22%;
-  top: 35%;
+  top: 40%;
 }
 .arista_vector {
   max-width: 95px;
   right: -12%;
-  top: 12%;
+  top: 35%;
 }
 .arista_ellipse {
-  width: 197px;
-  height: 197px;
+  width: 160px;
+  height: 160px;
   background-color: var(--clr-green);
-  filter: blur(80px);
+  filter: blur(100px);
   border-radius: 50%;
   right: -22%;
-  top: 35%;
+  top: 30%;
+}
+.pop_up {
+  background: linear-gradient(112.83deg, #121f13 0%, #102012 110.84%);
+  border: 1px solid white;
+  border-radius: 25px;
+  padding: 79px 60px;
+}
+.mw_429 {
+  max-width: 429px;
+}
+.popup_form {
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  border-radius: 15px;
+}
+.popup_form_input {
+  min-height: 52px;
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  border-radius: 100px;
 }
 /* ---------------------------------------- media quaries ----------------------------------- */
 @media (min-width: 1526px) {
