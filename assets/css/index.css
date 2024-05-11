@@ -344,7 +344,15 @@
   height: 1px;
   background: #228b22;
   opacity: 0.3;
+  margin-top: 40px;
 }
+.privacy_py {
+  padding: 27px 16px;
+}
+.privacy_mb {
+  padding: 26px;
+}
+
 @media (max-width: 1199.98px) {
   .max_w_705 {
     max-width: 580px;

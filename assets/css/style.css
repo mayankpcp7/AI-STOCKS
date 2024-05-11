@@ -358,6 +358,9 @@
   }
 }
 @media (max-width: 1199.98px) {
+    .palantir_logo {
+  max-width: 268px !important;
+}
   .ai_stocks_card {
     min-width: 377px !important;
     max-width: 377px;
@@ -376,6 +379,7 @@
   }
 }
 @media (max-width: 991.98px) {
+
   .hero_counter_card {
   min-width: 120px;
   min-height: auto!important;
@@ -397,8 +401,15 @@
     max-width: 100%;
     min-width: 300px !important;
   }
+     .palantir_logo {
+  max-width: 214px !important;
+}
 }
 @media (max-width: 767.98px) {
+ .ai_stocks_bg{
+  background:none;
+  padding: none !important;
+ }
   .ai_heading_lines {
     max-width: 108px;
   }
