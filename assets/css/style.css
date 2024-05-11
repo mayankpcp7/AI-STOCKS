@@ -73,6 +73,8 @@
 .hero_counter_card {
   background-color: #122014;
   border-radius: 8px;
+  min-width: 128px;
+  min-height: 154px !important;
 }
 .video_shadow {
   -webkit-box-shadow: 0px 0px 70px -30px rgba(103, 185, 222, 1);
@@ -324,6 +326,29 @@
 .palantir_logo {
   max-width: 311px !important;
 }
+/*----------------------------- back to top -----------------------------*/
+#back_to_top {
+  display: none;
+  border: none;
+  font-size: 48px;
+  width: 50px;
+  height: 50px;
+  position: fixed;
+  bottom: 40px;
+  right: 20px;
+  z-index: 99;
+  background-color: var(--clr-green) !important;
+  color: white;
+  cursor: pointer;
+  border-radius: 50%;
+  animation-duration: 300ms;
+  animation: spin 2s linear infinite;
+  transition: all 300ms linear;
+}
+#back_to_top:hover {
+  box-shadow: 0px 0px 8px #000000;
+}
+
 /* ---------------------------------------- media quaries ----------------------------------- */
 @media (min-width: 1526px) {
   .slide_container {
@@ -351,6 +376,10 @@
   }
 }
 @media (max-width: 991.98px) {
+  .hero_counter_card {
+  min-width: 120px;
+  min-height: auto!important;
+}
   .ai_heading_lines {
     max-width: 158px;
   }
@@ -400,6 +429,10 @@
   }
 }
 @media (max-width: 575.98px) {
+    .hero_counter_card {
+  min-width: 80px;
+  min-height: auto!important;
+}
   .ai_stocks_card {
     min-width: 230px !important;
     max-width: 113px;

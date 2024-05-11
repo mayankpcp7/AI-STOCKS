@@ -85,6 +85,9 @@
 .bg_green {
   background-color: var(--clr-green);
 }
+.bg_lightblack {
+  background-color: var(--clr-lightblack);
+}
 .custom_container {
   max-width: 1164px;
   padding: 0px 12px;
