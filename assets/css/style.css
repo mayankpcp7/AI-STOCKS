@@ -64,14 +64,23 @@
 .pause_icon {
   display: none;
 }
-
+.px_12 {
+  padding: 0px 12px;
+}
 .time_counter {
   max-width: 566px;
 }
 .hero_counter_card {
   background-color: #122014;
+  border-radius: 8px;
+  min-width: 128px;
+  min-height: 154px !important;
 }
-
+.video_shadow {
+  -webkit-box-shadow: 0px 0px 70px -30px rgba(103, 185, 222, 1);
+  -moz-box-shadow: 0px 0px 70px -30px rgba(103, 185, 222, 1);
+  box-shadow: 0px 0px 70px -30px rgba(103, 185, 222, 1);
+}
 .counter_line {
   content: "";
   height: 4px;
@@ -104,14 +113,352 @@
   border-radius: 100px;
   border: 1px solid #cccc;
   min-height: 37.6px;
-  outline: linear-gradient(180deg, #9b77e8 0%, #6854ff 100%);
+  outline: none;
 }
-
+.form_lable_border:hover {
+  border: 1px solid var(--clr-green);
+}
 .opacity_70 {
   opacity: 70%;
 }
-@media (max-width: 767.98px) {
-  .gap_20 {
-  gap: 6px;
+.hero_form_btn {
+  padding-top: 8px;
+  padding-bottom: 8px;
+  border-radius: 65px;
+  border: 1px solid var(--clr-green);
 }
+.hero_form_btn:hover {
+  background-color: var(--clr-darkgreen);
+}
+.hero_left_green_ellipse {
+  width: 197px;
+  height: 197px;
+  background-color: var(--clr-green);
+  filter: blur(100px);
+  border-radius: 50%;
+  left: -15%;
+  top: 10%;
+}
+.hero_right_green_ellipse {
+  width: 197px;
+  height: 197px;
+  background-color: var(--clr-green);
+  filter: blur(100px);
+  border-radius: 50%;
+  top: 10%;
+  right: -15%;
+}
+/* -------------------------------------- hero slider img ---------------------------------- */
+.hero_slider_img {
+  max-width: 80px;
+  border-radius: 50%;
+}
+.hero_slider_card {
+  min-width: 367px;
+  background: linear-gradient(
+      0deg,
+      rgba(255, 255, 255, 0.01),
+      rgba(255, 255, 255, 0.01)
+    ),
+    linear-gradient(112.83deg, #121f13 0%, #102012 110.84%);
+  border-radius: 8px;
+}
+.hero_slider_card:hover {
+  box-shadow: 0px 0px 20px var(--clr-green);
+}
+.gap_22 {
+  gap: 22px;
+}
+.mw_400 {
+  max-width: 400px;
+}
+.ws_nowrap {
+  white-space: nowrap;
+}
+.slide_container {
+  width: calc(360px * 8);
+  -webkit-animation: scroll 20s linear infinite;
+  animation: scroll 20s linear infinite;
+}
+@-webkit-keyframes scroll {
+  0% {
+    -webkit-transform: translateX(0);
+    transform: translateX(0);
+  }
+  100% {
+    -webkit-transform: translateX(calc(-360px * 4));
+    transform: translateX(calc(-360px * 4));
+  }
+}
+/* --------------------------------------- How it  Benifit ----------------------------------*/
+.benifit_heading {
+  max-width: 648px;
+}
+.benefit_content {
+  max-width: 558px;
+}
+.benefit_card {
+  background: linear-gradient(112.83deg, #121f13 0%, #102012 110.84%);
+  border-radius: 9.93px;
+  padding: 78px 36.5px;
+}
+.benefit_card_heading {
+  max-width: 200px;
+}
+.benefit_card_img {
+  max-width: 64px;
+}
+.benefit_card:hover {
+  box-shadow: 0px 0px 30px var(--clr-green);
+}
+.benifit_triangle_vec {
+  max-width: 87.8px;
+  left: -11%;
+  bottom: -3%;
+}
+.benifit_bottom_ellipse {
+  width: 197px;
+  height: 197px;
+  background-color: #08f70980;
+  filter: blur(90px);
+  border-radius: 50%;
+  left: -21%;
+  bottom: -10%;
+}
+.benifit_top_ellipse {
+  width: 197px;
+  height: 197px;
+  background-color: #08f70980;
+  filter: blur(90px);
+  border-radius: 50%;
+  right: -21%;
+  top: 5%;
+}
+.benifit_square_vec {
+  max-width: 95.05px;
+  right: -11%;
+  top: 5%;
+}
+/* ---------------------------------------- understanding ----------------------------------- */
+.understanding_heading {
+  max-width: 624px;
+}
+.understanding_content {
+  max-width: 812px;
+}
+.understanding_card {
+  border-radius: 16px;
+  min-width: 524px;
+  min-height: 260px;
+}
+.understanding_card_img {
+  max-width: 72px;
+}
+.mw_360 {
+  max-width: 360px;
+}
+.leverged_card {
+  border-radius: 9.93px;
+  background: linear-gradient(112.83deg, #121f13 0%, #102012 110.84%);
+  padding: 20px;
+  max-width: 471px;
+  margin-top: -15%;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.nla_graph {
+  max-width: 430px;
+}
+.potential_energy {
+  background-color: #182619;
+  border-radius: 10px;
+}
+.lighter_green {
+  color: #2db965;
+}
+.maximize_btn {
+  padding: 10px 23px;
+  border-radius: 65px;
+  border: 1px solid var(--clr-green);
+}
+.maximize_btn:hover {
+  background-color: #102012;
+}
+/* ------------------------------------------- Ai-stocks ------------------------------------ */
+.ai_stocks_bg {
+  background: linear-gradient(112.83deg, #121f13 0%, #102012 110.84%);
+  border-radius: 25px;
+}
+.ai_stocks_card {
+  min-width: 377px !important;
+  max-width: 377px;
+  min-height: 352px;
+}
+.nvindia_logo {
+  max-width: 228px;
+}
+.gap_48 {
+  gap: 48px;
+}
+.nvidia_corporation {
+  max-width: 612px;
+}
+.read_btn {
+  padding: 11px 35px;
+  border-radius: 65px;
+  border: 1px solid var(--clr-green);
+}
+.read_btn:hover {
+  background-color: #102012;
+}
+.ai_heading_lines {
+  max-width: 288px;
+}
+.growt_logo {
+  max-width: 214px;
+}
+.mw_579 {
+  max-width: 579px;
+}
+.mw_586 {
+  max-width: 586px;
+}
+.palantir_logo {
+  max-width: 311px !important;
+}
+/*----------------------------- back to top -----------------------------*/
+#back_to_top {
+  display: none;
+  border: none;
+  font-size: 48px;
+  width: 50px;
+  height: 50px;
+  position: fixed;
+  bottom: 40px;
+  right: 20px;
+  z-index: 99;
+  background-color: var(--clr-green) !important;
+  color: white;
+  cursor: pointer;
+  border-radius: 50%;
+  animation-duration: 300ms;
+  animation: spin 2s linear infinite;
+  transition: all 300ms linear;
+}
+#back_to_top:hover {
+  box-shadow: 0px 0px 8px #000000;
+}
+
+/* ---------------------------------------- media quaries ----------------------------------- */
+@media (min-width: 1526px) {
+  .slide_container {
+    width: calc(244px * 12);
+    -webkit-animation: scroll 15s linear infinite;
+    animation: scroll 15s linear infinite;
+  }
+}
+@media (max-width: 1199.98px) {
+    .palantir_logo {
+  max-width: 268px !important;
+}
+  .ai_stocks_card {
+    min-width: 377px !important;
+    max-width: 377px;
+    min-height: auto;
+  }
+  .ai_stocks_card {
+    min-width: 308px !important;
+    max-width: 313px;
+  }
+  .leverged_card {
+    max-width: 400px;
+  }
+  .understanding_card {
+    max-width: 100%;
+    min-width: 400px !important;
+  }
+}
+@media (max-width: 991.98px) {
+
+  .hero_counter_card {
+  min-width: 120px;
+  min-height: auto!important;
+}
+  .ai_heading_lines {
+    max-width: 158px;
+  }
+  .ai_stocks_card {
+    min-width: 280px !important;
+    max-width: 313px;
+  }
+  .benefit_card {
+    padding: 58px 15.5px;
+  }
+  .leverged_card {
+    max-width: 340px;
+  }
+  .understanding_card {
+    max-width: 100%;
+    min-width: 300px !important;
+  }
+     .palantir_logo {
+  max-width: 214px !important;
+}
+}
+@media (max-width: 767.98px) {
+ .ai_stocks_bg{
+  background:none;
+  padding: none !important;
+ }
+  .ai_heading_lines {
+    max-width: 108px;
+  }
+  .nvindia_logo {
+    max-width: 160px;
+  }
+  .ai_stocks_card {
+    min-width: 200px !important;
+    max-width: 203px;
+  }
+  .gap_48 {
+    gap: 28px;
+  }
+  .leverged_card {
+    max-width: 400px;
+  }
+  .stamp {
+    max-width: 79px;
+  }
+  .gap_20 {
+    gap: 6px;
+  }
+  .nav_btn {
+    padding: 8px 30px;
+    border-radius: 65px;
+    line-height: 138.2%;
+    border: 1px solid #228b22;
+  }
+}
+@media (max-width: 575.98px) {
+    .hero_counter_card {
+  min-width: 80px;
+  min-height: auto!important;
+}
+  .ai_stocks_card {
+    min-width: 230px !important;
+    max-width: 113px;
+  }
+
+  .leverged_card {
+    max-width: 350px;
+  }
+  .hero_mobile {
+    max-width: 310px;
+  }
+  .hero_form_btn {
+    padding: 6px;
+  }
+  .play_icon {
+    max-width: 34px;
+  }
 }

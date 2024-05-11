@@ -1,3 +1,4 @@
+/*------------------------------ how_it_works ------------------------------*/
 .works_bg_img {
   background-image: url("/assets/images/png/how-works-bg.png") !important;
   background-size: cover !important;
@@ -36,7 +37,7 @@
   max-width: 265px;
 }
 .circle_card_mt {
-  margin-top: 86px;
+  margin-top: 86px !important;
 }
 .circle_card_mb {
   margin-bottom: 39px;
@@ -48,12 +49,12 @@
   padding-top: 10px;
 }
 .green_line {
-  max-width: 173px;
+  max-width: 173px !important;
   top: 23%;
   left: 24%;
 }
 .green_line_2 {
-  max-width: 173px;
+  max-width: 173px !important;
   top: 23%;
   right: 24%;
 }
@@ -73,7 +74,7 @@
   box-shadow: 0px 0px 30px #228b22;
 }
 .counter_card_mt {
-  margin-top: 98px;
+  margin-top: 98px !important;
 }
 .counter_card_text {
   color: #121f13;
@@ -90,6 +91,15 @@
   max-width: 96px;
   bottom: 0;
   left: 0;
+}
+.green_ellipse_trangle {
+  width: 197px;
+  height: 197px;
+  background-color: var(--clr-green);
+  filter: blur(100px);
+  border-radius: 50%;
+  left: -5%;
+  bottom: -10%;
 }
 /*------------------- average_earnings -------------------*/
 .average_earnings {
@@ -161,6 +171,20 @@
     transform: translateX(calc(0px * 4));
   }
 }
+.box_shadow {
+  max-width: 96px;
+  bottom: 0;
+  right: 3%;
+}
+.green_ellipse_box {
+  width: 197px;
+  height: 197px;
+  background-color: var(--clr-green);
+  filter: blur(100px);
+  border-radius: 50%;
+  right: -5%;
+  bottom: -10%;
+}
 /*--------------------- faq ---------------------*/
 .faq {
   padding-top: 250px;
@@ -227,7 +251,7 @@
 
 .accordion-button,
 .accordion-body,
-accordion-item {
+.accordion-item {
   box-shadow: none !important;
   outline: none !important;
   background-color: transparent !important;
@@ -347,11 +371,12 @@ accordion-item {
   margin-top: 40px;
 }
 .privacy_py {
-  padding: 27px 16px;
+  padding: 27px 0px;
 }
 .privacy_mb {
   padding: 26px;
 }
+
 @media (max-width: 1199.98px) {
   .max_w_705 {
     max-width: 580px;
@@ -359,8 +384,14 @@ accordion-item {
 }
 
 @media (max-width: 991.98px) {
+  .group_logos {
+    max-width: 400px;
+  }
   .commun_btn_mt {
-    margin-top: 45px;
+    margin-top: 45p;
+  }
+  .form_card_mt {
+    margin-top: 60px;
   }
   .max_w_705 {
     max-width: 100%;
@@ -372,7 +403,7 @@ accordion-item {
     padding-top: 18px;
   }
   .circle_card_mt {
-    margin-top: 60px;
+    margin-top: 40px !important;
   }
   .statistics_for_today {
     padding-top: 80px;
@@ -384,6 +415,7 @@ accordion-item {
   }
   .form_section {
     padding-bottom: 80px !important;
+    padding-top: 80px !important;
   }
   .how_it_works {
     padding-top: 80px;
@@ -422,6 +454,9 @@ accordion-item {
   }
 }
 @media (max-width: 767.98px) {
+  .form_card_mt {
+    margin-top: 0px;
+  }
   .how_work_pera_pt {
     padding-top: 12px;
   }
@@ -429,7 +464,7 @@ accordion-item {
     margin-top: 32px;
   }
   .col_3_mt {
-    margin-top: 32px;
+    margin-top: 32px !important;
   }
   .circle_card_mb {
     margin-bottom: 12px;
@@ -446,6 +481,7 @@ accordion-item {
   }
   .form_section {
     padding-bottom: 64px !important;
+    padding-top: 64px !important;
   }
   .footer_pt {
     padding-top: 64px !important;
@@ -459,7 +495,8 @@ accordion-item {
     padding-bottom: 64px;
   }
   .average_earnings {
-    padding: 64px 0px;
+    padding-top: 64px;
+    padding-bottom: 64px;
   }
   .counter_card_mt {
     margin-top: 40px;
@@ -467,7 +504,7 @@ accordion-item {
 }
 @media (max-width: 575.98px) {
   .col_2_mt {
-    margin-top: 32px;
+    margin-top: 32px !important;
   }
   .circle_card_pera_pt {
     padding-top: 6px;
@@ -478,5 +515,28 @@ accordion-item {
     padding: 7px 13px !important;
     background: #ebecf0;
     border-radius: 4px;
+  }
+  .statistics_for_today {
+    padding-top: 48px;
+    padding-bottom: 48px;
+  }
+  .form_section {
+    padding-bottom: 48px !important;
+    padding-top: 48px !important;
+  }
+  .footer_pt {
+    padding-top: 48px !important;
+  }
+  .how_it_works {
+    padding-top: 48px;
+    padding-bottom: 48px;
+  }
+  .faq {
+    padding-top: 48px;
+    padding-bottom: 48px;
+  }
+  .average_earnings {
+    padding-top: 48px;
+    padding-bottom: 48px;
   }
 }
