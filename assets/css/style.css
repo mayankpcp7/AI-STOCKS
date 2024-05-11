@@ -326,6 +326,12 @@
 .palantir_logo {
   max-width: 311px !important;
 }
+.croed_logo {
+  max-width: 282.63px;
+}
+.uipath_logo {
+  max-width: 298px;
+}
 /*----------------------------- back to top -----------------------------*/
 #back_to_top {
   display: none;
@@ -348,7 +354,48 @@
 #back_to_top:hover {
   box-shadow: 0px 0px 8px #000000;
 }
-
+.palantir_vector {
+  max-width: 88px;
+  bottom: -20%;
+  right: -12%;
+}
+.palantir_ellipse {
+  width: 197px;
+  height: 197px;
+  background-color: var(--clr-green);
+  filter: blur(80px);
+  border-radius: 50%;
+  right: -22%;
+  bottom: -30%;
+}
+.uipath_vector {
+  max-width: 76px;
+  left: -12%;
+  top: 40%;
+}
+.uipath_ellipse {
+  width: 197px;
+  height: 197px;
+  background-color: var(--clr-green);
+  filter: blur(80px);
+  border-radius: 50%;
+  left: -22%;
+  top: 35%;
+}
+.arista_vector {
+  max-width: 95px;
+  right: -12%;
+  top: 12%;
+}
+.arista_ellipse {
+  width: 197px;
+  height: 197px;
+  background-color: var(--clr-green);
+  filter: blur(80px);
+  border-radius: 50%;
+  right: -22%;
+  top: 35%;
+}
 /* ---------------------------------------- media quaries ----------------------------------- */
 @media (min-width: 1526px) {
   .slide_container {
@@ -358,9 +405,15 @@
   }
 }
 @media (max-width: 1199.98px) {
-    .palantir_logo {
-  max-width: 268px !important;
-}
+  .uipath_logo {
+    max-width: 268px;
+  }
+  .croed_logo {
+    max-width: 268.63px;
+  }
+  .palantir_logo {
+    max-width: 268px !important;
+  }
   .ai_stocks_card {
     min-width: 377px !important;
     max-width: 377px;
@@ -379,11 +432,16 @@
   }
 }
 @media (max-width: 991.98px) {
-
+  .uipath_logo {
+    max-width: 214px;
+  }
+  .croed_logo {
+    max-width: 214.63px;
+  }
   .hero_counter_card {
-  min-width: 120px;
-  min-height: auto!important;
-}
+    min-width: 120px;
+    min-height: auto !important;
+  }
   .ai_heading_lines {
     max-width: 158px;
   }
@@ -401,15 +459,18 @@
     max-width: 100%;
     min-width: 300px !important;
   }
-     .palantir_logo {
-  max-width: 214px !important;
-}
+  .palantir_logo {
+    max-width: 214px !important;
+  }
 }
 @media (max-width: 767.98px) {
- .ai_stocks_bg{
-  background:none;
-  padding: none !important;
- }
+  .croed_logo {
+    max-width: 214.63px;
+  }
+  .ai_stocks_bg {
+    background: none;
+    padding: none !important;
+  }
   .ai_heading_lines {
     max-width: 108px;
   }
@@ -440,10 +501,10 @@
   }
 }
 @media (max-width: 575.98px) {
-    .hero_counter_card {
-  min-width: 80px;
-  min-height: auto!important;
-}
+  .hero_counter_card {
+    min-width: 80px;
+    min-height: auto !important;
+  }
   .ai_stocks_card {
     min-width: 230px !important;
     max-width: 113px;
