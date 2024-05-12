@@ -494,7 +494,9 @@
                     <img class="ai_heading_lines w-100 ms-lg-5 ms-lg-3 d-sm-block d-none"
                         src="./assets/images/png/ai-after.png" alt="ai-before">
                 </div>
-                <div class="d-flex flex-md-row flex-column align-items-center align-items-sm-start mt-5 pt-lg-5 gap_48">
+                <div
+                    class="d-flex flex-md-row flex-column position-relative align-items-center align-items-sm-start mt-5 pt-lg-5 gap_48">
+
                     <div
                         class="ai_stocks_card h-100 py-lg-5 pt-4 pb-md-4 me-xl-4 ai_stocks_bg d-flex align-items-center  justify-content-center">
 
@@ -503,7 +505,8 @@
                     </div>
                     <div
                         class="d-flex flex-column ai_stocks_bg p-md-4 p-2 w-100  justify-content-start align-items-start">
-                        <p class="lh_130 fs_xl ff_opensans fw-bold text-white ps-lg-2 pt-lg-2 pb-0">AI GPU 1 year 228%
+                        <p class="lh_130 fs_xl ff_opensans fw-bold text-white ps-lg-2 pt-lg-2 pb-0">AI GPU 1 year
+                            228%
                             Growth </p>
                         <p class="text-white opacity_80 lh_160 fw-normal fs_sm nvidia_corporation ps-lg-2">NVIDIA
                             Corporation,
@@ -512,35 +515,72 @@
                             compelling opportunities. With
                             dominance in gaming and data center markets, NVIDIA stands poised for growth.
                             Diversification efforts into AI,
-                            autonomous vehicles, and strategic acquisitions further bolster its potential. As a leader
+                            autonomous vehicles, and strategic acquisitions further bolster its potential. As a
+                            leader
                             in technology and with a
                             strong financial track record, NVIDIA remains a top choice for savvy investors.</p>
-                        <button
+                        <button onclick="openPopup()"
                             class="text-white bg_green read_btn fs_lg transition_200 ms-lg-2 mt-md-4 mt-sm-3 mt-2">Read
                             more</button>
                     </div>
-                </div>
-                <div class="d-flex align-items-center pop_up">
-                    <div class="mw_429">
-                        <img class="nvindia_logo" src="./assets/images/png/nvidia-logo.png" alt="nvidia-logo">
-                        <p class="ff_opensans fs_4xl fw-bold lh_140 text-white pt-4">AI GPU 1 year 228% Growth</p>
-                        <p class="text-white opacity_80 fw-normal fs_sm">NVIDIA Corporation, a powerhouse in GPU
-                            technology and AI innovation, offers investors
-                            compelling opportunities. With
-                            dominance in gaming and data center markets, NVIDIA stands poised for growth.
-                            Diversification efforts into AI,
-                            autonomous vehicles, and strategic acquisitions further bolster its potential. As a leader
-                            in technology and with a
-                            strong financial track record, NVIDIA remains a top choice for savvy investors.</p>
-                    </div>
-
-                    <div class="d-flex flex-column bg-white ms-5 popup_form w-100">
-                        <p class="fw-bold fs_xl text-black">Start Trading with AI Stocks !</p>
-                        <form action="/submit" method="post">
-                            <label class="ff_opensans text-black fs_sm mb-2" for="name">First Name</label><br>
-                            <input type="text-black  popup_form_input" id="name" name="name" required><br>
-
-                        </form>
+                    <div
+                        class="d-flex flex-md-row gap-3 gap-md-0 flex-column-reverse align-items-md-center popup_parent position-absolute">
+                        <div class="d-flex flex-md-row gap-3 gap-md-0 flex-column-reverse align-items-md-center pop_up position-relative overflow-hidden z-2"
+                            id="nvidia_popup">
+                            <img class="position-absolute popup_bottom_ellips bottom-0 start-0 pointer_none"
+                                src="./assets/images/png/popup_bottom_ellipse.png" alt="ellipse">
+                            <img class="position-absolute popup_top_ellipse pointer_none"
+                                src="./assets/images/png/popup_top_ellipse.png" alt="ellipse">
+                            <img class="cross position-absolute cursor_pointer" onclick="removePopup()"
+                                src="./assets/images/svg/popup_cross.svg" alt="cross">
+                            <div class="mw_429">
+                                <img class="nvindia_logo" src="./assets/images/png/nvidia-logo.png" alt="nvidia-logo">
+                                <p class="ff_opensans fs_4xl fw-bold lh_140 text-white pt-4">AI GPU 1 year 228% Growth
+                                </p>
+                                <p class="text-white opacity_80 fw-normal fs_sm">NVIDIA Corporation, a powerhouse in GPU
+                                    technology and AI innovation, offers investors
+                                    compelling opportunities. With
+                                    dominance in gaming and data center markets, NVIDIA stands poised for growth.
+                                    Diversification efforts into AI,
+                                    autonomous vehicles, and strategic acquisitions further bolster its potential. As a
+                                    leader
+                                    in technology and with a
+                                    strong financial track record, NVIDIA remains a top choice for savvy investors.</p>
+                            </div>
+                            <div
+                                class="d-flex flex-column bg-white ms-lg-5 ms-md-3 popup_form w-100 position-relative z-2">
+                                <p class="fw-bold fs_xl text-black">Start Trading with AI Stocks!</p>
+                                <form action="/submit" method="post" onsubmit="clearForm(event)">
+                                    <div class="d-flex align-items-start pt-lg-4">
+                                        <div>
+                                            <label class="ff_opensans text-black fs_sm mb-2" for="firstName">First
+                                                Name</label>
+                                            <input height="52px" class="text-black  border-none" id="firstName"
+                                                name="firstName" required>
+                                        </div>
+                                        <div class="ps-2">
+                                            <label class="ff_opensans text-black fs_sm mb-2" for="lastName">Last
+                                                Name</label>
+                                            <input height="52px" class="text-black border-none" id="lastName"
+                                                name="lastName" required>
+                                        </div>
+                                    </div>
+                                    <div class="mt-2 d-flex flex-column">
+                                        <label class="ff_opensans text-black fs_sm mb-2" for="email">Email</label>
+                                        <input height="52px" type="email" id="popup_email" name="email" required>
+                                    </div>
+                                    <div class="mt-2 d-flex flex-column">
+                                        <label class="ff_opensans text-black fs_sm mb-2" for="phone">Phone
+                                            Number</label>
+                                        <input height="52px" type="phone" id="popup_phone" name="phone" required>
+                                    </div>
+                                    <button type="submit"
+                                        class="bg_green w-100 ff_opensans fw-bold text-white border-0 mx-auto mt-md-5 mt-4 start_trading_btn">
+                                        Start Trading With [Nvidia]
+                                    </button>
+                                </form>
+                            </div>
+                        </div>
                     </div>
                 </div>
                 <div class=" d-flex flex-md-row flex-column-reverse align-items-center align-items-sm-start mt-5 pt-lg-4
@@ -560,13 +600,68 @@
                             enterprise software, Azure
                             cloud computing, and innovation make it an attractive investment.</p>
                         <button
-                            class="text-white bg_green read_btn fs_lg transition_200 ms-lg-2 mb-5 mt-md-4 mt-sm-3 mt-2">Read
+                            class="text-white bg_green read_btn fs_lg transition_200 ms-lg-2 mb-5 mt-md-4 mt-sm-3 mt-2"
+                            onclick="openPopup()">Read
                             more</button>
                     </div>
                     <div
                         class="ai_stocks_card h-100 py-lg-5 pt-4 pb-md-4 ms-xl-4 ai_stocks_bg d-flex align-items-center  justify-content-center">
                         <img class="growt_logo" src="./assets/images/png/growt.png" alt="nvidia-logo">
                     </div>
+                </div>
+                <div class="d-flex flex-md-row gap-3 gap-md-0 flex-column-reverse align-items-md-center pop_up position-relative overflow-hidden z-2"
+                    id="growt_popup">
+                    <img class="position-absolute popup_bottom_ellips bottom-0 start-0 pointer_none"
+                        src="./assets/images/png/popup_bottom_ellipse.png" alt="ellipse">
+                    <img class="position-absolute popup_top_ellipse pointer_none"
+                        src="./assets/images/png/popup_top_ellipse.png" alt="ellipse">
+                    <img class="cross position-absolute cursor_pointer" onclick="removePopup()"
+                        src="./assets/images/svg/popup_cross.svg" alt="cross">
+                    <div class="mw_429">
+                        <img class="nvindia_logo" src="./assets/images/png/growt.png" alt="nvidia-logo">
+                        <p class="ff_opensans fs_4xl fw-bold lh_140 text-white pt-4">Co-pilot 1
+                            year 64%</p>
+                        <p class="text-white opacity_80 fw-normal fs_sm">Microsoft A tech
+                            giant
+                            with diverse solutions for investors, including Azure cloud services. With market
+                            dominance
+                            in
+                            software, cloud, and hardware, Microsoft shows strong growth potential. Its
+                            leadership in
+                            enterprise software, Azure
+                            cloud computing, and innovation make it an attractive investment.</p>
+                    </div>
+                    <div class="d-flex flex-column bg-white ms-lg-5 ms-md-3 popup_form w-100 position-relative z-2">
+                        <p class="fw-bold fs_xl text-black">Start Trading with AI Stocks!</p>
+                        <form action="/submit" method="post" onsubmit="clearForm(event)">
+                            <div class="d-flex align-items-start pt-lg-4">
+                                <div>
+                                    <label class="ff_opensans text-black fs_sm mb-2" for="firstName">First Name</label>
+                                    <input height="52px" class="text-black  border-none" id="firstName" name="firstName"
+                                        required>
+                                </div>
+                                <div class="ps-2">
+                                    <label class="ff_opensans text-black fs_sm mb-2" for="lastName">Last Name</label>
+                                    <input height="52px" class="text-black border-none" id="lastName" name="lastName"
+                                        required>
+                                </div>
+                            </div>
+                            <div class="mt-2 d-flex flex-column">
+                                <label class="ff_opensans text-black fs_sm mb-2" for="email">Email</label>
+                                <input height="52px" type="email" id="popup_email" name="email" required>
+                            </div>
+                            <div class="mt-2 d-flex flex-column">
+                                <label class="ff_opensans text-black fs_sm mb-2" for="phone">Phone Number</label>
+                                <input height="52px" type="phone" id="popup_phone" name="phone" required>
+                            </div>
+                            <button type="submit"
+                                class="bg_green w-100 ff_opensans fw-bold text-white border-0 mx-auto mt-md-5 mt-4 start_trading_btn">
+                                Start Trading With [Nvidia]
+                            </button>
+                        </form>
+                    </div>
+
+
                 </div>
                 <div class="d-flex flex-md-row flex-column align-items-center align-items-sm-start mt-5 pt-lg-4 gap_48">
                     <div
@@ -588,10 +683,61 @@
                             prowess, Amazon remains a top
                             choice for investors</p>
                         <button
-                            class="text-white bg_green read_btn fs_lg transition_200 ms-lg-2 mb-4 mt-md-4 mt-sm-3 mt-2">Read
+                            class="text-white bg_green read_btn fs_lg transition_200 ms-lg-2 mb-4 mt-md-4 mt-sm-3 mt-2"
+                            onclick="openPopup()">Read
                             more</button>
                     </div>
 
+                </div>
+                <div class="d-flex flex-md-row gap-3 gap-md-0 flex-column-reverse align-items-md-center pop_up position-relative overflow-hidden z-2"
+                    id="aws_popup">
+                    <img class="position-absolute popup_bottom_ellips bottom-0 start-0 pointer_none"
+                        src="./assets/images/png/popup_bottom_ellipse.png" alt="ellipse">
+                    <img class="position-absolute popup_top_ellipse pointer_none"
+                        src="./assets/images/png/popup_top_ellipse.png" alt="ellipse">
+                    <img class="cross position-absolute cursor_pointer" onclick="removePopup()"
+                        src="./assets/images/svg/popup_cross.svg" alt="cross">
+                    <div class="mw_429">
+                        <img class="nvindia_logo" src="./assets/images/png/aws.png" alt="nvidia-logo">
+                        <p class="ff_opensans fs_4xl fw-bold lh_140 text-white pt-4">AI 1
+                            year 69% Growth</p>
+                        <p class="text-white opacity_80 fw-normal fs_sm">MAmazon A tech juggernaut with AWS cloud
+                            services, offering diverse solutions for investors. With market leadership in
+                            cloud computing, e-commerce, and more, Amazon shows strong growth potential. Its dominance
+                            in AWS cloud services,
+                            e-commerce, and innovation make it an attractive investment. Backed by technological
+                            prowess, Amazon remains a top
+                            choice for investors</p>
+                    </div>
+                    <div class="d-flex flex-column bg-white ms-lg-5 ms-md-3 popup_form w-100 position-relative z-2">
+                        <p class="fw-bold fs_xl text-black">Start Trading with AI Stocks!</p>
+                        <form action="/submit" method="post" onsubmit="clearForm(event)">
+                            <div class="d-flex align-items-start pt-lg-4">
+                                <div>
+                                    <label class="ff_opensans text-black fs_sm mb-2" for="firstName">First Name</label>
+                                    <input height="52px" class="text-black  border-none" id="firstName" name="firstName"
+                                        required>
+                                </div>
+                                <div class="ps-2">
+                                    <label class="ff_opensans text-black fs_sm mb-2" for="lastName">Last Name</label>
+                                    <input height="52px" class="text-black border-none" id="lastName" name="lastName"
+                                        required>
+                                </div>
+                            </div>
+                            <div class="mt-2 d-flex flex-column">
+                                <label class="ff_opensans text-black fs_sm mb-2" for="email">Email</label>
+                                <input height="52px" type="email" id="popup_email" name="email" required>
+                            </div>
+                            <div class="mt-2 d-flex flex-column">
+                                <label class="ff_opensans text-black fs_sm mb-2" for="phone">Phone Number</label>
+                                <input height="52px" type="phone" id="popup_phone" name="phone" required>
+                            </div>
+                            <button type="submit"
+                                class="bg_green w-100 ff_opensans fw-bold text-white border-0 mx-auto mt-md-5 mt-4 start_trading_btn">
+                                Start Trading With [Nvidia]
+                            </button>
+                        </form>
+                    </div>
                 </div>
                 <div
                     class="d-flex flex-md-row position-relative flex-column-reverse align-items-center align-items-sm-start mt-5 pt-lg-4 gap_48">
@@ -614,12 +760,67 @@
                             technological prowess in the AI
                             stock market.</p>
                         <button
-                            class="text-white bg_green read_btn fs_lg transition_200 ms-lg-2 mb-5 mt-md-4 mt-sm-3 mt-2">Read
+                            class="text-white bg_green read_btn fs_lg transition_200 ms-lg-2 mb-4 mt-md-4 mt-sm-3 mt-2"
+                            onclick="openPopup()">Read
                             more</button>
                     </div>
                     <div
                         class="ai_stocks_card h-100 py-lg-5 pt-4 pb-md-4 ms-xl-4 ai_stocks_bg d-flex align-items-center  justify-content-center">
                         <img class="palantir_logo" src="./assets/images/png/palantir.png" alt="nvidia-logo">
+                    </div>
+                </div>
+                <div class="d-flex flex-md-row gap-3 gap-md-0 flex-column-reverse align-items-md-center pop_up position-relative overflow-hidden z-2"
+                    id="palantir_popup">
+                    <img class="position-absolute popup_bottom_ellips bottom-0 start-0 pointer_none"
+                        src="./assets/images/png/popup_bottom_ellipse.png" alt="ellipse">
+                    <img class="position-absolute popup_top_ellipse pointer_none"
+                        src="./assets/images/png/popup_top_ellipse.png" alt="ellipse">
+                    <img class="cross position-absolute cursor_pointer" onclick="removePopup()"
+                        src="./assets/images/svg/popup_cross.svg" alt="cross">
+                    <div class="mw_429">
+                        <img class="palantir_logo" src="./assets/images/png/palantir.png" alt="nvidia-logo">
+                        <p class="ff_opensans fs_4xl fw-bold lh_140 text-white pt-4">AI Analytics 1
+                            year
+                            157% Growth </p>
+                        <p class="text-white opacity_80 fw-normal fs_sm">Palantir
+                            Technologies, a
+                            leading data analytics company, revolutionizes decision-making with its powerful
+                            software
+                            platforms. With a track record of serving government agencies and commercial
+                            enterprises,
+                            Palantir's innovative
+                            solutions and market dominance make it a top choice for investors seeking growth and
+                            technological prowess in the AI
+                            stock market.</p>
+                    </div>
+                    <div class="d-flex flex-column bg-white ms-lg-5 ms-md-3 popup_form w-100 position-relative z-2">
+                        <p class="fw-bold fs_xl text-black">Start Trading with AI Stocks!</p>
+                        <form action="/submit" method="post" onsubmit="clearForm(event)">
+                            <div class="d-flex align-items-start pt-lg-4">
+                                <div>
+                                    <label class="ff_opensans text-black fs_sm mb-2" for="firstName">First Name</label>
+                                    <input height="52px" class="text-black  border-none" id="firstName" name="firstName"
+                                        required>
+                                </div>
+                                <div class="ps-2">
+                                    <label class="ff_opensans text-black fs_sm mb-2" for="lastName">Last Name</label>
+                                    <input height="52px" class="text-black border-none" id="lastName" name="lastName"
+                                        required>
+                                </div>
+                            </div>
+                            <div class="mt-2 d-flex flex-column">
+                                <label class="ff_opensans text-black fs_sm mb-2" for="email">Email</label>
+                                <input height="52px" type="email" id="popup_email" name="email" required>
+                            </div>
+                            <div class="mt-2 d-flex flex-column">
+                                <label class="ff_opensans text-black fs_sm mb-2" for="phone">Phone Number</label>
+                                <input height="52px" type="phone" id="popup_phone" name="phone" required>
+                            </div>
+                            <button type="submit"
+                                class="bg_green w-100 ff_opensans fw-bold text-white border-0 mx-auto mt-md-5 mt-4 start_trading_btn">
+                                Start Trading With [Nvidia]
+                            </button>
+                        </form>
                     </div>
                 </div>
                 <div class="d-flex flex-md-row flex-column align-items-center align-items-sm-start mt-5 pt-lg-4 gap_48">
@@ -631,12 +832,9 @@
                         class="d-flex flex-column ai_stocks_bg p-md-4 p-2 w-100 h-100 justify-content-start align-items-start">
                         <p class="lh_130 fs_xl ff_opensans fw-bold text-white ps-lg-2 pt-lg-2 pb-0">AI 1
                             year 69% Growth </p>
-                        <p class="text-white opacity_80 lh_160 fw-normal fs_sm mw_586 ps-lg-2">CrowdStrike Shaping
-                            the
-                            Future of Cybersecurity with Advanced AI Solutions. As a trailblazer in threat detection
-                            and
-                            response, CrowdStrike integrates AI-driven capabilities to fortify defenses against
-                            evolving
+                        <p class="text-white opacity_80 lh_160 fw-normal fs_sm mw_586 ps-lg-2">CrowdStrike Shaping the
+                            Future of Cybersecurity with Advanced AI Solutions. As a trailblazer in threat detection and
+                            response, CrowdStrike integrates AI-driven capabilities to fortify defenses against evolving
                             cyber threats. With its
                             innovative technology portfolio, including machine learning and behavioral analytics,
                             CrowdStrike stands as a formidable
@@ -647,6 +845,57 @@
                             more</button>
                     </div>
 
+                </div>
+                <div class="d-flex flex-md-row gap-3 gap-md-0 flex-column-reverse align-items-md-center pop_up position-relative overflow-hidden z-2"
+                    id="croed_palantir_popup">
+                    <img class="position-absolute popup_bottom_ellips bottom-0 start-0 pointer_none"
+                        src="./assets/images/png/popup_bottom_ellipse.png" alt="ellipse">
+                    <img class="position-absolute popup_top_ellipse pointer_none"
+                        src="./assets/images/png/popup_top_ellipse.png" alt="ellipse">
+                    <img class="cross position-absolute cursor_pointer" onclick="removePopup()"
+                        src="./assets/images/svg/popup_cross.svg" alt="cross">
+                    <div class="mw_429">
+                        <img class="palantir_logo" src="./assets/images/png/croed-palantir.png" alt="nvidia-logo">
+                        <p class="ff_opensans fs_4xl fw-bold lh_140 text-white pt-4">AI 1
+                            year 69% Growth </p>
+                        <p class="text-white opacity_80 fw-normal fs_sm">CrowdStrike Shaping the Future of Cybersecurity
+                            with Advanced AI Solutions. As a trailblazer in threat detection and
+                            response, CrowdStrike integrates AI-driven capabilities to fortify defenses against evolving
+                            cyber threats. With its
+                            innovative technology portfolio, including machine learning and behavioral analytics,
+                            CrowdStrike stands as a formidable
+                            force in the AI stock market, offering investors unparalleled growth potential and
+                            technological excellence.</p>
+                    </div>
+                    <div class="d-flex flex-column bg-white ms-lg-5 ms-md-3 popup_form w-100 position-relative z-2">
+                        <p class="fw-bold fs_xl text-black">Start Trading with AI Stocks!</p>
+                        <form action="/submit" method="post" onsubmit="clearForm(event)">
+                            <div class="d-flex align-items-start pt-lg-4">
+                                <div>
+                                    <label class="ff_opensans text-black fs_sm mb-2" for="firstName">First Name</label>
+                                    <input height="52px" class="text-black  border-none" id="firstName" name="firstName"
+                                        required>
+                                </div>
+                                <div class="ps-2">
+                                    <label class="ff_opensans text-black fs_sm mb-2" for="lastName">Last Name</label>
+                                    <input height="52px" class="text-black border-none" id="lastName" name="lastName"
+                                        required>
+                                </div>
+                            </div>
+                            <div class="mt-2 d-flex flex-column">
+                                <label class="ff_opensans text-black fs_sm mb-2" for="email">Email</label>
+                                <input height="52px" type="email" id="popup_email" name="email" required>
+                            </div>
+                            <div class="mt-2 d-flex flex-column">
+                                <label class="ff_opensans text-black fs_sm mb-2" for="phone">Phone Number</label>
+                                <input height="52px" type="phone" id="popup_phone" name="phone" required>
+                            </div>
+                            <button type="submit"
+                                class="bg_green w-100 ff_opensans fw-bold text-white border-0 mx-auto mt-md-5 mt-4 start_trading_btn">
+                                Start Trading With [Nvidia]
+                            </button>
+                        </form>
+                    </div>
                 </div>
                 <div
                     class="d-flex flex-md-row flex-column-reverse align-items-center align-items-sm-start mt-5 pt-lg-4 gap_48 position-relative">
@@ -669,12 +918,67 @@
                             for investors seeking
                             growth and innovation in the AI stock sector</p>
                         <button
-                            class="text-white bg_green read_btn fs_lg transition_200 ms-lg-2 mb-4 mt-md-4 mt-sm-3 mt-2">Read
+                            class="text-white bg_green read_btn fs_lg transition_200 ms-lg-2 mb-4 mt-md-4 mt-sm-3 mt-2"
+                            onclick="openPopup()">Read
                             more</button>
                     </div>
                     <div
                         class="ai_stocks_card h-100 py-lg-5 pt-4 pb-md-4 ms-xl-4 ai_stocks_bg d-flex align-items-center  justify-content-center">
                         <img class="uipath_logo" src="./assets/images/png/ui-path.png" alt="nvidia-logo">
+                    </div>
+                </div>
+                <div class="d-flex flex-md-row gap-3 gap-md-0 flex-column-reverse align-items-md-center pop_up position-relative overflow-hidden z-2"
+                    id="uipath_popup">
+                    <img class="position-absolute popup_bottom_ellips bottom-0 start-0 pointer_none"
+                        src="./assets/images/png/popup_bottom_ellipse.png" alt="ellipse">
+                    <img class="position-absolute popup_top_ellipse pointer_none"
+                        src="./assets/images/png/popup_top_ellipse.png" alt="ellipse">
+                    <img class="cross position-absolute cursor_pointer" onclick="removePopup()"
+                        src="./assets/images/svg/popup_cross.svg" alt="cross">
+                    <div class="mw_429">
+                        <img class="palantir_logo" src="./assets/images/png/ui-path.png" alt="nvidia-logo">
+                        <p class="ff_opensans fs_4xl fw-bold lh_140 text-white pt-4">Robotic
+                            Automations
+                            1 year 82% Growth </p>
+                        <p class="text-white opacity_80 fw-normal fs_sm">UiPath Powering
+                            Automation with Intelligent AI Solutions. As a leader in robotic process automation
+                            (RPA),
+                            UiPath
+                            leverages cutting-edge AI technologies to streamline business processes and drive
+                            efficiency. With its innovative
+                            AI-driven platform and market dominance, UiPath presents a compelling investment
+                            opportunity
+                            for investors seeking
+                            growth and innovation in the AI stock sector</p>
+                    </div>
+                    <div class="d-flex flex-column bg-white ms-lg-5 ms-md-3 popup_form w-100 position-relative z-2">
+                        <p class="fw-bold fs_xl text-black">Start Trading with AI Stocks!</p>
+                        <form action="/submit" method="post" onsubmit="clearForm(event)">
+                            <div class="d-flex align-items-start pt-lg-4">
+                                <div>
+                                    <label class="ff_opensans text-black fs_sm mb-2" for="firstName">First Name</label>
+                                    <input height="52px" class="text-black  border-none" id="firstName" name="firstName"
+                                        required>
+                                </div>
+                                <div class="ps-2">
+                                    <label class="ff_opensans text-black fs_sm mb-2" for="lastName">Last Name</label>
+                                    <input height="52px" class="text-black border-none" id="lastName" name="lastName"
+                                        required>
+                                </div>
+                            </div>
+                            <div class="mt-2 d-flex flex-column">
+                                <label class="ff_opensans text-black fs_sm mb-2" for="email">Email</label>
+                                <input height="52px" type="email" id="popup_email" name="email" required>
+                            </div>
+                            <div class="mt-2 d-flex flex-column">
+                                <label class="ff_opensans text-black fs_sm mb-2" for="phone">Phone Number</label>
+                                <input height="52px" type="phone" id="popup_phone" name="phone" required>
+                            </div>
+                            <button type="submit"
+                                class="bg_green w-100 ff_opensans fw-bold text-white border-0 mx-auto mt-md-5 mt-4 start_trading_btn">
+                                Start Trading With [Nvidia]
+                            </button>
+                        </form>
                     </div>
                 </div>
                 <div
@@ -702,10 +1006,61 @@
                             capitalize on the evolution of
                             networking in the AI stock market.</p>
                         <button
-                            class="text-white bg_green read_btn fs_lg transition_200 ms-lg-2 mb-1 mt-md-4 mt-sm-3 mt-2">Read
+                            class="text-white bg_green read_btn fs_lg transition_200 ms-lg-2 mb-1 mt-md-4 mt-sm-3 mt-2"
+                            onclick="openPopup()">Read
                             more</button>
                     </div>
 
+                </div>
+                <div class="d-flex flex-md-row gap-3 gap-md-0 flex-column-reverse align-items-md-center pop_up position-relative overflow-hidden z-2"
+                    id="uipath_popup">
+                    <img class="position-absolute popup_bottom_ellips bottom-0 start-0 pointer_none"
+                        src="./assets/images/png/popup_bottom_ellipse.png" alt="ellipse">
+                    <img class="position-absolute popup_top_ellipse pointer_none"
+                        src="./assets/images/png/popup_top_ellipse.png" alt="ellipse">
+                    <img class="cross position-absolute cursor_pointer" onclick="removePopup()"
+                        src="./assets/images/svg/popup_cross.svg" alt="cross">
+                    <div class="mw_429">
+                        <img class="nvindia_logo" src="./assets/images/png/arista.png" alt="nvidia-logo">
+                        <p class="ff_opensans fs_4xl fw-bold lh_140 text-white pt-4">Arista Networks - AI Cloud
+                            Computing 1 year 111% Growth </p>
+                        <p class="text-white opacity_80 fw-normal fs_sm">Arista Networks: Transforming Networking with
+                            AI-Driven Solutions. Leading the charge in cloud networking, Arista
+                            harnesses the power of AI to deliver high-performance, scalable solutions. With its
+                            innovative AI-driven approach and
+                            industry-leading technology, Arista Networks offers investors a prime opportunity to
+                            capitalize on the evolution of
+                            networking in the AI stock market.</p>
+                    </div>
+                    <div class="d-flex flex-column bg-white ms-lg-5 ms-md-3 popup_form w-100 position-relative z-2">
+                        <p class="fw-bold fs_xl text-black">Start Trading with AI Stocks!</p>
+                        <form action="/submit" method="post" onsubmit="clearForm(event)">
+                            <div class="d-flex align-items-start pt-lg-4">
+                                <div>
+                                    <label class="ff_opensans text-black fs_sm mb-2" for="firstName">First Name</label>
+                                    <input height="52px" class="text-black  border-none" id="firstName" name="firstName"
+                                        required>
+                                </div>
+                                <div class="ps-2">
+                                    <label class="ff_opensans text-black fs_sm mb-2" for="lastName">Last Name</label>
+                                    <input height="52px" class="text-black border-none" id="lastName" name="lastName"
+                                        required>
+                                </div>
+                            </div>
+                            <div class="mt-2 d-flex flex-column">
+                                <label class="ff_opensans text-black fs_sm mb-2" for="email">Email</label>
+                                <input height="52px" type="email" id="popup_email" name="email" required>
+                            </div>
+                            <div class="mt-2 d-flex flex-column">
+                                <label class="ff_opensans text-black fs_sm mb-2" for="phone">Phone Number</label>
+                                <input height="52px" type="phone" id="popup_phone" name="phone" required>
+                            </div>
+                            <button type="submit"
+                                class="bg_green w-100 ff_opensans fw-bold text-white border-0 mx-auto mt-md-5 mt-4 start_trading_btn">
+                                Start Trading With [Nvidia]
+                            </button>
+                        </form>
+                    </div>
                 </div>
             </div>
         </section>
@@ -1287,9 +1642,9 @@
             document.getElementById("email").value = "";
             document.getElementById("phone").value = "";
             return false;
-
         }
     </script>
+
     <!----------- hero counter ------->
     <script>
         var seconds = 59;
@@ -1317,27 +1672,30 @@
     </script>
     <!-- 7 ai stocks pop up  -->
     <script>
-        document.addEventListener("DOMContentLoaded", function () {
-            // Function to handle the click event of "Read more" buttons
-            function openPopup(id) {
-                var popupContent = ''; // You can customize the content of the pop-up window here
-
-                // Open a new pop-up window with custom content
-                var popup = window.open('', id, 'width=600,height=400');
-                popup.document.write(popupContent);
-            }
-
-            // Add event listeners to "Read more" buttons
-            var readmoreBtns = document.querySelectorAll('.read_btn');
-            readmoreBtns.forEach(function (btn) {
-                btn.addEventListener('click', function () {
-                    var btnId = this.getAttribute('data-popup-id'); // Get the ID of the button
-                    openPopup(btnId); // Call the function to open the pop-up
-                });
-            });
-        });
+        function openPopup() {
+            var popup = document.getElementById("nvidia_popup");
+            popup.classList.add("show_popup");
+        }
+        function removePopup() {
+            var popup = document.getElementById("nvidia_popup");
+            popup.classList.remove("show_popup");
+        }
     </script>
 
+    <!-- ------------ popup-form ------ -->
+    <script>
+        function clearForm(event) {
+            event.preventDefault();
+            var firstNameInput = document.getElementById("firstName");
+            var lastNameInput = document.getElementById("lastName");
+            var emailInput = document.getElementById("popup_email");
+            var phoneInput = document.getElementById("popup_phone");
+            firstNameInput.value = "";
+            lastNameInput.value = "";
+            emailInput.value = "";
+            phoneInput.value = "";
+        }
+    </script>
     <!------ stastistics counter ------->
     <script>
         document.addEventListener("DOMContentLoaded", function () {

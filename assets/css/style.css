@@ -402,17 +402,53 @@
   border-radius: 25px;
   padding: 79px 60px;
 }
+.popup_parent {
+  left: -1000%;
+  opacity: 0%;
+}
+.show_popup {
+  left: 0%;
+  opacity: 100%;
+}
 .mw_429 {
   max-width: 429px;
 }
 .popup_form {
   border: 1px solid rgba(0, 0, 0, 0.1);
   border-radius: 15px;
+  padding: 30px;
+  max-width: 528px;
 }
-.popup_form_input {
-  min-height: 52px;
+#firstName,
+#lastName,
+#popup_phone,
+#popup_email {
+  outline: none !important;
+  min-height: 52px !important;
   border: 1px solid rgba(0, 0, 0, 0.2);
   border-radius: 100px;
+  width: 100%;
+  padding: 0px 8px !important;
+}
+.start_trading_btn {
+  border-radius: 65px;
+  padding: 12px 0px;
+}
+.cross {
+  top: 5%;
+  right: 3%;
+}
+.popup_top_ellipse {
+  right: 0%;
+  top: 0%;
+}
+.pointer_none {
+  pointer-events: none;
+}
+
+.show_popup {
+  opacity: 100%;
+  transform: translatey(0%);
 }
 /* ---------------------------------------- media quaries ----------------------------------- */
 @media (min-width: 1526px) {
@@ -423,6 +459,14 @@
   }
 }
 @media (max-width: 1199.98px) {
+  .cross {
+    top: 2%;
+    right: 3%;
+    max-width: 22px;
+  }
+  .pop_up {
+    padding: 60px 40px;
+  }
   .uipath_logo {
     max-width: 268px;
   }
@@ -450,6 +494,21 @@
   }
 }
 @media (max-width: 991.98px) {
+  .cross {
+    top: 2%;
+    right: 3%;
+    max-width: 20px;
+  }
+  .popup_form {
+    padding: 15px;
+    max-width: 528px;
+  }
+  .pop_up {
+    padding: 50px 16px;
+  }
+  .mw_429 {
+    max-width: 350px;
+  }
   .uipath_logo {
     max-width: 214px;
   }
@@ -480,8 +539,29 @@
   .palantir_logo {
     max-width: 214px !important;
   }
+  #firstName,
+  #lastName,
+  #popup_phone,
+  #popup_email {
+    min-height: 45px !important;
+  }
 }
 @media (max-width: 767.98px) {
+  #firstName,
+  #lastName,
+  #popup_phone,
+  #popup_email {
+    min-height: 40px !important;
+  }
+  .pop_up {
+    padding: 16px;
+  }
+  .popup_form {
+    margin-top: 26px;
+  }
+  .mw_429 {
+    max-width: 100%;
+  }
   .croed_logo {
     max-width: 214.63px;
   }
