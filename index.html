@@ -42,6 +42,10 @@
 </head>
 
 <body>
+    <button onclick="topFunction()" id="myBtn"><svg class="top_icon" width="29" height="36" viewBox="0 0 29 36" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M3.64375 11.05L13.1063 0.887485C13.2211 0.766368 13.3592 0.669687 13.5124 0.603235C13.6655 0.536784 13.8304 0.50193 13.9973 0.500763C14.1643 0.499596 14.3297 0.532139 14.4837 0.596443C14.6377 0.660746 14.7772 0.755486 14.8938 0.874985L24.3563 11.0375C25.0563 11.7825 24.5063 12.9912 23.4688 12.9912H18.9188C18.4813 12.9912 18.1188 13.3462 18.1188 13.7725V20.2662C18.1188 21.0725 17.4563 21.72 16.6313 21.72H11.3563C10.5438 21.72 9.86875 21.0725 9.88125 20.2787V13.785C9.87731 13.5758 9.79117 13.3765 9.64146 13.2303C9.49175 13.0841 9.29051 13.0027 9.08125 13.0037H4.53125C3.49375 13.0037 2.94375 11.8075 3.64375 11.05ZM9.55 24.0225H1.5C0.8125 24.0225 0.25 24.585 0.25 25.2725C0.25 25.96 0.8125 26.5225 1.5 26.5225H4.275V34.235C4.275 34.9225 4.8375 35.485 5.525 35.485C6.2125 35.485 6.775 34.9225 6.775 34.235V26.5225H9.55C10.2375 26.5225 10.8 25.96 10.8 25.2725C10.8 24.5725 10.2375 24.0225 9.55 24.0225ZM21.2875 24.035H24.75C26.6375 24.035 28.175 25.5725 28.175 27.46C28.175 29.3475 26.6375 30.885 24.75 30.885H22.5375V34.2475C22.5375 34.935 21.975 35.4975 21.2875 35.4975C20.6 35.4975 20.0375 34.935 20.0375 34.2475V25.285C20.0375 24.5975 20.6 24.035 21.2875 24.035ZM22.5375 28.385H24.75C25.2625 28.385 25.675 27.9725 25.675 27.46C25.675 26.9475 25.2625 26.535 24.75 26.535H22.5375V28.385ZM10.8 31.5725C10.8 33.735 12.5625 35.4975 14.7375 35.4975C16.9 35.4975 18.675 33.735 18.675 31.5725V27.9725C18.675 25.81 16.9125 24.0475 14.7375 24.0475C12.5625 24.0475 10.8 25.81 10.8 27.9725V31.5725ZM13.3 27.9725C13.3 27.5912 13.4515 27.2256 13.721 26.956C13.9906 26.6864 14.3563 26.535 14.7375 26.535C15.1188 26.535 15.4844 26.6864 15.754 26.956C16.0236 27.2256 16.175 27.5912 16.175 27.9725V31.5725C16.175 32.3725 15.525 33.01 14.7375 33.01C13.95 33.01 13.3 32.36 13.3 31.5725V27.9725Z" fill="white"/>
+</svg>
+</button>
     <div class="bg_richblack overflow-hidden ">
         <header class="bg_header pb-sm-4">
             <nav class="nav_border">
@@ -1429,11 +1433,17 @@
         </section>
         <!----------------------------- FAQ ----------------------------->
         <section class="faq">
-            <div class="custom_container">
-                <h2 class="ff_opensans fw-light fs_7xl text-white text-center mb-0 lh_125">
+            <div class="custom_container position-relative">
+                 <div class="green_ellipse_circle position-absolute"></div>
+                <img class="position-absolute circle_shadow" src="/assets/images/png/plantir_vector.png"
+                    alt="plantir_vector" />
+                 <div class="green_ellipse_circle2 position-absolute"></div>
+                <img class="position-absolute circle_shadow2" src="/assets/images/png/plantir_vector.png"
+                    alt="plantir_vector" />
+                <h2 class="ff_opensans fw-light fs_7xl text-white text-center lh_125 faq_heading_mb position-relative">
                     Frequently Asked Questions
                 </h2>
-                <div class="accordian_box mx-auto">
+                <div class="accordian_box mx-auto position-relative">
                     <div class="accordion accordion-flush" id="accordionFlushExample">
                         <div class="accordion-item">
                             <h2 class="accordion-header" id="flush-headingOne">
@@ -1608,8 +1618,8 @@
             <div class="custom_container footer_pt">
                 <div class="d-flex flex-sm-row flex-column justify-content-between w-100 align-items-center">
                     <div class="d-felx flex-column justify-content-lg-start align-items-center justify-content-center">
-                        <a href="/" class="fw-bold text-white ff_opensans mx-auto fs_6xl lh_136 text-decoration-none mb-0">AI
-                            STOCKS</a>
+                        <p class="fw-bold text-sm-start text-center cursor_pointer text-white ff_opensans mx-auto fs_6xl lh_136 text-decoration-none mb-0">AI
+                            STOCKS</p>
                         <p
                             class="ff_opensans text-sm-start text-center fw-normal fs_sm text-white opacity_80 lh_160 max_w_260 mb-0 pt-3">
                             Empowering Your Financial Future with Intelligent Investments
@@ -1620,7 +1630,7 @@
                             Follow Us on
                         </p>
                         <div class="d-flex justify-content-center icons_gap icons_mt">
-                            <a href="" class="socail_icon_hover">
+                            <a href="https://www.facebook.com/" target="_blank" class="socail_icon_hover">
                                 <svg width="30" height="31" viewBox="0 0 30 31" fill="none"
                                     xmlns="http://www.w3.org/2000/svg">
                                     <circle cx="15" cy="15.5" r="14.5" stroke="#228B22" />
@@ -1629,7 +1639,7 @@
                                         fill="white" />
                                 </svg>
                             </a>
-                            <a href="" class="socail_icon_hover"><svg width="30" height="31" viewBox="0 0 30 31"
+                            <a href="https://www.instagram.com/" target="_blank" class="socail_icon_hover"><svg width="30" height="31" viewBox="0 0 30 31"
                                     fill="none" xmlns="http://www.w3.org/2000/svg">
                                     <circle cx="15" cy="15.5" r="14.5" stroke="#228B22" />
                                     <path
@@ -1637,7 +1647,7 @@
                                         fill="white" />
                                 </svg>
                             </a>
-                            <a href="" class="socail_icon_hover">
+                            <a href="https://www.linkedin.com/" target="_blank" class="socail_icon_hover">
                                 <svg width="30" height="31" viewBox="0 0 30 31" fill="none"
                                     xmlns="http://www.w3.org/2000/svg">
                                     <circle cx="15" cy="15.5" r="14.5" stroke="#228B22" />
@@ -1777,8 +1787,28 @@
             document.getElementById("myForm").reset();
         }
     </script>
+<!---------------- back to top ---------------->
+<script>
+// Get the button
+let mybutton = document.getElementById("myBtn");
 
+// When the user scrolls down 20px from the top of the document, show the button
+window.onscroll = function() {scrollFunction()};
 
+function scrollFunction() {
+  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+    mybutton.style.display = "block";
+  } else {
+    mybutton.style.display = "none";
+  }
+}
+
+// When the user clicks on the button, scroll to the top of the document
+function topFunction() {
+  document.body.scrollTop = 0;
+  document.documentElement.scrollTop = 0;
+}
+</script>
     <!------ stastistics counter ------->
     <script>
         document.addEventListener("DOMContentLoaded", function () {
