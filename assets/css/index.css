@@ -1,3 +1,4 @@
+/*------------------------------ how_it_works ------------------------------*/
 .works_bg_img {
   background-image: url("/assets/images/png/how-works-bg.png") !important;
   background-size: cover !important;
@@ -91,6 +92,15 @@
   bottom: 0;
   left: 0;
 }
+.green_ellipse_trangle {
+  width: 197px;
+  height: 197px;
+  background-color: var(--clr-green);
+  filter: blur(100px);
+  border-radius: 50%;
+  left: -5%;
+  bottom: -10%;
+}
 /*------------------- average_earnings -------------------*/
 .average_earnings {
   padding: 30px 0px;
@@ -160,6 +170,20 @@
     -webkit-transform: translateX(calc(0px * 4));
     transform: translateX(calc(0px * 4));
   }
+}
+.box_shadow {
+  max-width: 96px;
+  bottom: 0;
+  right: 3%;
+}
+.green_ellipse_box {
+  width: 197px;
+  height: 197px;
+  background-color: var(--clr-green);
+  filter: blur(100px);
+  border-radius: 50%;
+  right: -5%;
+  bottom: -10%;
 }
 /*--------------------- faq ---------------------*/
 .faq {
@@ -347,7 +371,7 @@
   margin-top: 40px;
 }
 .privacy_py {
-  padding: 27px 16px;
+  padding: 27px 0px;
 }
 .privacy_mb {
   padding: 26px;
@@ -360,8 +384,14 @@
 }
 
 @media (max-width: 991.98px) {
+  .group_logos {
+    max-width: 400px;
+  }
   .commun_btn_mt {
-    margin-top: 45px;
+    margin-top: 45p;
+  }
+  .form_card_mt {
+    margin-top: 60px;
   }
   .max_w_705 {
     max-width: 100%;
@@ -385,6 +415,7 @@
   }
   .form_section {
     padding-bottom: 80px !important;
+    padding-top: 80px !important;
   }
   .how_it_works {
     padding-top: 80px;
@@ -423,6 +454,9 @@
   }
 }
 @media (max-width: 767.98px) {
+  .form_card_mt {
+    margin-top: 0px;
+  }
   .how_work_pera_pt {
     padding-top: 12px;
   }
@@ -447,6 +481,7 @@
   }
   .form_section {
     padding-bottom: 64px !important;
+    padding-top: 64px !important;
   }
   .footer_pt {
     padding-top: 64px !important;
@@ -460,7 +495,8 @@
     padding-bottom: 64px;
   }
   .average_earnings {
-    padding: 64px 0px;
+    padding-top: 64px;
+    padding-bottom: 64px;
   }
   .counter_card_mt {
     margin-top: 40px;
@@ -479,5 +515,28 @@
     padding: 7px 13px !important;
     background: #ebecf0;
     border-radius: 4px;
+  }
+  .statistics_for_today {
+    padding-top: 48px;
+    padding-bottom: 48px;
+  }
+  .form_section {
+    padding-bottom: 48px !important;
+    padding-top: 48px !important;
+  }
+  .footer_pt {
+    padding-top: 48px !important;
+  }
+  .how_it_works {
+    padding-top: 48px;
+    padding-bottom: 48px;
+  }
+  .faq {
+    padding-top: 48px;
+    padding-bottom: 48px;
+  }
+  .average_earnings {
+    padding-top: 48px;
+    padding-bottom: 48px;
   }
 }
