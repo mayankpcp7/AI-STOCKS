@@ -605,7 +605,7 @@
                             cloud computing, and innovation make it an attractive investment.</p>
                         <button
                             class="text-white bg_green read_btn fs_lg transition_200 ms-lg-2 mb-5 mt-md-4 mt-sm-3 mt-2"
-                            onclick="openPopup()">Read
+                            onclick="openPopup('growt_popup')">Read
                             more</button>
                     </div>
                     <div
@@ -613,14 +613,14 @@
                         <img class="growt_logo" src="./assets/images/png/growt.png" alt="nvidia-logo">
                     </div>
                     <div
-                        class="d-flex flex-md-row gap-3 gap-md-0 flex-column-reverse align-items-md-center popup_parent position-absolute">
+                        class="d-flex flex-md-row gap-3 gap-md-0 flex-column-reverse align-items-md-center popup_parent position-absolute" id="growt_popup">
                         <div class="d-flex flex-md-row gap-3 gap-md-0 flex-column-reverse align-items-md-center pop_up position-relative overflow-hidden z-2"
-                            id="growt_popup">
+                           >
                             <img class="position-absolute popup_bottom_ellips bottom-0 start-0 pointer_none"
                                 src="./assets/images/png/popup_bottom_ellipse.png" alt="ellipse">
                             <img class="position-absolute popup_top_ellipse pointer_none"
                                 src="./assets/images/png/popup_top_ellipse.png" alt="ellipse">
-                            <img class="cross position-absolute cursor_pointer" onclick="removePopup()"
+                            <img class="cross position-absolute cursor_pointer" onclick="openPopup('growt_popup')"
                                 src="./assets/images/svg/popup_cross.svg" alt="cross">
                             <div class="mw_429">
                                 <img class="nvindia_logo" src="./assets/images/png/growt.png" alt="nvidia-logo">
