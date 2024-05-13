@@ -509,22 +509,84 @@
 }
 @keyframes vector {
   0% {
-    transform: translateY(0px);
-  }
-  25% {
-    transform: translateY(-5px);
+    transform: rotate(20deg);
   }
   50% {
-    transform: translateY(0px);
-  }
-  75% {
-    transform: translateY(-5px);
+    transform: rotate(-20deg);
   }
   100% {
-    transform: translateY(0px);
+    transform: rotate(20deg);
   }
 }
 @media (max-width: 1199.98px) {
+  .box_shadow {
+    max-width: 96px;
+    bottom: 0;
+    right: 3%;
+    animation: vector 3s ease infinite;
+    width: 70px;
+  }
+  .green_ellipse_circle {
+    width: 197px;
+    height: 197px;
+    background-color: var(--clr-green);
+    filter: blur(100px);
+    border-radius: 50%;
+    left: -16%;
+    bottom: -34%;
+    animation: ellips 3s ease infinite;
+  }
+  .green_ellipse_circle3 {
+    width: 197px;
+    height: 197px;
+    background-color: var(--clr-green);
+    filter: blur(100px);
+    border-radius: 50%;
+    left: 6%;
+    bottom: -50%;
+    animation: ellips 3s ease infinite;
+  }
+  .circle_shadow {
+    max-width: 96px;
+    bottom: -40%;
+    left: 9%;
+    animation: vector 3s ease infinite;
+    width: 70px;
+  }
+  .green_ellipse_circle2 {
+    width: 197px;
+    height: 197px;
+    background-color: var(--clr-green);
+    filter: blur(100px);
+    border-radius: 50%;
+    right: 3%;
+    top: -15%;
+    animation: ellips 3s ease infinite;
+  }
+  .circle_shadow2 {
+    max-width: 96px;
+    top: -10%;
+    right: 5%;
+    animation: vector 3s ease infinite;
+    width: 70px;
+  }
+  .trangle_shadow {
+    max-width: 96px;
+    bottom: -30%;
+    left: 10%;
+    animation: vector 3s ease infinite;
+    width: 70px;
+  }
+  .green_ellipse_trangle {
+    width: 197px;
+    height: 197px;
+    background-color: var(--clr-green);
+    filter: blur(100px);
+    border-radius: 50%;
+    left: 5%;
+    bottom: -40%;
+    animation: ellips 3s ease infinite;
+  }
   .how_it_works {
     padding-top: 100px;
     padding-bottom: 100px;
