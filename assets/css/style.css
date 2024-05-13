@@ -283,7 +283,7 @@
   color: #2db965;
 }
 .maximize_btn {
-  padding: 10px 23px;
+  padding: 9.5px 22.5px;
   border-radius: 65px;
   border: 1px solid var(--clr-green);
 }
@@ -310,7 +310,7 @@
   max-width: 612px;
 }
 .read_btn {
-  padding: 11px 35px;
+  padding: 9.5px 40px;
   border-radius: 65px;
   border: 1px solid var(--clr-green);
 }
@@ -417,10 +417,13 @@
 .popup_parent {
   left: -1000%;
   opacity: 0%;
+
 }
 .show_popup {
-  left: 0%;
-  opacity: 100%;
+  left: 0% !important;
+  opacity: 1 !important;
+  z-index: 5
+  ;
 }
 .mw_429 {
   max-width: 429px;
