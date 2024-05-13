@@ -619,6 +619,10 @@
 .mw_513 {
   max-width: 513px !important;
 }
+.mw_1920 {
+  max-width: 1920px;
+  margin: 0 auto;
+}
 /* ---------------------------------------- media quaries ----------------------------------- */
 @media (min-width: 1526px) {
   .slide_container {
