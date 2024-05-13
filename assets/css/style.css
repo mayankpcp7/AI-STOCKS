@@ -4,7 +4,7 @@
 }
 
 .bg_header {
-  background-image: url(../images/png/header-bg.png);
+  background-image: url(../images/webp/header-bg.webp);
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -450,6 +450,162 @@
   opacity: 100%;
   transform: translatey(0%);
 }
+/* ------------------------------------- lottie animation ---------------------------------- */
+.sign_up_btn {
+  padding: 12px 30px;
+  border: 1px solid var(--clr-green) !important;
+}
+.linear_bg {
+  background: var(--clr-green);
+}
+
+.cursior_pointer {
+  cursor: pointer;
+}
+
+.sign_up_btn:hover {
+  background-color: var(--clr-darkgreen) !important;
+}
+
+/* TRADE LEVERAGE SECTION  */
+.trade_leverage_parent {
+  max-width: 617px;
+}
+.phone_bubble {
+  width: 100%;
+  height: 449px;
+  border-radius: 70% 30% 73% 27% / 43% 32% 68% 57%;
+  animation: bubble-radious 7s linear infinite alternate;
+}
+@keyframes bubble-radious {
+  25% {
+    border-radius: 48% 52% 18% 82% / 53% 46% 54% 47%;
+  }
+  50% {
+    border-radius: 20% 80% 18% 82% / 22% 31% 69% 78%;
+  }
+  75% {
+    border-radius: 20% 80% 73% 27% / 22% 59% 41% 78%;
+  }
+  100% {
+    border-radius: 70% 30% 73% 27% / 43% 59% 41% 57%;
+  }
+}
+
+.timeline_dot {
+  width: 18px;
+  height: 18px;
+  border: 1px solid #939393;
+  position: relative;
+  z-index: 2;
+  background-color: white;
+}
+.timeline_dot::before {
+  content: "";
+  position: absolute;
+  top: 50%; /* Adjust as needed */
+  left: 50%;
+  transform: translate(-50%); /* Adjust as needed */
+  border-radius: 50%;
+  width: 20px; /* Adjust as needed */
+  height: 20px; /* Adjust as needed */
+  top: -20px;
+  transition: all 0.3s ease;
+}
+.trade_shares {
+  gap: 25px;
+}
+.trade_shares_btns {
+  padding: 0 33px;
+  width: 519px;
+  border-radius: 500px;
+  height: 60px;
+  border: 1px solid #0000001a;
+  background: linear-gradient(112.83deg, #121f13 0%, #102012 110.84%);
+}
+.trade_timeline {
+  max-width: 478px;
+}
+.trade_timeline::after {
+  content: "";
+  position: absolute;
+  top: 50%; /* Adjust as needed */
+  right: -99px;
+  transform: translateY(-50%); /* Adjust as needed */
+  width: 1px; /* Adjust as needed */
+  height: 60%;
+  transition: all 0.3s ease;
+  background: #939393;
+  z-index: 0;
+}
+.trade_line_first::after {
+  content: "";
+  position: absolute;
+  top: 50%; /* Adjust as needed */
+  right: 8px;
+  width: 1px; /* Adjust as needed */
+  height: 0%;
+  transition: all 0.3s ease;
+  background: var(--clr-green);
+  z-index: 1;
+}
+.trade_line_second::after {
+  content: "";
+  position: absolute;
+  top: 50%; /* Adjust as needed */
+  right: 8px;
+  width: 1px; /* Adjust as needed */
+  height: 0%;
+  background: var(--clr-green);
+  z-index: 1;
+}
+.tradeLineSecondAfter::after {
+  height: 120% !important;
+}
+.trade_timeline_gradient::after {
+  background: var(--clr-green);
+}
+.tradeLinetransitionFirst::after {
+  height: 120% !important;
+  transition: all 6s ease-in;
+}
+.trade_shares_active_btns {
+  background: linear-gradient(112.83deg, #121f13 0%, #102012 110.84%);
+  border: 2px solid var(--clr-green);
+  opacity: 100%;
+  -webkit-text-stroke-width: 0.6px;
+}
+.active_timeline_dot {
+  border-color: transparent;
+  border: 0;
+  position: relative;
+  overflow: hidden;
+}
+.active_timeline_dot::before {
+  background: var(--clr-green);
+  top: 0;
+  z-index: -1; /* Push the pseudo-element behind the content */
+}
+.d_none {
+  display: none;
+}
+.travel_phone_image {
+  max-width: 422px;
+}
+.travel_section_padding {
+  padding-top: 6px;
+  padding-bottom: 104px;
+}
+.phone_ellipse {
+  height: 360px;
+  width: 360px;
+  border-radius: 50%;
+  background-color: var(--clr-green);
+  filter: blur(100px);
+}
+.mw_513 {
+  max-width: 513px !important;
+}
 /* ---------------------------------------- media quaries ----------------------------------- */
 @media (min-width: 1526px) {
   .slide_container {
@@ -459,6 +615,16 @@
   }
 }
 @media (max-width: 1199.98px) {
+  .travel_section_padding {
+    padding-top: 24px;
+    padding-bottom: 20px;
+  }
+  .trade_timeline::after {
+    right: 0;
+  }
+  .trade_shares_btns {
+    width: 410px !important;
+  }
   .cross {
     top: 2%;
     right: 3%;
@@ -494,6 +660,35 @@
   }
 }
 @media (max-width: 991.98px) {
+  .travel_section_padding {
+    padding-top: 64px;
+    padding-bottom: 20px;
+  }
+  .trade_timeline::after {
+    right: -114px !important;
+  }
+  .start_trading_box {
+    max-width: none;
+    padding: 16px;
+  }
+  .trade_shares {
+    row-gap: 15px;
+    column-gap: 12px;
+  }
+
+  .trade_shares_btns {
+    min-width: 566px !important;
+    min-height: 48px;
+    border: 1px solid #0000001a;
+    box-shadow: 0px 0px 7.3px 2px #0000000d;
+  }
+  .phone_bubble {
+    width: 90%;
+    height: 350px;
+  }
+  .trade_timeline::after {
+    right: 24px;
+  }
   .cross {
     top: 2%;
     right: 3%;
@@ -547,6 +742,25 @@
   }
 }
 @media (max-width: 767.98px) {
+  .phone_ellipse {
+    height: 260px;
+    width: 260px;
+   
+  }
+  .trade_timeline::after {
+    right: 25px !important;
+  }
+  .travel_phone_image {
+    padding-top: 19px;
+    padding-bottom: 11px;
+  }
+
+  .trade_shares_btns {
+    min-width: 406px !important;
+  }
+  .trade_timeline::after {
+    right: 85px;
+  }
   #firstName,
   #lastName,
   #popup_phone,
@@ -597,8 +811,46 @@
     line-height: 138.2%;
     border: 1px solid #228b22;
   }
+  .travel_section_padding {
+    padding-top: 60px;
+    padding-bottom: 0px;
+  }
 }
 @media (max-width: 575.98px) {
+  .travel_phone_image {
+    max-width: 327px;
+  }
+  .trade_timeline::after {
+    right: 4px !important;
+  }
+  .travel_section_padding {
+    padding-top: 60px;
+    padding-bottom: 0px;
+  }
+  .rounded_15 {
+    border-radius: 12px;
+  }
+  .rounded_14 {
+    border-radius: 12px;
+  }
+
+  .trade_shares_last_btn {
+    width: 100%;
+    max-width: 327px;
+  }
+  .trade_shares_btns {
+    min-width: 326px !important;
+    max-width: 325px;
+    height: 50px;
+    padding: 12px 12px;
+  }
+  .trade_shares {
+    max-width: 351px;
+    margin: 0 auto;
+  }
+  .trade_timeline::after {
+    right: 21px;
+  }
   .hero_counter_card {
     min-width: 80px;
     min-height: auto !important;
@@ -619,5 +871,34 @@
   }
   .play_icon {
     max-width: 34px;
+  }
+}
+@media (max-width: 450px) {
+  .hero_video {
+    height: 190px;
+    max-width: 327px;
+  }
+  .hero_video2 {
+    height: 190px;
+    max-width: 327px;
+  }
+}
+
+@media (max-width: 375.98px) {
+  .trade_shares {
+    max-width: 294px;
+  }
+  .trade_shares_btns {
+    max-width: 270px !important;
+    min-width: 270px !important;
+    height: 60px;
+  }
+  .trade_timeline::after {
+    right: 38px;
+  }
+}
+@media (max-width: 365.98px) {
+  .trade_shares_btns {
+    width: 100%;
   }
 }

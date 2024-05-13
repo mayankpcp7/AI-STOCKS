@@ -165,6 +165,7 @@
 @media (max-width: 575.98px) {
   :root {
     --fs-md: 15px;
+    --fs-lg: 16px;
     --fs-xl: 17px;
     --fs-4xl: 20px;
     --fs-6xl: 25px;
