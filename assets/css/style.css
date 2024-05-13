@@ -138,7 +138,7 @@
   border-radius: 50%;
   left: -15%;
   top: 10%;
-  animation: ellips 3s ease infinite;
+  animation: ellips 10s ease infinite;
 }
 .hero_right_green_ellipse {
   width: 197px;
@@ -148,7 +148,7 @@
   border-radius: 50%;
   top: 10%;
   right: -15%;
-  animation: ellips 3s ease infinite;
+  animation: ellips 10s ease infinite;
 }
 /* -------------------------------------- hero slider img ---------------------------------- */
 .hero_slider_img {
@@ -227,7 +227,7 @@
   border-radius: 50%;
   left: -21%;
   bottom: -10%;
-  animation: ellips 3s ease infinite;
+  animation: ellips 10s ease infinite;
 }
 .benifit_top_ellipse {
   width: 197px;
@@ -237,7 +237,7 @@
   border-radius: 50%;
   right: -21%;
   top: 15%;
-  animation: ellips 3s ease infinite;
+  animation: ellips 10s ease infinite;
 }
 .benifit_square_vec {
   max-width: 95.05px;
@@ -374,7 +374,7 @@
   border-radius: 50%;
   right: -22%;
   bottom: -30%;
-  animation: ellips 3s ease infinite;
+  animation: ellips 10s ease infinite;
 }
 .uipath_vector {
   max-width: 76px;
@@ -390,7 +390,7 @@
   border-radius: 50%;
   left: -22%;
   top: 40%;
-  animation: ellips 3s ease infinite;
+  animation: ellips 10s ease infinite;
 }
 .arista_vector {
   max-width: 95px;
@@ -406,7 +406,7 @@
   border-radius: 50%;
   right: -22%;
   top: 30%;
-  animation: ellips 3s ease infinite;
+  animation: ellips 10s ease infinite;
 }
 .pop_up {
   background: linear-gradient(112.83deg, #121f13 0%, #102012 110.84%);

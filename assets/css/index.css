@@ -96,7 +96,7 @@
   max-width: 96px;
   bottom: 0;
   left: 0;
-  animation: vector 3s ease infinite;
+  animation: vector 10s ease infinite;
 }
 .green_ellipse_trangle {
   width: 197px;
@@ -106,7 +106,7 @@
   border-radius: 50%;
   left: -5%;
   bottom: -10%;
-  animation: ellips 3s ease infinite;
+  animation: ellips 10s ease infinite;
 }
 /*------------------- average_earnings -------------------*/
 .average_earnings {
@@ -182,7 +182,7 @@
   max-width: 96px;
   bottom: 0;
   right: 3%;
-  animation: vector 3s ease infinite;
+  animation: vector 10s ease infinite;
 }
 .green_ellipse_box {
   width: 197px;
@@ -192,7 +192,7 @@
   border-radius: 50%;
   right: -5%;
   bottom: -10%;
-  animation: ellips 3s ease infinite;
+  animation: ellips 10s ease infinite;
 }
 /*-------------------------- back to top --------------------------*/
 #myBtn {
@@ -242,7 +242,7 @@
   border-radius: 50%;
   left: -16%;
   bottom: -34%;
-  animation: ellips 3s ease infinite;
+  animation: ellips 10s ease infinite;
 }
 .green_ellipse_circle3 {
   width: 197px;
@@ -252,13 +252,13 @@
   border-radius: 50%;
   left: -6%;
   bottom: 9%;
-  animation: ellips 3s ease infinite;
+  animation: ellips 10s ease infinite;
 }
 .circle_shadow {
   max-width: 96px;
   bottom: -6%;
   left: -9%;
-  animation: vector 3s ease infinite;
+  animation: vector 10s ease infinite;
 }
 .green_ellipse_circle2 {
   width: 197px;
@@ -268,13 +268,13 @@
   border-radius: 50%;
   right: -13%;
   top: 11%;
-  animation: ellips 3s ease infinite;
+  animation: ellips 10s ease infinite;
 }
 .circle_shadow2 {
   max-width: 96px;
   top: 25%;
   right: -6%;
-  animation: vector 3s ease infinite;
+  animation: vector 10s ease infinite;
 }
 .faq {
   padding-top: 250px;
@@ -524,7 +524,7 @@
     max-width: 96px;
     bottom: 0;
     right: 3%;
-    animation: vector 3s ease infinite;
+    animation: vector 10s ease infinite;
     width: 70px;
   }
   .green_ellipse_circle {
@@ -535,7 +535,7 @@
     border-radius: 50%;
     left: -16%;
     bottom: -34%;
-    animation: ellips 3s ease infinite;
+    animation: ellips 10s ease infinite;
   }
   .green_ellipse_circle3 {
     width: 197px;
@@ -545,13 +545,13 @@
     border-radius: 50%;
     left: 6%;
     bottom: -50%;
-    animation: ellips 3s ease infinite;
+    animation: ellips 10s ease infinite;
   }
   .circle_shadow {
     max-width: 96px;
     bottom: -40%;
     left: 9%;
-    animation: vector 3s ease infinite;
+    animation: vector 10s ease infinite;
     width: 70px;
   }
   .green_ellipse_circle2 {
@@ -562,20 +562,20 @@
     border-radius: 50%;
     right: 3%;
     top: -15%;
-    animation: ellips 3s ease infinite;
+    animation: ellips 10s ease infinite;
   }
   .circle_shadow2 {
     max-width: 96px;
     top: -10%;
     right: 5%;
-    animation: vector 3s ease infinite;
+    animation: vector 10s ease infinite;
     width: 70px;
   }
   .trangle_shadow {
     max-width: 96px;
     bottom: -30%;
     left: 10%;
-    animation: vector 3s ease infinite;
+    animation: vector 10s ease infinite;
     width: 70px;
   }
   .green_ellipse_trangle {
@@ -586,7 +586,7 @@
     border-radius: 50%;
     left: 5%;
     bottom: -40%;
-    animation: ellips 3s ease infinite;
+    animation: ellips 10s ease infinite;
   }
   .how_it_works {
     padding-top: 100px;
