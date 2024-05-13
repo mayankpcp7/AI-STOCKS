@@ -417,13 +417,11 @@
 .popup_parent {
   left: -1000%;
   opacity: 0%;
-
 }
 .show_popup {
   left: 0% !important;
   opacity: 1 !important;
-  z-index: 5
-  ;
+  z-index: 5;
 }
 .mw_429 {
   max-width: 429px;
@@ -835,18 +833,17 @@
 }
 @media (max-width: 575.98px) {
   .read_btn {
-  padding: 8px 25px;
-  
-}
+    padding: 8px 25px;
+  }
   .palantir_logo {
-  max-width: 170px !important;
-}
-.croed_logo {
-  max-width: 170px;
-}
-.uipath_logo {
-  max-width: 170px;
-}
+    max-width: 170px !important;
+  }
+  .croed_logo {
+    max-width: 170px;
+  }
+  .uipath_logo {
+    max-width: 170px;
+  }
   .growt_logo {
     max-width: 170px;
   }
