@@ -645,7 +645,7 @@
   .ai_stocks_card {
     min-width: 377px !important;
     max-width: 377px;
-    min-height: auto;
+    min-height: none;
   }
   .ai_stocks_card {
     min-width: 308px !important;
@@ -742,10 +742,12 @@
   }
 }
 @media (max-width: 767.98px) {
+  .ai_stocks_card {
+    min-height: auto;
+  }
   .phone_ellipse {
     height: 260px;
     width: 260px;
-   
   }
   .trade_timeline::after {
     right: 25px !important;
@@ -817,6 +819,22 @@
   }
 }
 @media (max-width: 575.98px) {
+  .read_btn {
+  padding: 8px 25px;
+  
+}
+  .palantir_logo {
+  max-width: 170px !important;
+}
+.croed_logo {
+  max-width: 170px;
+}
+.uipath_logo {
+  max-width: 170px;
+}
+  .growt_logo {
+    max-width: 170px;
+  }
   .travel_phone_image {
     max-width: 327px;
   }
@@ -861,7 +879,10 @@
   }
 
   .leverged_card {
-    max-width: 350px;
+    max-width: 320px;
+  }
+  .-mt_20 {
+    margin-top: -120px !important;
   }
   .hero_mobile {
     max-width: 310px;
