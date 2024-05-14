@@ -429,7 +429,7 @@
   opacity: 1 !important;
   z-index: 5;
 }
-.popup_overlay {
+/* .popup_overlay {
     display: none;
     position: fixed;
     top: 0;
@@ -438,7 +438,7 @@
     height: 100%;
     background: rgba(0, 0, 0, 0.5);
     z-index: 9998;
-}
+} */
 
 .show_popup ~ .popup_overlay {
     display: block;
