@@ -72,9 +72,9 @@
                 <span class="hero_right_green_ellipse position-absolute"></span>
                 <span class="hero_left_green_ellipse position-absolute  hero_right_ellipse"></span>
                 <h1 class="text-white ff_opensans mt-md-2 max_w_520 text-center fw-normal fs_8xl main_heading mx-auto">
-                    The 
+                    The
                     <span class="fw-bold clr_green lh_120"> Top 7
-                       </span> Fastest-Growing <span class="fw-bold clr_green lh_120"> AI Stocks!</span>
+                    </span> Fastest-Growing <span class="fw-bold clr_green lh_120"> AI Stocks!</span>
                 </h1>
                 <p
                     class="text-white ff_opensans fw-normal pb-sm-1 mb-sm-3 lh_160 fs_sm major_ai opacity_80 mx-auto mt-md-2 pt-sm-4 pt-1 text-center">
@@ -101,11 +101,11 @@
                             extremely high
                             demand for
                             media coverage, registration closes in</p>
-                        <div class="d-lg-flex align-items-center mb-3 gap_20 d-none pt-sm-4 pt-3 time_counter mx-auto">
+                        <div class="d-lg-flex align-items-center mb-3 gap_20 d-none pt-sm-4 pt-3 time_counter mx-auto counter_box">
                             <div class="hero_counter_card d-flex flex-column align-items-center" width="128">
                                 <div class="position-relative my-3 pt-1">
                                     <p class="time_numbers mb-0 position-relative fw-bold text-white ff_opensans lh_145 fs_8xl"
-                                        id="days">00</p>
+                                        id="desktopDays">00</p>
                                     <span class="counter_line position-absolute"></span>
                                 </div>
                                 <p class="text-white fw-bold ff_opensans lh_145 fs_md px-lg-4 px-sm-2 mx-1">Days</p>
@@ -113,7 +113,7 @@
                             <div class="hero_counter_card d-flex flex-column align-items-center">
                                 <div class="position-relative my-3 pt-1">
                                     <p class="time_numbers mb-0 position-relative fw-bold text-white ff_opensans lh_145 fs_8xl"
-                                        id="hours">01
+                                        id="desktopHours">01
                                     </p>
                                     <span class="counter_line position-absolute"></span>
                                 </div>
@@ -122,7 +122,7 @@
                             <div class="hero_counter_card d-flex flex-column align-items-center">
                                 <div class="position-relative my-3 pt-1">
                                     <p class="time_numbers mb-0 position-relative fw-bold text-white ff_opensans lh_145 fs_8xl"
-                                        id="minutes">05
+                                        id="desktopMinutes">05
                                     </p>
                                     <span class="counter_line position-absolute"></span>
                                 </div>
@@ -131,7 +131,7 @@
                             <div class="hero_counter_card d-flex flex-column align-items-center">
                                 <div class="position-relative my-3 pt-1">
                                     <p class="time_numbers mb-0 position-relative fw-bold text-white ff_opensans lh_145 fs_8xl"
-                                        id="seconds">59
+                                        id="desktopSeconds">59
                                     </p>
                                     <span class="counter_line position-absolute"></span>
                                 </div>
@@ -182,9 +182,9 @@
                             </form>
                             <p class="text-center fw-bold ff_opensans clr_richblack fs_xsm pt-3 me-3 me-lg-0">3 Spots
                                 Left</p>
-                                <div id="doneMessage" class="alert">
-                                    <p>Good job!</p>
-                                </div>
+                            <div id="doneMessage" class="alert">
+                                <p>Good job!</p>
+                            </div>
                         </div>
                     </div>
                     <p
@@ -194,10 +194,10 @@
                         demand for
                         media coverage, registration closes in</p>
                     <div class="d-flex d-lg-none align-items-center mb-3 gap_20 pt-sm-4 pt-3 time_counter mx-auto">
-                        <div class="hero_counter_card d-flex flex-column align-items-center">
+                        <div class="hero_counter_card d-flex flex-column align-items-center" id="countdown">
                             <div class="position-relative my-3 pt-1">
                                 <p class="time_numbers mb-0 position-relative fw-bold text-white ff_opensans lh_145 fs_8xl"
-                                    id="days">00</p>
+                                    id="mobileDays">00</p>
                                 <span class="counter_line position-absolute"></span>
                             </div>
                             <p class="text-white fw-bold ff_opensans lh_145 fs_md px-lg-4 px-sm-2 mx-1">Days</p>
@@ -205,7 +205,7 @@
                         <div class="hero_counter_card d-flex flex-column align-items-center">
                             <div class="position-relative my-3 pt-1">
                                 <p class="time_numbers mb-0 position-relative fw-bold text-white ff_opensans lh_145 fs_8xl"
-                                    id="hours">01
+                                    id="mobileHours">01
                                 </p>
                                 <span class="counter_line position-absolute"></span>
                             </div>
@@ -214,7 +214,7 @@
                         <div class="hero_counter_card d-flex flex-column align-items-center">
                             <div class="position-relative my-3 pt-1">
                                 <p class="time_numbers mb-0 position-relative fw-bold text-white ff_opensans lh_145 fs_8xl"
-                                    id="minutes">05
+                                   id="mobileMintus">05
                                 </p>
                                 <span class="counter_line position-absolute"></span>
                             </div>
@@ -223,7 +223,7 @@
                         <div class="hero_counter_card d-flex flex-column align-items-center">
                             <div class="position-relative my-3 pt-1">
                                 <p class="time_numbers mb-0 position-relative fw-bold text-white ff_opensans lh_145 fs_8xl"
-                                    id="seconds">59
+                                   id="mobileSeconds" >59
                                 </p>
                                 <span class="counter_line position-absolute"></span>
                             </div>
@@ -388,8 +388,7 @@
         <!-- ---------------------------------------------------Trade long and shorts ---------------------------- -->
         <section>
             <div class="custom_container container px-4 travel_section_padding">
-                <div
-                    class="row align-items-center gap-sm-4 gap-3 gap-lg-0  justify-content-center flex-wrap-reverse">
+                <div class="row align-items-center gap-sm-4 gap-3 gap-lg-0  justify-content-center flex-wrap-reverse">
                     <div class="col-lg-8 col-8 mw_525 pe_xl_68 position-relative travel_phone_image">
                         <lottie-player id="company" src="./assets/json/phone-1.json" speed=".55"
                             class="position-relative z-2 mx-auto w-100 px-4 h-auto px-md-5 mb-3 mb-md-0"
@@ -569,9 +568,9 @@
                         <img class="ai_heading_lines w-100 me-lg-5 me-lg-5 me-lg-3 d-sm-block d-none "
                             src="./assets/images/webp/ai-before.webp" alt="ai-before">
                         <h2 class="ff_opensans fs_7xl fw-light text-center text-white lh_125 px-xl-5 px-xl-4 px-3">TOP
-                            7 <span class="clr_green"> 
+                            7 <span class="clr_green">
                                 Ai Stocks
-                            </span> 
+                            </span>
                         </h2>
                         <img class="ai_heading_lines w-100 ms-lg-5 ms-lg-3 d-sm-block d-none"
                             src="./assets/images/webp/ai-after.webp" alt="ai-before">
@@ -1548,7 +1547,7 @@
                     <div class="m-0 position-relative">
                         <h2
                             class="ff_opensans fw-light text-lg-start text-center fs_7xl text-white mb-0 lh_125 max_w_548">
-                          <span class="clr_green"> Average Weekly Earnings</span> of a Registered User From a $250 
+                            <span class="clr_green"> Average Weekly Earnings</span> of a Registered User From a $250
                             <span class="clr_green">investment = $521</span>
                         </h2>
                         <div class="d-flex justify-content-lg-start justify-content-center commun_btn_mt">
@@ -1853,7 +1852,7 @@
     </script>
 
     <!----------- hero counter ------->
-    <script>
+    <!-- <script>
         var seconds = 59;
         var x = setInterval(function () {
             seconds--;
@@ -1876,31 +1875,78 @@
                 seconds = 59;
             }
         }, 1000);
-    </script>
-    <script>
-        var seconds = 59;
-        var x = setInterval(function () {
-            seconds--;
-            document.getElementById("seconds").innerHTML = seconds < 10 ? "0" + seconds : seconds;
-            if (seconds === 0) {
-                if (minutes === 0) {
-                    if (hours === 0) {
-                        clearInterval(x);
-                        document.getElementById("days").innerHTML = "00";
-                        document.getElementById("hours").innerHTML = "00";
-                        document.getElementById("minutes").innerHTML = "00";
-                        document.getElementById("seconds").innerHTML = "00";
-                        return;
-                    }
-                    hours--;
-                    minutes = 59;
-                } else {
-                    minutes--;
+    </script> -->
+
+   <script>
+    function startCountdown(targetDate) {
+            // Function to update the countdown
+            const updateCountdown = () => {
+                // Get the current date and time
+                const currentDate = new Date().getTime();
+                // Calculate the remaining time
+                let remainingTime = targetDate - currentDate;
+                // If the remaining time is less than or equal to 0, reset the countdown for 1 hour
+                if (remainingTime <= 0) {
+                    targetDate = new Date(currentDate + 3600000).getTime(); // 3600000 milliseconds = 1 hour
+                    remainingTime = targetDate - currentDate;
+                    // Store the new target date in local storage
+                    localStorage.setItem("targetDate", targetDate);
                 }
-                seconds = 59;
-            }
-        }, 1000);
-    </script>
+                // Calculate days, hours, minutes, and seconds
+                const days = Math.floor(remainingTime / (1000 * 60 * 60 * 24));
+                const hours = Math.floor(
+                    (remainingTime % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60)
+                );
+                const minutes = Math.floor(
+                    (remainingTime % (1000 * 60 * 60)) / (1000 * 60)
+                );
+                const seconds = Math.floor((remainingTime % (1000 * 60)) / 1000);
+                // Update the HTML elements with the remaining time
+                document.getElementById("desktopDays").textContent = days
+                    .toString()
+                    .padStart(2, "0");
+                document.getElementById("desktopHours").textContent = hours
+                    .toString()
+                    .padStart(2, "0");
+                document.getElementById("desktopMinutes").textContent = minutes
+                    .toString()
+                    .padStart(2, "0");
+                document.getElementById("desktopSeconds").textContent = seconds
+                    .toString()
+                    .padStart(2, "0");
+                document.getElementById("mobileDays").textContent = days
+                    .toString()
+                    .padStart(2, "0");
+                document.getElementById("mobileHours").textContent = hours
+                    .toString()
+                    .padStart(2, "0");
+                document.getElementById("mobileMintus").textContent = minutes
+                    .toString()
+                    .padStart(2, "0");
+                document.getElementById("mobileSeconds").textContent = seconds
+                    .toString()
+                    .padStart(2, "0");
+            };
+            // Update the countdown immediately
+            updateCountdown();
+            // Update the countdown every second
+            const timer = setInterval(updateCountdown, 1000);
+        }
+        // Example usage
+        let targetDate = localStorage.getItem("targetDate");
+        if (!targetDate) {
+            // If target date is not stored, set it to the next hour
+            targetDate = new Date();
+            targetDate.setHours(targetDate.getHours() + 1);
+            targetDate.setMinutes(0);
+            targetDate.setSeconds(0);
+            localStorage.setItem("targetDate", targetDate.getTime());
+        } else {
+            // If target date is stored, parse it from string to number
+            targetDate = parseInt(targetDate);
+        }
+        startCountdown(targetDate);
+   </script>
     <!-- 7 ai stocks pop up  -->
     <script>
         function openPopup(popupId) {
@@ -1999,6 +2045,7 @@
         document.getElementById("currentYear").innerHTML =
             new Date().getFullYear();
     </script>
+
 
     <!-- -bootstarp js -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
