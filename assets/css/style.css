@@ -113,7 +113,7 @@
   outline: none;
 }
 .alert {
-  display: none ;
+  display: none;
   position: fixed !important;
   background-color: #ffffff !important;
   padding: 20px;
@@ -446,27 +446,7 @@
   width: 100%;
   z-index: 5;
 }
-/* .popup_overlay {
-    display: none;
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: rgba(0, 0, 0, 0.5);
-    z-index: 9998;
-} */
 
-/* .popup_parent {
-    display: none;
-    position: fixed;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    z-index: 9999;
-    border-radius: 8px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
-} */
 .live_tag {
   background: #c20000;
   padding: 5.5px 8px;
@@ -676,6 +656,9 @@
   }
 }
 @media (max-width: 1199.98px) {
+  .ws_nowrap {
+    white-space: wrap !important;
+  }
   .travel_section_padding {
     padding-top: 24px;
     padding-bottom: 20px;
