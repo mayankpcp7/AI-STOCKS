@@ -109,6 +109,9 @@
   animation: ellips 15s linear infinite;
 }
 /*------------------- average_earnings -------------------*/
+.mw_571px {
+  max-width: 571px !important;
+}
 .average_earnings {
   padding: 30px 0px;
 }
@@ -130,8 +133,8 @@
 .social_translate {
   transform: translateX(-16%);
 }
-.max_w_548 {
-  max-width: 548px;
+.max_w_602 {
+  max-width: 602px;
 }
 .commun_btn {
   padding: 16px 35px;
