@@ -41,7 +41,10 @@
 
 </head>
 
-<body>
+<body class="position-relative">
+    <div id="doneMessage" class="alert">
+        <p>Good job!</p>
+    </div>
     <button onclick="topFunction()" id="myBtn"><svg width="24" height="24" viewBox="0 0 24 24" fill="none"
             xmlns="http://www.w3.org/2000/svg">
             <g clip-path="url(#clip0_559_459)">
@@ -103,39 +106,39 @@
                             media coverage, registration closes in</p>
                         <div class="d-lg-flex align-items-center mb-3 gap_20 d-none pt-sm-4 pt-3 time_counter mx-auto counter_box">
                             <div class="hero_counter_card d-flex flex-column align-items-center" width="128">
-                                <div class="position-relative my-3 pt-1">
+                                <div class="position-relative mt-3 pt-1">
                                     <p class="time_numbers mb-0 position-relative fw-bold text-white ff_opensans lh_145 fs_8xl"
                                         id="desktopDays">00</p>
                                     <span class="counter_line position-absolute"></span>
                                 </div>
-                                <p class="text-white fw-bold ff_opensans lh_145 fs_md px-lg-4 px-sm-2 mx-1">Days</p>
+                                <p class="text-white fw-bold ff_opensans mb-0 mt-4 lh_145 fs_md px-lg-4 px-sm-2 mx-1">Days</p>
                             </div>
                             <div class="hero_counter_card d-flex flex-column align-items-center">
-                                <div class="position-relative my-3 pt-1">
+                                <div class="position-relative mt-3 pt-1">
                                     <p class="time_numbers mb-0 position-relative fw-bold text-white ff_opensans lh_145 fs_8xl"
                                         id="desktopHours">01
                                     </p>
                                     <span class="counter_line position-absolute"></span>
                                 </div>
-                                <p class="text-white fw-bold ff_opensans lh_145 fs_md px-lg-4 px-sm-2 mx-1">Hours</p>
+                                <p class="text-white fw-bold ff_opensans mb-0 mt-4 lh_145 fs_md px-lg-4 px-sm-2 mx-1">Hours</p>
                             </div>
                             <div class="hero_counter_card d-flex flex-column align-items-center">
-                                <div class="position-relative my-3 pt-1">
+                                <div class="position-relative mt-3 pt-1">
                                     <p class="time_numbers mb-0 position-relative fw-bold text-white ff_opensans lh_145 fs_8xl"
                                         id="desktopMinutes">05
                                     </p>
                                     <span class="counter_line position-absolute"></span>
                                 </div>
-                                <p class="text-white fw-bold ff_opensans lh_145 fs_md px-lg-4 px-sm-2 mx-1">Minutes</p>
+                                <p class="text-white fw-bold ff_opensans mb-0 mt-4 lh_145 fs_md px-lg-4 px-sm-2 mx-1">Minutes</p>
                             </div>
                             <div class="hero_counter_card d-flex flex-column align-items-center">
-                                <div class="position-relative my-3 pt-1">
+                                <div class="position-relative mt-3 pt-1">
                                     <p class="time_numbers mb-0 position-relative fw-bold text-white ff_opensans lh_145 fs_8xl"
                                         id="desktopSeconds">59
                                     </p>
                                     <span class="counter_line position-absolute"></span>
                                 </div>
-                                <p class="text-white fw-bold ff_opensans lh_145 fs_md px-lg-4 px-sm-2 mx-1">Seconds</p>
+                                <p class="text-white fw-bold ff_opensans mb-0 mt-4 lh_145 fs_md px-lg-4 px-sm-2 mx-1">Seconds</p>
                             </div>
                         </div>
                     </div>
@@ -182,13 +185,11 @@
                             </form>
                             <p class="text-center fw-bold ff_opensans clr_richblack fs_xsm pt-3 me-3 me-lg-0">3 Spots
                                 Left</p>
-                            <div id="doneMessage" class="alert">
-                                <p>Good job!</p>
-                            </div>
+                          
                         </div>
                     </div>
                     <p
-                        class="mt-1 pt-3 px-1 text-white ff_opensans text-center d-lg-none mw_400 fw-bold text-white fs_md">
+                        class="mt-1 pt-3 text-white ff_opensans text-center d-lg-none mw_400 fw-bold text-white fs_md">
                         Due to
                         extremely high
                         demand for
@@ -200,7 +201,7 @@
                                     id="mobileDays">00</p>
                                 <span class="counter_line position-absolute"></span>
                             </div>
-                            <p class="text-white fw-bold ff_opensans lh_145 fs_md px-lg-4 px-sm-2 mx-1">Days</p>
+                            <p class="text-white fw-bold ff_opensans mb-0 mt-4 lh_145 fs_md px-lg-4 px-sm-2 mx-1">Days</p>
                         </div>
                         <div class="hero_counter_card d-flex flex-column align-items-center">
                             <div class="position-relative my-3 pt-1">
@@ -209,7 +210,7 @@
                                 </p>
                                 <span class="counter_line position-absolute"></span>
                             </div>
-                            <p class="text-white fw-bold ff_opensans lh_145 fs_md px-lg-4 px-sm-2 mx-1">Hours</p>
+                            <p class="text-white fw-bold ff_opensans mb-0 mt-4 lh_145 fs_md px-lg-4 px-sm-2 mx-1">Hours</p>
                         </div>
                         <div class="hero_counter_card d-flex flex-column align-items-center">
                             <div class="position-relative my-3 pt-1">
@@ -218,7 +219,7 @@
                                 </p>
                                 <span class="counter_line position-absolute"></span>
                             </div>
-                            <p class="text-white fw-bold ff_opensans lh_145 fs_md px-lg-4 px-sm-2 mx-1">Minutes</p>
+                            <p class="text-white fw-bold ff_opensans mb-0 mt-4 lh_145 fs_md px-lg-4 px-sm-2 mx-1">Minutes</p>
                         </div>
                         <div class="hero_counter_card d-flex flex-column align-items-center">
                             <div class="position-relative my-3 pt-1">
@@ -227,7 +228,7 @@
                                 </p>
                                 <span class="counter_line position-absolute"></span>
                             </div>
-                            <p class="text-white fw-bold ff_opensans lh_145 fs_md px-lg-4 px-sm-2 mx-1">Seconds</p>
+                            <p class="text-white fw-bold ff_opensans mb-0 mt-4 lh_145 fs_md px-lg-4 px-sm-2 mx-1">Seconds</p>
                         </div>
                     </div>
                 </div>
@@ -489,7 +490,7 @@
                                 </div>
                             </div>
                             <div class="d-flex flex-column leverged_card -mt_20 position-relative z-2">
-                                <p class="clr_green fw-bold ff_opensans fs_xl lh_125 mb-0">Non - Leveraged Accounts</p>
+                                <p class="clr_green fw-bold ff_opensans fs_xl lh_125 mb-0">Non - Leverage Accounts</p>
                                 <div class="d-flex justify-content-between align-items-start pt-3">
                                     <p class="lh_160 ff_opensans text-white opacity_70 mb-0">John invested</p>
                                     <p class="fw-bold fs_sm ff_opensans lh_160 text-white mb-0">$250</p>
@@ -527,7 +528,7 @@
 
                             </div>
                             <div class="d-flex flex-column leverged_card position-relative z-2">
-                                <p class="clr_green fw-bold fs_xl ff_opensans lh_125 mb-0">Leveraged Accounts</p>
+                                <p class="clr_green fw-bold fs_xl ff_opensans lh_125 mb-0">Leverage Accounts</p>
                                 <div class="d-flex justify-content-between align-items-start pt-3">
                                     <p class="lh_160 ff_opensans text-white opacity_70 mb-0">Mike invested</p>
                                     <p class="fw-bold fs_sm lh_160 ff_opensans text-white mb-0">$250</p>
@@ -575,100 +576,81 @@
                         <img class="ai_heading_lines w-100 ms-lg-5 ms-lg-3 d-sm-block d-none"
                             src="./assets/images/webp/ai-after.webp" alt="ai-before">
                     </div>
+                <div
+                    class="d-flex flex-md-row flex-column position-relative align-items-center align-items-sm-start mt-5 pt-lg-5 gap_48">
+                    <!-- Existing content -->
                     <div
-                        class="d-flex flex-md-row flex-column position-relative align-items-center align-items-sm-start mt-5 pt-lg-5 gap_48">
+                        class="ai_stocks_card h-100 py-lg-5 pb-md-4 me-xl-4 ai_stocks_bg d-flex align-items-center justify-content-center">
+                        <img class="nvindia_logo my-xl-5 my-md-3" src="./assets/images/png/nvidia-logo.png" alt="nvidia-logo">
+                    </div>
+                    <div class="d-flex flex-column ai_stocks_bg p-md-4 p-2 w-100 justify-content-start align-items-start">
+                        <p class="lh_130 fs_xl ff_opensans fw-bold text-white ps-lg-2 pt-lg-2 pb-0">AI GPU 1 year 228% Growth </p>
+                        <p class="text-white opacity_80 lh_160 fw-normal fs_sm nvidia_corporation ff_opensans ps-lg-2">
+                            NVIDIA Corporation, a powerhouse in GPU technology and AI innovation, offers investors
+                            compelling opportunities. With dominance in gaming and data center markets, NVIDIA stands poised for growth.
+                            Diversification efforts into AI, autonomous vehicles, and strategic acquisitions further bolster its
+                            potential.
+                            As a leader in technology and with a strong financial track record, NVIDIA remains a top choice for savvy
+                            investors.
+                        </p>
+                        <button onclick="openPopup('nvidia_popup')"
+                            class="text-white bg_green read_btn fs_lg transition_200 ms-lg-2 mt-md-4 mt-sm-3 mt-2">Read more</button>
+                    </div>
+                    <!-- Popup structure -->
+                    <div id="popup_overlay" class="popup_overlay"></div>
+                    <div class="popup_parent position-absolute" id="nvidia_popup">
                         <div
-                            class="ai_stocks_card h-100 py-lg-5 pb-md-4 me-xl-4 ai_stocks_bg d-flex align-items-center  justify-content-center">
-                            <img class="nvindia_logo my-xl-5 my-md-3" src="./assets/images/png/nvidia-logo.png"
-                                alt="nvidia-logo">
-                        </div>
-                        <div
-                            class="d-flex flex-column ai_stocks_bg p-md-4 p-2 w-100  justify-content-start align-items-start">
-                            <p class="lh_130 fs_xl ff_opensans fw-bold text-white ps-lg-2 pt-lg-2 pb-0">AI GPU 1 year
-                                228%
-                                Growth </p>
-                            <p
-                                class="text-white opacity_80 lh_160 fw-normal fs_sm nvidia_corporation ff_opensans ps-lg-2">
-                                NVIDIA
-                                Corporation,
-                                a powerhouse in GPU
-                                technology and AI innovation, offers investors
-                                compelling opportunities. With
-                                dominance in gaming and data center markets, NVIDIA stands poised for growth.
-                                Diversification efforts into AI,
-                                autonomous vehicles, and strategic acquisitions further bolster its potential. As a
-                                leader
-                                in technology and with a
-                                strong financial track record, NVIDIA remains a top choice for savvy investors.</p>
-                            <button onclick="openPopup('nvidia_popup')"
-                                class="text-white bg_green read_btn fs_lg transition_200 ms-lg-2 mt-md-4 mt-sm-3 mt-2">Read
-                                more</button>
-                        </div>
-                        <div class="d-flex flex-md-row gap-3 gap-md-0 flex-column-reverse align-items-md-center popup_parent position-absolute "
-                            id="nvidia_popup">
-                            <div
-                                class="d-flex flex-md-row gap-3 gap-md-0 flex-column-reverse align-items-md-center pop_up position-relative overflow-hidden z-2">
-                                <img class="position-absolute popup_bottom_ellips bottom-0 start-0 pointer_none"
-                                    src="./assets/images/png/popup_bottom_ellipse.png" alt="ellipse">
-                                <img class="position-absolute popup_top_ellipse pointer_none"
-                                    src="./assets/images/png/popup_top_ellipse.png" alt="ellipse">
-                                <img class="cross position-absolute cursor_pointer" onclick="openPopup('nvidia_popup')"
-                                    src="./assets/images/svg/popup_cross.svg" alt="cross">
-                                <div class="mw_429">
-                                    <img class="nvindia_logo" src="./assets/images/png/nvidia-logo.png"
-                                        alt="nvidia-logo">
-                                    <p class="ff_opensans fs_4xl fw-bold lh_140 text-white pt-4">AI GPU 1 year 228%
-                                        Growth
-                                    </p>
-                                    <p class="text-white opacity_80 fw-normal fs_sm">NVIDIA Corporation, a powerhouse in
-                                        GPU
-                                        technology and AI innovation, offers investors
-                                        compelling opportunities. With
-                                        dominance in gaming and data center markets, NVIDIA stands poised for growth.
-                                        Diversification efforts into AI,
-                                        autonomous vehicles, and strategic acquisitions further bolster its potential.
-                                        As a
-                                        leader
-                                        in technology and with a
-                                        strong financial track record, NVIDIA remains a top choice for savvy investors.
-                                    </p>
-                                </div>
-                                <div
-                                    class="d-flex flex-column bg-white ms-lg-5 ms-md-3 popup_form w-100 position-relative z-2">
-                                    <p class="fw-bold fs_xl text-black">Start Trading with AI Stocks!</p>
-                                    <form action="/submit" method="post" onsubmit="clearForm(event)">
-                                        <div class="d-flex align-items-start pt-lg-4">
-                                            <div>
-                                                <label class="ff_opensans text-black fs_sm mb-2" for="firstName">First
-                                                    Name</label>
-                                                <input height="52px" class="text-black  border-none" id="firstName"
-                                                    name="firstName" required>
-                                            </div>
-                                            <div class="ps-2">
-                                                <label class="ff_opensans text-black fs_sm mb-2" for="lastName">Last
-                                                    Name</label>
-                                                <input height="52px" class="text-black border-none" id="lastName"
-                                                    name="lastName" required>
-                                            </div>
+                            class="d-flex flex-md-row gap-3 gap-md-0 flex-column-reverse align-items-md-center pop_up position-relative overflow-hidden z-2">
+                            <img class="position-absolute popup_bottom_ellips bottom-0 start-0 pointer_none"
+                                src="./assets/images/png/popup_bottom_ellipse.png" alt="ellipse">
+                            <img class="position-absolute popup_top_ellipse pointer_none"
+                                src="./assets/images/png/popup_top_ellipse.png" alt="ellipse">
+                            <img class="cross position-absolute cursor_pointer" onclick="openPopup('nvidia_popup')"
+                                src="./assets/images/svg/popup_cross.svg" alt="cross">
+                            <div class="mw_429">
+                                <img class="nvindia_logo" src="./assets/images/png/nvidia-logo.png" alt="nvidia-logo">
+                                <p class="ff_opensans fs_4xl fw-bold lh_140 text-white pt-4">AI GPU 1 year 228% Growth</p>
+                                <p class="text-white opacity_80 fw-normal fs_sm">NVIDIA Corporation, a powerhouse in GPU technology and
+                                    AI innovation, offers investors
+                                    compelling opportunities. With dominance in gaming and data center markets, NVIDIA stands poised for
+                                    growth.
+                                    Diversification efforts into AI, autonomous vehicles, and strategic acquisitions further bolster its
+                                    potential.
+                                    As a leader in technology and with a strong financial track record, NVIDIA remains a top choice for
+                                    savvy investors.
+                                </p>
+                            </div>
+                            <div class="d-flex flex-column bg-white ms-lg-5 ms-md-3 popup_form w-100 position-relative z-2">
+                                <p class="fw-bold fs_xl text-black">Start Trading with AI Stocks!</p>
+                                <form action="/submit" method="post" onsubmit="clearForm(event)">
+                                    <div class="d-flex align-items-start pt-lg-4">
+                                        <div>
+                                            <label class="ff_opensans text-black fs_sm mb-2" for="firstName">First Name</label>
+                                            <input height="52px" class="text-black border-none" id="firstName" name="firstName"
+                                                required>
                                         </div>
-                                        <div class="mt-2 d-flex flex-column">
-                                            <label class="ff_opensans text-black fs_sm mb-2" for="email">Email</label>
-                                            <input height="52px" type="email" id="popup_email" name="email" required>
+                                        <div class="ps-2">
+                                            <label class="ff_opensans text-black fs_sm mb-2" for="lastName">Last Name</label>
+                                            <input height="52px" class="text-black border-none" id="lastName" name="lastName" required>
                                         </div>
-                                        <div class="mt-2 d-flex flex-column">
-                                            <label class="ff_opensans text-black fs_sm mb-2" for="phone">Phone
-                                                Number</label>
-                                            <input height="52px" type="phone" id="popup_phone" name="phone" required>
-                                        </div>
-                                        <button type="submit"
-                                            class="bg_green w-100 ff_opensans fw-bold text-white border-0 mx-auto mt-md-5 mt-4 start_trading_btn">
-                                            Start Trading With [Nvidia]
-                                        </button>
-                                    </form>
-                                </div>
+                                    </div>
+                                    <div class="mt-2 d-flex flex-column">
+                                        <label class="ff_opensans text-black fs_sm mb-2" for="email">Email</label>
+                                        <input height="52px" type="email" id="popup_email" name="email" required>
+                                    </div>
+                                    <div class="mt-2 d-flex flex-column">
+                                        <label class="ff_opensans text-black fs_sm mb-2" for="phone">Phone Number</label>
+                                        <input height="52px" type="phone" id="popup_phone" name="phone" required>
+                                    </div>
+                                    <button type="submit"
+                                        class="bg_green w-100 ff_opensans fw-bold text-white border-0 mx-auto mt-md-5 mt-4 start_trading_btn">Start
+                                        Trading With [Nvidia]</button>
+                                </form>
                             </div>
                         </div>
                     </div>
+                </div>
+
                     <div class="position-relative d-flex flex-md-row flex-column-reverse align-items-center align-items-sm-start mt-5 pt-lg-4
                             gap_48">
                         <div
@@ -1852,31 +1834,6 @@
     </script>
 
     <!----------- hero counter ------->
-    <!-- <script>
-        var seconds = 59;
-        var x = setInterval(function () {
-            seconds--;
-            document.getElementById("seconds").innerHTML = seconds < 10 ? "0" + seconds : seconds;
-            if (seconds === 0) {
-                if (minutes === 0) {
-                    if (hours === 0) {
-                        clearInterval(x);
-                        document.getElementById("days").innerHTML = "00";
-                        document.getElementById("hours").innerHTML = "00";
-                        document.getElementById("minutes").innerHTML = "00";
-                        document.getElementById("seconds").innerHTML = "00";
-                        return;
-                    }
-                    hours--;
-                    minutes = 59;
-                } else {
-                    minutes--;
-                }
-                seconds = 59;
-            }
-        }, 1000);
-    </script> -->
-
    <script>
     function startCountdown(targetDate) {
             // Function to update the countdown
@@ -1949,11 +1906,13 @@
    </script>
     <!-- 7 ai stocks pop up  -->
     <script>
-        function openPopup(popupId) {
+      function openPopup(popupId) {
             var popup = document.getElementById(popupId);
+            var overlay = document.getElementById('popup_overlay');
             var body = document.body;
-            if (popup) {
+            if (popup && overlay) {
                 popup.classList.toggle("show_popup");
+                overlay.classList.toggle("show_popup");
                 console.log("Popup with ID " + popupId + " toggled");
                 if (popup.classList.contains("show_popup")) {
                     body.style.overflow = "hidden";
@@ -1961,7 +1920,7 @@
                     body.style.overflow = "";
                 }
             } else {
-                console.error("Element with ID '" + popupId + "' not found.");
+                console.error("Element with ID '" + popupId + "' or overlay not found.");
             }
         }
     </script>
