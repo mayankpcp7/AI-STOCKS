@@ -419,6 +419,7 @@
   border: 1px solid rgba(255, 255, 255, 0.145);
   border-radius: 25px;
   padding: 79px 60px;
+  max-width: 1140px;
 }
 .popup_parent {
   display: none !important;
@@ -432,11 +433,12 @@
 .show_popup {
   display: flex !important;
   overflow: hidden !important;
-  position: sticky;
+  position: fixed;
   left: 50%;
   top: 50%;
   transform: translate(-50%, -50%);
   max-width: 1140px;
+  width: 100%;
   z-index: 5;
 }
 /* .popup_overlay {
@@ -449,10 +451,6 @@
     background: rgba(0, 0, 0, 0.5);
     z-index: 9998;
 } */
-
-.show_popup ~ .popup_overlay {
-  display: block;
-}
 
 /* .popup_parent {
     display: none;
@@ -468,9 +466,6 @@
   background: #c20000;
   padding: 5.5px 8px;
   line-height: 110%;
-}
-.show_popup {
-  display: block;
 }
 .mw_429 {
   max-width: 429px;
@@ -506,11 +501,6 @@
 }
 .pointer_none {
   pointer-events: none;
-}
-
-.show_popup {
-  opacity: 100%;
-  transform: translatey(0%);
 }
 /* ------------------------------------- lottie animation ---------------------------------- */
 .sign_up_btn {
