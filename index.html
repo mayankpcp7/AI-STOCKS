@@ -387,7 +387,6 @@
         </section>
         <!-- ---------------------------------------------------Trade long and shorts ---------------------------- -->
         <section>
-            <!-- TRADE LEVERAGE SECTION STARTS HERE  -->
             <div class="custom_container container px-4 travel_section_padding">
                 <div
                     class="row align-items-center gap-sm-4 gap-3 gap-lg-0  justify-content-center flex-wrap-reverse">
@@ -1910,7 +1909,6 @@
             if (popup) {
                 popup.classList.toggle("show_popup");
                 console.log("Popup with ID " + popupId + " toggled");
-                // Toggle overflow style on body
                 if (popup.classList.contains("show_popup")) {
                     body.style.overflow = "hidden";
                 } else {
@@ -1958,10 +1956,8 @@
 
     <!---------------- back to top ---------------->
     <script>
-        // Get the button
         let mybutton = document.getElementById("myBtn");
 
-        // When the user scrolls down 20px from the top of the document, show the button
         window.onscroll = function () { scrollFunction() };
 
         function scrollFunction() {
@@ -1971,8 +1967,6 @@
                 mybutton.style.display = "none";
             }
         }
-
-        // When the user clicks on the button, scroll to the top of the document
         function topFunction() {
             document.body.scrollTop = 0;
             document.documentElement.scrollTop = 0;
@@ -1989,11 +1983,10 @@
 
                 const updateCounter = () => {
                     const count = +counter.innerText;
-                    // Decrease the increment value for a slower animation
-                    const increment = target / 500; // Adjust this value for the desired speed
+                    const increment = target / 500;
                     if (count < target) {
                         counter.innerText = `${Math.ceil(count + increment)}`;
-                        setTimeout(updateCounter, 10); // Adjust the timeout for smoother animation
+                        setTimeout(updateCounter, 10);
                     } else {
                         counter.innerText = target;
                     }
@@ -2002,12 +1995,10 @@
             });
         });
     </script>
-    <!-------  year function -->
     <script>
         document.getElementById("currentYear").innerHTML =
             new Date().getFullYear();
     </script>
-
 
     <!-- -bootstarp js -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
