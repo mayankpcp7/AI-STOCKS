@@ -41,30 +41,13 @@
   border-radius: 8px;
   max-width: 628px;
 }
-.play_icon {
-  top: 50%;
-  left: 50%;
-  z-index: 2;
-  transform: translate(-50%, -50%);
-  max-width: 54px;
-  border-radius: 50%;
-  display: block;
-}
-.stamp {
-  top: 50%;
-  left: 50%;
-  z-index: 1;
-  transform: translate(-50%, -50%);
-  max-width: 119px;
-}
+
 .play_icon:hover {
   -webkit-box-shadow: -1px -4px 33px 3px rgba(255, 255, 255, 1);
   -moz-box-shadow: -1px -4px 33px 3px rgba(255, 255, 255, 1);
   box-shadow: -1px -4px 33px 3px rgba(255, 255, 255, 1);
 }
-.pause_icon {
-  display: none;
-}
+
 .px_12 {
   padding: 0px 12px;
 }
@@ -97,11 +80,18 @@
 .gap_20 {
   gap: 20px;
 }
+.mw_525 {
+  max-width: 525px !important;
+}
 .hero_mobile {
   max-width: 329px;
 }
 .hero_form {
   min-width: 261px;
+  top: 5% !important;
+}
+.pe_xl_68 {
+  padding-right: 68px !important;
 }
 .right_ai {
   min-width: 250px;
@@ -115,6 +105,19 @@
   border: 1px solid #cccc;
   min-height: 37.6px;
   outline: none;
+}
+.alert {
+  display: none;
+  position: fixed;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #228b22;
+  border: 1px solid #f9f9f9;
+  padding: 20px;
+  z-index: 1000;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  text-align: center;
 }
 .form_lable_border:hover {
   border: 1px solid var(--clr-green);
@@ -678,6 +681,9 @@
   }
 }
 @media (max-width: 991.98px) {
+  .pe_xl_68 {
+    padding-right: 0 !important;
+  }
   .travel_section_padding {
     padding-top: 64px;
     padding-bottom: 20px;
@@ -898,9 +904,7 @@
   .leverged_card {
     max-width: 320px;
   }
-  .-mt_20 {
-    margin-top: -120px !important;
-  }
+ zzz
   .hero_mobile {
     max-width: 310px;
   }
@@ -929,7 +933,7 @@
   .trade_shares_btns {
     max-width: 270px !important;
     min-width: 270px !important;
-    height: 60px;
+    height: 45px;
   }
   .trade_timeline::after {
     right: 38px;
