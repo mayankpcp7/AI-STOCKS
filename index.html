@@ -487,13 +487,13 @@
     <div class="bg_richblack overflow-hidden mw_1920">
         <header class="bg_header pb-sm-4">
             <nav class="nav_border nav_shadow">
-            <div class="custom_container nav_py">
-                <div class="d-flex align-items-center justify-content-between py-sm-4 py-3">
-                    <a href="#" class="fw-bold text-white ff_opensans fs_2xl">AI STOCKS</a>
-                    <button class="bg_green text-white ff_opensans fw-semibold nav_btn fs_lg transition_200">Sign
-                        Up</button>
+                <div class="custom_container nav_py">
+                    <div class="d-flex align-items-center justify-content-between py-sm-4 py-3">
+                        <a href="#" class="fw-bold text-white ff_opensans fs_2xl">AI STOCKS</a>
+                        <button class="bg_green text-white ff_opensans fw-semibold nav_btn fs_lg transition_200">Sign
+                            Up</button>
+                    </div>
                 </div>
-            </div>
             </nav>
             <main class="mt-sm-5 mt-4 pt-5 custom_container position-relative">
                 <span class="hero_right_green_ellipse position-absolute"></span>
@@ -635,7 +635,8 @@
                                     id="mobileDays">00</p>
                                 <span class="counter_line position-absolute"></span>
                             </div>
-                            <p class="text-white fw-bold ff_opensans mb-0 mt-2 mb-2 lh_145 fs_md px-lg-4 px-sm-2 mx-1">Days
+                            <p class="text-white fw-bold ff_opensans mb-0 mt-2 mb-2 lh_145 fs_md px-lg-4 px-sm-2 mx-1">
+                                Days
                             </p>
                         </div>
                         <div class="hero_counter_card d-flex flex-column align-items-center">
@@ -645,7 +646,8 @@
                                 </p>
                                 <span class="counter_line position-absolute"></span>
                             </div>
-                            <p class="text-white fw-bold ff_opensans mb-0 mt-2 mb-2 lh_145 fs_md px-lg-4 px-sm-2 mx-1">Hours
+                            <p class="text-white fw-bold ff_opensans mb-0 mt-2 mb-2 lh_145 fs_md px-lg-4 px-sm-2 mx-1">
+                                Hours
                             </p>
                         </div>
                         <div class="hero_counter_card d-flex flex-column align-items-center">
@@ -981,72 +983,11 @@
                         </div>
                         <!-- Popup structure -->
                         <div id="popup_overlay" class="popup_overlay"></div>
-                        <div class="popup_parent position-absolute" id="nvidia_popup">
-                            <div
-                                class="d-flex flex-md-row gap-3 gap-md-0 flex-column-reverse align-items-md-center pop_up position-relative overflow-hidden z-2">
-                                <img class="position-absolute popup_bottom_ellips bottom-0 start-0 pointer_none"
-                                    src="./assets/images/png/popup_bottom_ellipse.png" alt="ellipse">
-                                <img class="position-absolute popup_top_ellipse pointer_none"
-                                    src="./assets/images/png/popup_top_ellipse.png" alt="ellipse">
-                                <img class="cross position-absolute cursor_pointer" onclick="openPopup('nvidia_popup')"
-                                    src="./assets/images/svg/popup_cross.svg" alt="cross">
-                                <div class="mw_429">
-                                    <img class="nvindia_logo" src="./assets/images/png/nvidia-logo.png"
-                                        alt="nvidia-logo">
-                                    <p class="ff_opensans fs_4xl fw-bold lh_140 text-white pt-4">AI GPU 1 year 228%
-                                        Growth</p>
-                                    <p class="text-white opacity_80 fw-normal fs_sm">NVIDIA Corporation, a powerhouse in
-                                        GPU technology and
-                                        AI innovation, offers investors
-                                        compelling opportunities. With dominance in gaming and data center markets,
-                                        NVIDIA stands poised for
-                                        growth.
-                                        Diversification efforts into AI, autonomous vehicles, and strategic acquisitions
-                                        further bolster its
-                                        potential.
-                                        As a leader in technology and with a strong financial track record, NVIDIA
-                                        remains a top choice for
-                                        savvy investors.
-                                    </p>
-                                </div>
-                                <div
-                                    class="d-flex flex-column bg-white ms-lg-5 ms-md-3 popup_form w-100 position-relative z-2">
-                                    <p class="fw-bold fs_xl text-black">Start Trading with AI Stocks!</p>
-                                    <form action="/submit" method="post" onsubmit="clearForm(event)">
-                                        <div class="d-flex align-items-start pt-lg-4">
-                                            <div>
-                                                <label class="ff_opensans text-black fs_sm mb-2" for="firstName">First
-                                                    Name</label>
-                                                <input height="52px" class="text-black border-none" id="firstName"
-                                                    name="firstName" required>
-                                            </div>
-                                            <div class="ps-2">
-                                                <label class="ff_opensans text-black fs_sm mb-2" for="lastName">Last
-                                                    Name</label>
-                                                <input height="52px" class="text-black border-none" id="lastName"
-                                                    name="lastName" required>
-                                            </div>
-                                        </div>
-                                        <div class="mt-2 d-flex flex-column">
-                                            <label class="ff_opensans text-black fs_sm mb-2" for="email">Email</label>
-                                            <input height="52px" type="email" id="popup_email" name="email" required>
-                                        </div>
-                                        <div class="mt-2 d-flex flex-column">
-                                            <label class="ff_opensans text-black fs_sm mb-2" for="phone">Phone
-                                                Number</label>
-                                            <input height="52px" type="phone" id="popup_phone" name="phone" required>
-                                        </div>
-                                        <button type="submit"
-                                            class="bg_green w-100 ff_opensans fw-bold text-white border-0 mx-auto mt-md-5 mt-4 start_trading_btn">Start
-                                            Trading With [Nvidia]</button>
-                                    </form>
-                                </div>
-                            </div>
-                        </div>
+
                     </div>
 
                     <div class="position-relative d-flex flex-md-row flex-column-reverse align-items-center align-items-sm-start mt-5 pt-lg-4
-                            gap_48">
+                                    gap_48">
                         <div
                             class="d-flex flex-column ai_stocks_bg p-md-4 p-2 w-100 h-100 justify-content-start align-items-start">
                             <p class="lh_130 fs_xl ff_opensans fw-bold text-white ps-lg-2 pt-lg-2 pb-0">Co-pilot 1
@@ -1071,68 +1012,7 @@
                             class="ai_stocks_card h-100 py-lg-5 pb-md-4 ms-xl-4 ai_stocks_bg d-flex align-items-center  justify-content-center">
                             <img class="growt_logo" src="./assets/images/png/growt.png" alt="nvidia-logo">
                         </div>
-                        <div class="d-flex flex-md-row gap-3 gap-md-0 flex-column-reverse align-items-md-center popup_parent position-absolute"
-                            id="growt_popup">
-                            <div
-                                class="d-flex flex-md-row gap-3 gap-md-0 flex-column-reverse align-items-md-center pop_up position-relative overflow-hidden z-2">
-                                <img class="position-absolute popup_bottom_ellips bottom-0 start-0 pointer_none"
-                                    src="./assets/images/png/popup_bottom_ellipse.png" alt="ellipse">
-                                <img class="position-absolute popup_top_ellipse pointer_none"
-                                    src="./assets/images/png/popup_top_ellipse.png" alt="ellipse">
-                                <img class="cross position-absolute cursor_pointer" onclick="openPopup('growt_popup')"
-                                    src="./assets/images/svg/popup_cross.svg" alt="cross">
-                                <div class="mw_429">
-                                    <img class="nvindia_logo" src="./assets/images/png/growt.png" alt="nvidia-logo">
-                                    <p class="ff_opensans fs_4xl fw-bold lh_140 text-white pt-4">Co-pilot 1
-                                        year 64%</p>
-                                    <p class="text-white opacity_80 fw-normal fs_sm ff_opensans">Microsoft A tech
-                                        giant
-                                        with diverse solutions for investors, including Azure cloud services. With
-                                        market
-                                        dominance
-                                        in
-                                        software, cloud, and hardware, Microsoft shows strong growth potential. Its
-                                        leadership in
-                                        enterprise software, Azure
-                                        cloud computing, and innovation make it an attractive investment.</p>
-                                </div>
-                                <div
-                                    class="d-flex flex-column bg-white ms-lg-5 ms-md-3 popup_form w-100 position-relative z-2">
-                                    <p class="fw-bold fs_xl text-black">Start Trading with AI Stocks!</p>
-                                    <form action="/submit" method="post" onsubmit="clearForm(event)">
-                                        <div class="d-flex align-items-start pt-lg-4">
-                                            <div>
-                                                <label class="ff_opensans text-black fs_sm mb-2" for="firstName">First
-                                                    Name</label>
-                                                <input height="52px" class="text-black  border-none" id="firstName"
-                                                    name="firstName" required>
-                                            </div>
-                                            <div class="ps-2">
-                                                <label class="ff_opensans text-black fs_sm mb-2" for="lastName">Last
-                                                    Name</label>
-                                                <input height="52px" class="text-black border-none" id="lastName"
-                                                    name="lastName" required>
-                                            </div>
-                                        </div>
-                                        <div class="mt-2 d-flex flex-column">
-                                            <label class="ff_opensans text-black fs_sm mb-2" for="email">Email</label>
-                                            <input height="52px" type="email" id="popup_email" name="email" required>
-                                        </div>
-                                        <div class="mt-2 d-flex flex-column">
-                                            <label class="ff_opensans text-black fs_sm mb-2" for="phone">Phone
-                                                Number</label>
-                                            <input height="52px" type="phone" id="popup_phone" name="phone" required>
-                                        </div>
-                                        <button type="submit"
-                                            class="bg_green w-100 ff_opensans fw-bold text-white border-0 mx-auto mt-md-5 mt-4 start_trading_btn">
-                                            Start Trading With [Nvidia]
-                                        </button>
-                                    </form>
-                                </div>
 
-
-                            </div>
-                        </div>
                     </div>
 
                     <div
@@ -1160,72 +1040,13 @@
                                 onclick="openPopup('aws_popup')">Read
                                 more</button>
                         </div>
-                        <div class="position-absolute d-flex flex-md-row gap-3 gap-md-0 flex-column-reverse align-items-md-center popup_parent"
-                            id="aws_popup">
-                            <div class="d-flex flex-md-row gap-3 gap-md-0 flex-column-reverse align-items-md-center pop_up position-relative overflow-hidden z-2"
-                                id="aws_popup">
-                                <img class="position-absolute popup_bottom_ellips bottom-0 start-0 pointer_none"
-                                    src="./assets/images/png/popup_bottom_ellipse.png" alt="ellipse">
-                                <img class="position-absolute popup_top_ellipse pointer_none"
-                                    src="./assets/images/png/popup_top_ellipse.png" alt="ellipse">
-                                <img class="cross position-absolute cursor_pointer" onclick="openPopup('aws_popup')"
-                                    src="./assets/images/svg/popup_cross.svg" alt="cross">
-                                <div class="mw_429">
-                                    <img class="nvindia_logo" src="./assets/images/webp/aws.webp" alt="nvidia-logo">
-                                    <p class="ff_opensans fs_4xl fw-bold lh_140 text-white pt-4">AI 1
-                                        year 69% Growth</p>
-                                    <p class="text-white opacity_80 fw-normal fs_sm">MAmazon A tech juggernaut with AWS
-                                        cloud
-                                        services, offering diverse solutions for investors. With market leadership in
-                                        cloud computing, e-commerce, and more, Amazon shows strong growth potential. Its
-                                        dominance
-                                        in AWS cloud services,
-                                        e-commerce, and innovation make it an attractive investment. Backed by
-                                        technological
-                                        prowess, Amazon remains a top
-                                        choice for investors</p>
-                                </div>
-                                <div
-                                    class="d-flex flex-column bg-white ms-lg-5 ms-md-3 popup_form w-100 position-relative z-2">
-                                    <p class="fw-bold fs_xl text-black">Start Trading with AI Stocks!</p>
-                                    <form action="/submit" method="post" onsubmit="clearForm(event)">
-                                        <div class="d-flex align-items-start pt-lg-4">
-                                            <div>
-                                                <label class="ff_opensans text-black fs_sm mb-2" for="firstName">First
-                                                    Name</label>
-                                                <input height="52px" class="text-black  border-none" id="firstName"
-                                                    name="firstName" required>
-                                            </div>
-                                            <div class="ps-2">
-                                                <label class="ff_opensans text-black fs_sm mb-2" for="lastName">Last
-                                                    Name</label>
-                                                <input height="52px" class="text-black border-none" id="lastName"
-                                                    name="lastName" required>
-                                            </div>
-                                        </div>
-                                        <div class="mt-2 d-flex flex-column">
-                                            <label class="ff_opensans text-black fs_sm mb-2" for="email">Email</label>
-                                            <input height="52px" type="email" id="popup_email" name="email" required>
-                                        </div>
-                                        <div class="mt-2 d-flex flex-column">
-                                            <label class="ff_opensans text-black fs_sm mb-2" for="phone">Phone
-                                                Number</label>
-                                            <input height="52px" type="phone" id="popup_phone" name="phone" required>
-                                        </div>
-                                        <button type="submit"
-                                            class="bg_green w-100 ff_opensans fw-bold text-white border-0 mx-auto mt-md-5 mt-4 start_trading_btn">
-                                            Start Trading With [Nvidia]
-                                        </button>
-                                    </form>
-                                </div>
-                            </div>
-                        </div>
+
                     </div>
 
                     <div
                         class="d-flex flex-md-row position-relative flex-column-reverse align-items-center align-items-sm-start mt-5 pt-lg-4 gap_48">
-                        <img class="palantir_vector pointer_none position-absolute"
-                            src="./assets/images/png/plantir_vector.png" alt="plantir_vector">
+                        <img class="palantir_vector position-absolute" src="./assets/images/png/plantir_vector.png"
+                            alt="plantir_vector">
                         <span class="palantir_ellipse position-absolute"></span>
                         <div
                             class="d-flex flex-column ai_stocks_bg p-md-4 p-2 w-100 h-100 justify-content-start align-items-start">
@@ -1250,68 +1071,6 @@
                         <div
                             class="ai_stocks_card h-100 py-lg-5 pb-md-4 ms-xl-4 ai_stocks_bg d-flex align-items-center  justify-content-center">
                             <img class="palantir_logo" src="./assets/images/png/palantir.png" alt="nvidia-logo">
-                        </div>
-                        <div class="position-absolute d-flex flex-md-row gap-3 gap-md-0 flex-column-reverse align-items-md-center popup_parent"
-                            id="plantir_popup">
-                            <div class="d-flex flex-md-row gap-3 gap-md-0 flex-column-reverse align-items-md-center pop_up position-relative overflow-hidden z-2"
-                                id="palantir_popup">
-                                <img class="position-absolute popup_bottom_ellips bottom-0 start-0 pointer_none"
-                                    src="./assets/images/png/popup_bottom_ellipse.png" alt="ellipse">
-                                <img class="position-absolute popup_top_ellipse pointer_none"
-                                    src="./assets/images/png/popup_top_ellipse.png" alt="ellipse">
-                                <img class="cross position-absolute cursor_pointer" onclick="openPopup('plantir_popup')"
-                                    src="./assets/images/svg/popup_cross.svg" alt="cross">
-                                <div class="mw_429">
-                                    <img class="palantir_logo" src="./assets/images/png/palantir.png" alt="nvidia-logo">
-                                    <p class="ff_opensans fs_4xl fw-bold lh_140 text-white pt-4">AI Analytics 1
-                                        year
-                                        157% Growth </p>
-                                    <p class="text-white opacity_80 fw-normal fs_sm">Palantir
-                                        Technologies, a
-                                        leading data analytics company, revolutionizes decision-making with its powerful
-                                        software
-                                        platforms. With a track record of serving government agencies and commercial
-                                        enterprises,
-                                        Palantir's innovative
-                                        solutions and market dominance make it a top choice for investors seeking growth
-                                        and
-                                        technological prowess in the AI
-                                        stock market.</p>
-                                </div>
-                                <div
-                                    class="d-flex flex-column bg-white ms-lg-5 ms-md-3 popup_form w-100 position-relative z-2">
-                                    <p class="fw-bold fs_xl text-black">Start Trading with AI Stocks!</p>
-                                    <form action="/submit" method="post" onsubmit="clearForm(event)">
-                                        <div class="d-flex align-items-start pt-lg-4">
-                                            <div>
-                                                <label class="ff_opensans text-black fs_sm mb-2" for="firstName">First
-                                                    Name</label>
-                                                <input height="52px" class="text-black  border-none" id="firstName"
-                                                    name="firstName" required>
-                                            </div>
-                                            <div class="ps-2">
-                                                <label class="ff_opensans text-black fs_sm mb-2" for="lastName">Last
-                                                    Name</label>
-                                                <input height="52px" class="text-black border-none" id="lastName"
-                                                    name="lastName" required>
-                                            </div>
-                                        </div>
-                                        <div class="mt-2 d-flex flex-column">
-                                            <label class="ff_opensans text-black fs_sm mb-2" for="email">Email</label>
-                                            <input height="52px" type="email" id="popup_email" name="email" required>
-                                        </div>
-                                        <div class="mt-2 d-flex flex-column">
-                                            <label class="ff_opensans text-black fs_sm mb-2" for="phone">Phone
-                                                Number</label>
-                                            <input height="52px" type="phone" id="popup_phone" name="phone" required>
-                                        </div>
-                                        <button type="submit"
-                                            class="bg_green w-100 ff_opensans fw-bold text-white border-0 mx-auto mt-md-5 mt-4 start_trading_btn">
-                                            Start Trading With [Nvidia]
-                                        </button>
-                                    </form>
-                                </div>
-                            </div>
                         </div>
                     </div>
 
@@ -1341,75 +1100,12 @@
                                 onclick="openPopup('croed_popup')">Read
                                 more</button>
                         </div>
-                        <div class="position-absolute d-flex flex-md-row gap-3 gap-md-0 flex-column-reverse align-items-md-center popup_parent"
-                            id="croed_popup">
-                            <div
-                                class="d-flex flex-md-row gap-3 gap-md-0 flex-column-reverse align-items-md-center pop_up position-relative overflow-hidden z-2">
-                                <img class="position-absolute popup_bottom_ellips bottom-0 start-0 pointer_none"
-                                    src="./assets/images/png/popup_bottom_ellipse.png" alt="ellipse">
-                                <img class="position-absolute popup_top_ellipse pointer_none"
-                                    src="./assets/images/png/popup_top_ellipse.png" alt="ellipse">
-                                <img class="cross position-absolute cursor_pointer" onclick="openPopup('croed_popup')"
-                                    src="./assets/images/svg/popup_cross.svg" alt="cross">
-                                <div class="mw_429">
-                                    <img class="palantir_logo" src="./assets/images/webp/croed-palantir.webp"
-                                        alt="nvidia-logo">
-                                    <p class="ff_opensans fs_4xl fw-bold lh_140 text-white pt-4">AI 1
-                                        year 69% Growth </p>
-                                    <p class="text-white opacity_80 fw-normal fs_sm">CrowdStrike Shaping the Future of
-                                        Cybersecurity
-                                        with Advanced AI Solutions. As a trailblazer in threat detection and
-                                        response, CrowdStrike integrates AI-driven capabilities to fortify defenses
-                                        against
-                                        evolving
-                                        cyber threats. With its
-                                        innovative technology portfolio, including machine learning and behavioral
-                                        analytics,
-                                        CrowdStrike stands as a formidable
-                                        force in the AI stock market, offering investors unparalleled growth potential
-                                        and
-                                        technological excellence.</p>
-                                </div>
-                                <div
-                                    class="d-flex flex-column bg-white ms-lg-5 ms-md-3 popup_form w-100 position-relative z-2">
-                                    <p class="fw-bold fs_xl text-black">Start Trading with AI Stocks!</p>
-                                    <form action="/submit" method="post" onsubmit="clearForm(event)">
-                                        <div class="d-flex align-items-start pt-lg-4">
-                                            <div>
-                                                <label class="ff_opensans text-black fs_sm mb-2" for="firstName">First
-                                                    Name</label>
-                                                <input height="52px" class="text-black  border-none" id="firstName"
-                                                    name="firstName" required>
-                                            </div>
-                                            <div class="ps-2">
-                                                <label class="ff_opensans text-black fs_sm mb-2" for="lastName">Last
-                                                    Name</label>
-                                                <input height="52px" class="text-black border-none" id="lastName"
-                                                    name="lastName" required>
-                                            </div>
-                                        </div>
-                                        <div class="mt-2 d-flex flex-column">
-                                            <label class="ff_opensans text-black fs_sm mb-2" for="email">Email</label>
-                                            <input height="52px" type="email" id="popup_email" name="email" required>
-                                        </div>
-                                        <div class="mt-2 d-flex flex-column">
-                                            <label class="ff_opensans text-black fs_sm mb-2" for="phone">Phone
-                                                Number</label>
-                                            <input height="52px" type="phone" id="popup_phone" name="phone" required>
-                                        </div>
-                                        <button type="submit"
-                                            class="bg_green w-100 ff_opensans fw-bold text-white border-0 mx-auto mt-md-5 mt-4 start_trading_btn">
-                                            Start Trading With [Nvidia]
-                                        </button>
-                                    </form>
-                                </div>
-                            </div>
-                        </div>
+
                     </div>
 
                     <div
                         class="d-flex flex-md-row flex-column-reverse align-items-center align-items-sm-start mt-5 pt-lg-4 gap_48 position-relative">
-                        <img class="uipath_vector pointer_none position-absolute d-sm-block d-none"
+                        <img class="uipath_vector position-absolute d-sm-block d-none"
                             src="./assets/images/png/uipath_vector.png" alt="uipath_vector">
                         <span class="uipath_ellipse position-absolute"></span>
                         <div
@@ -1436,75 +1132,13 @@
                             class="ai_stocks_card h-100 py-lg-5 pb-md-4 ms-xl-4 ai_stocks_bg d-flex align-items-center  justify-content-center">
                             <img class="uipath_logo" src="./assets/images/png/ui-path.png" alt="nvidia-logo">
                         </div>
-                        <div class="position-absolute  d-flex flex-md-row gap-3 gap-md-0 flex-column-reverse align-items-md-center popup_parent"
-                            id="uipath_popup">
-                            <div class="d-flex flex-md-row gap-3 gap-md-0 flex-column-reverse align-items-md-center pop_up position-relative overflow-hidden z-2"
-                                id="uipath_popup">
-                                <img class="position-absolute popup_bottom_ellips bottom-0 start-0 pointer_none"
-                                    src="./assets/images/png/popup_bottom_ellipse.png" alt="ellipse">
-                                <img class="position-absolute popup_top_ellipse pointer_none"
-                                    src="./assets/images/png/popup_top_ellipse.png" alt="ellipse">
-                                <img class="cross position-absolute cursor_pointer" onclick="openPopup('uipath_popup')"
-                                    src="./assets/images/svg/popup_cross.svg" alt="cross">
-                                <div class="mw_429">
-                                    <img class="palantir_logo" src="./assets/images/png/ui-path.png" alt="nvidia-logo">
-                                    <p class="ff_opensans fs_4xl fw-bold lh_140 text-white pt-4">Robotic
-                                        Automations
-                                        1 year 82% Growth </p>
-                                    <p class="text-white opacity_80 fw-normal fs_sm">UiPath Powering
-                                        Automation with Intelligent AI Solutions. As a leader in robotic process
-                                        automation
-                                        (RPA),
-                                        UiPath
-                                        leverages cutting-edge AI technologies to streamline business processes and
-                                        drive
-                                        efficiency. With its innovative
-                                        AI-driven platform and market dominance, UiPath presents a compelling investment
-                                        opportunity
-                                        for investors seeking
-                                        growth and innovation in the AI stock sector</p>
-                                </div>
-                                <div
-                                    class="d-flex flex-column bg-white ms-lg-5 ms-md-3 popup_form w-100 position-relative z-2">
-                                    <p class="fw-bold fs_xl text-black">Start Trading with AI Stocks!</p>
-                                    <form action="/submit" method="post" onsubmit="clearForm(event)">
-                                        <div class="d-flex align-items-start pt-lg-4">
-                                            <div>
-                                                <label class="ff_opensans text-black fs_sm mb-2" for="firstName">First
-                                                    Name</label>
-                                                <input height="52px" class="text-black  border-none" id="firstName"
-                                                    name="firstName" required>
-                                            </div>
-                                            <div class="ps-2">
-                                                <label class="ff_opensans text-black fs_sm mb-2" for="lastName">Last
-                                                    Name</label>
-                                                <input height="52px" class="text-black border-none" id="lastName"
-                                                    name="lastName" required>
-                                            </div>
-                                        </div>
-                                        <div class="mt-2 d-flex flex-column">
-                                            <label class="ff_opensans text-black fs_sm mb-2" for="email">Email</label>
-                                            <input height="52px" type="email" id="popup_email" name="email" required>
-                                        </div>
-                                        <div class="mt-2 d-flex flex-column">
-                                            <label class="ff_opensans text-black fs_sm mb-2" for="phone">Phone
-                                                Number</label>
-                                            <input height="52px" type="phone" id="popup_phone" name="phone" required>
-                                        </div>
-                                        <button type="submit"
-                                            class="bg_green w-100 ff_opensans fw-bold text-white border-0 mx-auto mt-md-5 mt-4 start_trading_btn">
-                                            Start Trading With [Nvidia]
-                                        </button>
-                                    </form>
-                                </div>
-                            </div>
-                        </div>
+
                     </div>
 
                     <div
                         class="d-flex position-relative flex-md-row mb-2 flex-column align-items-center align-items-sm-start mt-5 pt-lg-4 gap_48">
                         <span class="arista_ellipse position-absolute d-none d-md-block"></span>
-                        <img class="arista_vector position-absolute pointer_none d-none d-md-block"
+                        <img class="arista_vector position-absolute d-none d-md-block"
                             src="./assets/images/webp/arista_vrc.webp" alt="arista_vrc">
                         <span class="arista_ellipse position-absolute"></span>
                         <div
@@ -1532,68 +1166,7 @@
                         </div>
 
 
-                        <div class="position-absolute  d-flex flex-md-row gap-3 gap-md-0 flex-column-reverse align-items-md-center popup_parent"
-                            id="arista_popup">
-                            <div class="d-flex flex-md-row gap-3 gap-md-0 flex-column-reverse align-items-md-center pop_up position-relative overflow-hidden z-2"
-                                id="uipath_popup">
-                                <img class="position-absolute popup_bottom_ellips bottom-0 start-0 pointer_none"
-                                    src="./assets/images/png/popup_bottom_ellipse.png" alt="ellipse">
-                                <img class="position-absolute popup_top_ellipse pointer_none"
-                                    src="./assets/images/png/popup_top_ellipse.png" alt="ellipse">
-                                <img class="cross position-absolute cursor_pointer" onclick="openPopup('arista_popup')"
-                                    src="./assets/images/svg/popup_cross.svg" alt="cross">
-                                <div class="mw_429">
-                                    <img class="nvindia_logo" src="./assets/images/webp/arista.webp" alt="nvidia-logo">
-                                    <p class="ff_opensans fs_4xl fw-bold lh_140 text-white pt-4">Arista Networks - AI
-                                        Cloud
-                                        Computing 1 year 111% Growth </p>
-                                    <p class="text-white opacity_80 fw-normal fs_sm">Arista Networks: Transforming
-                                        Networking
-                                        with
-                                        AI-Driven Solutions. Leading the charge in cloud networking, Arista
-                                        harnesses the power of AI to deliver high-performance, scalable solutions. With
-                                        its
-                                        innovative AI-driven approach and
-                                        industry-leading technology, Arista Networks offers investors a prime
-                                        opportunity to
-                                        capitalize on the evolution of
-                                        networking in the AI stock market.</p>
-                                </div>
-                                <div
-                                    class="d-flex flex-column bg-white ms-lg-5 ms-md-3 popup_form w-100 position-relative z-2">
-                                    <p class="fw-bold fs_xl text-black">Start Trading with AI Stocks!</p>
-                                    <form action="/submit" method="post" onsubmit="clearForm(event)">
-                                        <div class="d-flex align-items-start pt-lg-4">
-                                            <div>
-                                                <label class="ff_opensans text-black fs_sm mb-2" for="firstName">First
-                                                    Name</label>
-                                                <input height="52px" class="text-black  border-none" id="firstName"
-                                                    name="firstName" required>
-                                            </div>
-                                            <div class="ps-2">
-                                                <label class="ff_opensans text-black fs_sm mb-2" for="lastName">Last
-                                                    Name</label>
-                                                <input height="52px" class="text-black border-none" id="lastName"
-                                                    name="lastName" required>
-                                            </div>
-                                        </div>
-                                        <div class="mt-2 d-flex flex-column">
-                                            <label class="ff_opensans text-black fs_sm mb-2" for="email">Email</label>
-                                            <input height="52px" type="email" id="popup_email" name="email" required>
-                                        </div>
-                                        <div class="mt-2 d-flex flex-column">
-                                            <label class="ff_opensans text-black fs_sm mb-2" for="phone">Phone
-                                                Number</label>
-                                            <input height="52px" type="phone" id="popup_phone" name="phone" required>
-                                        </div>
-                                        <button type="submit"
-                                            class="bg_green w-100 ff_opensans fw-bold text-white border-0 mx-auto mt-md-5 mt-4 start_trading_btn">
-                                            Start Trading With [Nvidia]
-                                        </button>
-                                    </form>
-                                </div>
-                            </div>
-                        </div>
+
                     </div>
                 </div>
             </section>
@@ -2232,7 +1805,7 @@
 
     <!----------- header form validation ------->
     <script>
-      function validateForm(event) {
+        function validateForm(event) {
             event.preventDefault();
 
             // Show the done message
@@ -2380,7 +1953,7 @@
                 document.getElementById("footerlast_name").value = "";
                 document.getElementById("footeremail").value = "";
                 document.getElementById("phone_number").value = "";
-                  document.getElementById("doneMessage").style.display = "block";
+                document.getElementById("doneMessage").style.display = "block";
 
                 // Disable body scroll
                 document.body.style.overflow = "hidden";
