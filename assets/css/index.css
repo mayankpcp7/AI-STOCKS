@@ -96,7 +96,7 @@
   max-width: 96px;
   bottom: 0;
   left: 0;
-  animation: vector 10s ease infinite;
+  animation: vector 15s linear infinite;
 }
 .green_ellipse_trangle {
   width: 197px;
@@ -106,7 +106,7 @@
   border-radius: 50%;
   left: -5%;
   bottom: -10%;
-  animation: ellips 10s ease infinite;
+  animation: ellips 15s linear infinite;
 }
 /*------------------- average_earnings -------------------*/
 .average_earnings {
@@ -130,8 +130,8 @@
 .social_translate {
   transform: translateX(-16%);
 }
-.max_w_518 {
-  max-width: 518px;
+.max_w_548 {
+  max-width: 548px;
 }
 .commun_btn {
   padding: 16px 35px;
@@ -151,7 +151,7 @@
 .slide_container {
   width: calc(360px * 4);
   -webkit-animation: scroll 20s linear infinite;
-  animation: scroll 10s linear infinite;
+  animation: scroll 15s linear infinite;
 }
 @-webkit-keyframes scroll {
   0% {
@@ -182,7 +182,7 @@
   max-width: 96px;
   bottom: 0;
   right: 3%;
-  animation: vector 10s ease infinite;
+  animation: vector 15s linear infinite;
 }
 .green_ellipse_box {
   width: 197px;
@@ -192,7 +192,7 @@
   border-radius: 50%;
   right: -5%;
   bottom: -10%;
-  animation: ellips 10s ease infinite;
+  animation: ellips 15s linear infinite;
 }
 /*-------------------------- back to top --------------------------*/
 #myBtn {
@@ -210,7 +210,7 @@
   height: 50px;
   border-radius: 50%;
   transition: all 300ms linear;
-  animation: buttonHover 3s ease infinite;
+  animation: buttonHover 3s linear infinite;
 }
 
 #myBtn:hover {
@@ -224,7 +224,7 @@
   background-color: #0a130b;
 }
 ::-webkit-scrollbar-track {
-  background:var(--clr-darkgreen);
+  background: var(--clr-darkgreen);
   border: 1px solid #228b22;
   border-radius: 10px;
 }
@@ -242,7 +242,7 @@
   border-radius: 50%;
   left: -16%;
   bottom: -34%;
-  animation: ellips 10s ease infinite;
+  animation: ellips 15s linear infinite;
 }
 .green_ellipse_circle3 {
   width: 197px;
@@ -252,13 +252,13 @@
   border-radius: 50%;
   left: -6%;
   bottom: 9%;
-  animation: ellips 10s ease infinite;
+  animation: ellips 15s linear infinite;
 }
 .circle_shadow {
   max-width: 96px;
   bottom: -6%;
   left: -9%;
-  animation: vector 10s ease infinite;
+  animation: vector 15s linear infinite;
 }
 .green_ellipse_circle2 {
   width: 197px;
@@ -268,13 +268,13 @@
   border-radius: 50%;
   right: -13%;
   top: 11%;
-  animation: ellips 10s ease infinite;
+  animation: ellips 15s linear infinite;
 }
 .circle_shadow2 {
   max-width: 96px;
   top: 25%;
   right: -6%;
-  animation: vector 10s ease infinite;
+  animation: vector 15s linear infinite;
 }
 .faq {
   padding-top: 250px;
@@ -321,7 +321,7 @@
 }
 
 .accordion-button {
-  transition: all 600ms ease-in-out !important;
+  transition: all 600ms linear-in-out !important;
   border-bottom: 1px solid #40501c !important;
   padding: 20px 0px !important;
   display: flex;
@@ -510,13 +510,10 @@
 }
 @keyframes vector {
   0% {
-    transform: rotate(20deg);
-  }
-  50% {
-    transform: rotate(-20deg);
+    transform: rotate(0deg);
   }
   100% {
-    transform: rotate(20deg);
+    transform: rotate(360deg);
   }
 }
 @media (max-width: 1199.98px) {
@@ -524,7 +521,7 @@
     max-width: 96px;
     bottom: 0;
     right: 3%;
-    animation: vector 10s ease infinite;
+    animation: vector 15s linear infinite;
     width: 70px;
   }
   .green_ellipse_circle {
@@ -535,7 +532,7 @@
     border-radius: 50%;
     left: -16%;
     bottom: -34%;
-    animation: ellips 10s ease infinite;
+    animation: ellips 15s linear infinite;
   }
   .green_ellipse_circle3 {
     width: 197px;
@@ -545,13 +542,13 @@
     border-radius: 50%;
     left: 6%;
     bottom: -50%;
-    animation: ellips 10s ease infinite;
+    animation: ellips 15s linear infinite;
   }
   .circle_shadow {
     max-width: 96px;
     bottom: -40%;
     left: 9%;
-    animation: vector 10s ease infinite;
+    animation: vector 15s linear infinite;
     width: 70px;
   }
   .green_ellipse_circle2 {
@@ -562,20 +559,20 @@
     border-radius: 50%;
     right: 3%;
     top: -15%;
-    animation: ellips 10s ease infinite;
+    animation: ellips 15s linear infinite;
   }
   .circle_shadow2 {
     max-width: 96px;
     top: -10%;
     right: 5%;
-    animation: vector 10s ease infinite;
+    animation: vector 15s linear infinite;
     width: 70px;
   }
   .trangle_shadow {
     max-width: 96px;
     bottom: -30%;
     left: 10%;
-    animation: vector 10s ease infinite;
+    animation: vector 15s linear infinite;
     width: 70px;
   }
   .green_ellipse_trangle {
@@ -586,7 +583,7 @@
     border-radius: 50%;
     left: 5%;
     bottom: -40%;
-    animation: ellips 10s ease infinite;
+    animation: ellips 15s linear infinite;
   }
   .how_it_works {
     padding-top: 100px;
@@ -636,7 +633,7 @@
   .max_w_705 {
     max-width: 100%;
   }
-  .max_w_518 {
+  .max_w_548 {
     max-width: 600px;
   }
   .how_work_pera_pt {
@@ -751,7 +748,7 @@
 }
 @media (max-width: 575.98px) {
   .accordion-button {
-    transition: all 600ms ease-in-out !important;
+    transition: all 600ms linear-in-out !important;
     border-bottom: 1px solid #40501c !important;
     padding: 10px 0px !important;
     display: flex;
@@ -767,7 +764,7 @@
   .slide_container {
     width: calc(360px * 8);
     -webkit-animation: scroll 20s linear infinite;
-    animation: scroll 10s linear infinite;
+    animation: scroll 15s linear infinite;
   }
   @-webkit-keyframes scroll {
     0% {
@@ -871,6 +868,6 @@
     padding-bottom: 48px;
   }
   .disclaimer_mt {
-  margin-top: 28px;
-}
+    margin-top: 28px;
+  }
 }

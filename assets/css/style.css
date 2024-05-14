@@ -2,7 +2,9 @@
   list-style-type: none !important;
   text-decoration: none !important;
 }
-
+.max_w_520 {
+  max-width: 520px !important;
+}
 .bg_header {
   background-image: url(../images/webp/header-bg.webp);
   background-size: cover;
@@ -28,8 +30,7 @@
   max-width: 840px;
 }
 .major_ai {
-  max-width: 665px;
-  color: #cfd2cf;
+  max-width: 520px;
 }
 
 .green_gradiant {
@@ -138,7 +139,7 @@
   border-radius: 50%;
   left: -15%;
   top: 10%;
-  animation: ellips 10s ease infinite;
+  animation: ellips 15s linear infinite;
 }
 .hero_right_green_ellipse {
   width: 197px;
@@ -148,7 +149,7 @@
   border-radius: 50%;
   top: 10%;
   right: -15%;
-  animation: ellips 10s ease infinite;
+  animation: ellips 15s linear infinite;
 }
 /* -------------------------------------- hero slider img ---------------------------------- */
 .hero_slider_img {
@@ -217,7 +218,7 @@
   max-width: 87.8px;
   left: -11%;
   bottom: -3%;
-  animation: vector 3s ease infinite;
+  animation: vector 15s linear infinite;
 }
 .benifit_bottom_ellipse {
   width: 197px;
@@ -227,7 +228,7 @@
   border-radius: 50%;
   left: -21%;
   bottom: -10%;
-  animation: ellips 10s ease infinite;
+  animation: ellips 15s linear infinite;
 }
 .benifit_top_ellipse {
   width: 197px;
@@ -237,13 +238,13 @@
   border-radius: 50%;
   right: -21%;
   top: 15%;
-  animation: ellips 10s ease infinite;
+  animation: ellips 15s linear infinite;
 }
 .benifit_square_vec {
   max-width: 95.05px;
   right: -11%;
   top: -45%;
-  animation: vector 3s ease infinite;
+  animation: vector 15s linear infinite;
 }
 /* ---------------------------------------- understanding ----------------------------------- */
 .understanding_heading {
@@ -364,7 +365,7 @@
   max-width: 88px;
   bottom: -20%;
   right: -12%;
-  animation: vector 3s ease infinite;
+  animation: vector 15s linear infinite;
 }
 .palantir_ellipse {
   width: 197px;
@@ -374,13 +375,13 @@
   border-radius: 50%;
   right: -22%;
   bottom: -30%;
-  animation: ellips 10s ease infinite;
+  animation: ellips 15s linear infinite;
 }
 .uipath_vector {
   max-width: 76px;
   left: -12%;
   top: 40%;
-  animation: vector 3s ease infinite;
+  animation: vector 15s linear infinite;
 }
 .uipath_ellipse {
   width: 197px;
@@ -390,13 +391,13 @@
   border-radius: 50%;
   left: -22%;
   top: 40%;
-  animation: ellips 10s ease infinite;
+  animation: ellips 15s linear infinite;
 }
 .arista_vector {
   max-width: 95px;
   right: -12%;
   top: 35%;
-  animation: vector 3s ease infinite;
+  animation: vector 15s linear infinite;
 }
 .arista_ellipse {
   width: 160px;
@@ -406,7 +407,7 @@
   border-radius: 50%;
   right: -22%;
   top: 30%;
-  animation: ellips 10s ease infinite;
+  animation: ellips 15s linear infinite;
 }
 .pop_up {
   background: linear-gradient(112.83deg, #121f13 0%, #102012 110.84%);
