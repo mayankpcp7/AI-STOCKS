@@ -419,19 +419,16 @@
   top: 30%;
   animation: ellips 15s linear infinite;
 }
+.popup_overlay {
+  display: none;
+}
 .pop_up {
   background: linear-gradient(112.83deg, #121f13 0%, #102012 110.84%);
   border: 1px solid rgba(255, 255, 255, 0.145);
   border-radius: 25px;
   padding: 79px 60px;
   max-width: 1140px;
-}
-
-.modal_layer {
   width: 100%;
-  min-height: 100vh;
-  background: #000;
-  fill-opacity: 0.8;
 }
 .popup_parent {
   display: none !important;
@@ -447,7 +444,6 @@
   width: 100%;
   z-index: 5;
 }
-
 .live_tag {
   background: #c20000;
   padding: 5.5px 8px;
