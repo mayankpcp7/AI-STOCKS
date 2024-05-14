@@ -141,7 +141,7 @@
                     </div>
                     <div class="position-relative ms-lg-5 ps-lg-3 mt-4 pt-4 pt-lg-0 mt-lg-0">
                         <img class="hero_mobile" src="./assets/images/png/hero-mobile.png" alt="hero-mobile">
-                        <div class="d-flex flex-column position-absolute top-0 hero_form w-full ms-2">
+                        <div class="d-flex flex-column position-absolute  hero_form w-full ms-2">
                             <p
                                 class="clr_richblack ff_opensans fs_sm fw-bold mt-5 pt-3 me-3 me-lg-0 right_time lh_140 mb-0 mx-auto text-center w-full">
                                 This Is The Right Time to Invest In AI
@@ -182,9 +182,9 @@
                             </form>
                             <p class="text-center fw-bold ff_opensans clr_richblack fs_xsm pt-3 me-3 me-lg-0">3 Spots
                                 Left</p>
-                            <div id="doneMessage" style="display: none;"
-                                class="clr_green fw-bold bg-white nav_border text-center fs_lg rounded-4 border-1 absolute top-50">
-                                Form Submit!</div>
+                                <div id="doneMessage" class="alert">
+                                    <p>Good job!</p>
+                                </div>
                         </div>
                     </div>
                     <p
@@ -390,8 +390,8 @@
             <!-- TRADE LEVERAGE SECTION STARTS HERE  -->
             <div class="custom_container container px-4 travel_section_padding">
                 <div
-                    class="row align-items-center gap-sm-4 gap-3 gap-lg-0 justify-content-lg-between justify-content-center flex-wrap-reverse">
-                    <div class="col-lg-5 col-8  px-lg-2 position-relative travel_phone_image">
+                    class="row align-items-center gap-sm-4 gap-3 gap-lg-0  justify-content-center flex-wrap-reverse">
+                    <div class="col-lg-8 col-8 mw_425 pe_xl_68 position-relative travel_phone_image">
                         <lottie-player id="company" src="./assets/json/phone-1.json" speed=".55"
                             class="position-relative z-2 mx-auto w-100 px-4 h-auto px-md-5 mb-3 mb-md-0"
                             autoplay></lottie-player>
@@ -504,7 +504,7 @@
                                     <p class="lh_160 ff_opensans text-white opacity_70 mb-0">Buying Power</p>
                                     <p class="fw-bold ff_opensans fs_sm lh_160 text-white mb-0">$250</p>
                                 </div>
-                                <img class="nla_graph mt-4" src="./assets/images/png/nla-graph.png" alt="graph">
+                                <img class="nla_graph mt-4" src="./assets/images/webp/la-graph.webp" alt="graph">
                                 <div class="d-flex align-items-center potential_energy p-2 mt-4">
                                     <p class="fw-bold ff_opensans fst-italic lighter_green mb-0 fs_4xl">$40 </p>
                                     <p class="fw-semibold fs_md -mt-2 lighter_green fst-italic ff_opensans ms-1 mb-0">
@@ -542,7 +542,7 @@
                                     <p class="lh_160 ff_opensans text-white opacity_70 mb-0">Buying Power</p>
                                     <p class="fw-bold fs_sm lh_160 ff_opensans text-white mb-0">$7,500</p>
                                 </div>
-                                <img class="nla_graph mt-4" src="./assets/images/png/la-graph.png" alt="graph">
+                                <img class="nla_graph mt-4" src="./assets/images/webp/nla-graph.webp" alt="graph">
                                 <div class="d-flex align-items-center potential_energy p-2 mt-4">
                                     <p class="fw-bold ff_opensans fst-italic lighter_green mb-0 fs_4xl">$1,200 </p>
                                     <p class="fw-semibold fs_md -mt-2 lighter_green fst-italic ff_opensans ms-1 mb-0">
@@ -1854,6 +1854,30 @@
     </script>
 
     <!----------- hero counter ------->
+    <script>
+        var seconds = 59;
+        var x = setInterval(function () {
+            seconds--;
+            document.getElementById("seconds").innerHTML = seconds < 10 ? "0" + seconds : seconds;
+            if (seconds === 0) {
+                if (minutes === 0) {
+                    if (hours === 0) {
+                        clearInterval(x);
+                        document.getElementById("days").innerHTML = "00";
+                        document.getElementById("hours").innerHTML = "00";
+                        document.getElementById("minutes").innerHTML = "00";
+                        document.getElementById("seconds").innerHTML = "00";
+                        return;
+                    }
+                    hours--;
+                    minutes = 59;
+                } else {
+                    minutes--;
+                }
+                seconds = 59;
+            }
+        }, 1000);
+    </script>
     <script>
         var seconds = 59;
         var x = setInterval(function () {
