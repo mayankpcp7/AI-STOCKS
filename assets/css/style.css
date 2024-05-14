@@ -426,14 +426,15 @@
   padding: 79px 60px;
   max-width: 1140px;
 }
-.popup_parent {
-  display: none !important;
-}
+
 .modal_layer {
   width: 100%;
   min-height: 100vh;
   background: #000;
   fill-opacity: 0.8;
+}
+.popup_parent {
+  display: none !important;
 }
 .show_popup {
   display: flex !important;
