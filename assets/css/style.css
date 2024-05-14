@@ -417,7 +417,6 @@
 .popup_parent {
   left: -1000%;
   opacity: 0%;
-  transition: 200ms;
 }
 .show_popup {
   left: 0% !important;
