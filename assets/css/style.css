@@ -786,6 +786,9 @@
   }
 }
 @media (max-width: 767.98px) {
+  .-mt_20 {
+    margin-top: -25%;
+  }
   .ai_stocks_card {
     min-height: auto;
   }
